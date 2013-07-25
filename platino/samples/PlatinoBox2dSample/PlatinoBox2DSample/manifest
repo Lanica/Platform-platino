@@ -1,0 +1,9 @@
+#appname:PlatinoBox2DSample
+#appid:com.lanica.samples.box2d
+#type:mobile
+#guid:2cad72db-8402-4ab6-908a-244edc5a62df
+#version:1.0
+#publisher:Lanica, Inc.
+#url:http://lanica.co
+#image:appicon.png
+#desc:Box2D sample app for Platino Game Engine by Lanica, Inc.

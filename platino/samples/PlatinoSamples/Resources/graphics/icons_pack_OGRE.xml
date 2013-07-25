@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker -->
+<!-- http://www.texturepacker.com -->
+<!-- $TexturePacker:SmartUpdate:1d69cdff2bbb4098221e2becac408cc7$ -->
+<Imageset Name="icons_pack" Imagefile="graphics/icons_pack.png" NativeHorzRes="128" NativeVertRes="128" AutoScaled="false">
+    <Image Name="A" XPos="0" YPos="0" Width="64" Height="64"/>
+    <Image Name="B" XPos="0" YPos="64" Width="64" Height="64"/>
+    <Image Name="ball" XPos="98" YPos="80" Width="29" Height="29"/>
+    <Image Name="block" XPos="64" YPos="50" Width="34" Height="34"/>
+    <Image Name="gear" XPos="98" YPos="50" Width="30" Height="30"/>
+    <Image Name="tv" XPos="64" YPos="0" Width="53" Height="50"/>
+</Imageset>

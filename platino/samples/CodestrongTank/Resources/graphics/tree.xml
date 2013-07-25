@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:6c2b4873321a243423cb8dcdb7b3dec3$ -->
+<TextureAtlas imagePath="graphics/tree.png">
+    <SubTexture name="tree1" x="512" y="512" width="128" height="256"/>
+    <SubTexture name="tree11" x="512" y="0" width="256" height="512"/>
+    <SubTexture name="tree2" x="896" y="256" width="128" height="256"/>
+    <SubTexture name="tree3" x="768" y="256" width="128" height="256"/>
+    <SubTexture name="tree4" x="896" y="0" width="128" height="256"/>
+    <SubTexture name="tree5" x="768" y="0" width="128" height="256"/>
+    <SubTexture name="tree6" x="256" y="512" width="256" height="512"/>
+    <SubTexture name="tree7d" x="256" y="0" width="256" height="512"/>
+    <SubTexture name="tree8b" x="0" y="512" width="256" height="512"/>
+    <SubTexture name="tree9a" x="0" y="0" width="256" height="512"/>
+</TextureAtlas>

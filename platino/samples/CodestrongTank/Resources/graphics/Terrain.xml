@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:1464c14a921bba416711c33f2be5d15c$ -->
+<TextureAtlas imagePath="Terrain.png">
+    <SubTexture name="SandPebbles" x="2" y="782" width="256" height="128"/>
+    <SubTexture name="desert" x="2" y="652" width="256" height="128"/>
+    <SubTexture name="ground" x="2" y="522" width="256" height="128"/>
+    <SubTexture name="ground3" x="2" y="392" width="256" height="128"/>
+    <SubTexture name="ground5" x="2" y="262" width="256" height="128"/>
+    <SubTexture name="ground6" x="2" y="132" width="256" height="128"/>
+    <SubTexture name="groundtex1" x="2" y="2" width="256" height="128"/>
+</TextureAtlas>

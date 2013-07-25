@@ -1,0 +1,21 @@
+# hidden/temp files
+.DS_Store
+*.swp
+*~.nib
+build.log
+ 
+# Build dir
+build/
+certs/
+.settings/
+.metadata/
+ 
+# Xcode project files except for the project file
+project.xcworkspace/
+xcuserdata/
+!*.xcodeproj/project.pbxproj
+ 
+# Windows image thumbnail file
+Thumbs.db
+ 
+# User-specific project settings

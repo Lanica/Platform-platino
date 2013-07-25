@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:5344c6be170bc9588e39a78b38b27e7d$ -->
+<TextureAtlas imagePath="graphics/bullets.png">
+    <SubTexture name="bullet_white" x="20" y="2" width="16" height="76"/>
+    <SubTexture name="bullet_yellow" x="2" y="2" width="16" height="76"/>
+</TextureAtlas>

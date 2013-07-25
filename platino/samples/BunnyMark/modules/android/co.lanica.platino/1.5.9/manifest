@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.5.9
+apiversion: 2
+description: Platino 2D Game Engine Module for Titanium Mobile
+author: Lanica, Inc
+license: New BSD License
+copyright: Copyright (c) 2012 by Lanica, Inc
+
+# these should not be edited
+name: colanicaplatino
+moduleid: co.lanica.platino
+guid: 7fd7198c-e866-4355-949c-76931716508c
+platform: android
+minsdk: 3.0.2.GA

@@ -1,0 +1,9 @@
+#appname:Transforms
+#appid:co.lanica.platino.samples.transforms
+#type:mobile
+#guid:4d77e011-1451-4695-9727-ea511c66d58b
+#version:1.0
+#publisher:Lanica, Inc.
+#url:http://lanica.co
+#image:appicon.png
+#desc:Demonstrates use of Platino Transform objects to create animated transitions.
