@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=PlatinoBox2DSample
+iosLaunchConfigurationAttributes/appid=com.lanica.samples.box2d
+iosLaunchConfigurationAttributes/certificate=Jonathan Beebe (7745272KLE)
+iosLaunchConfigurationAttributes/distribute_path=/Users/jonbeebe/Desktop
+iosLaunchConfigurationAttributes/keychain=/Users/jonbeebe/Library/Keychains/login.keychain
+iosLaunchConfigurationAttributes/output_format=ipa
+iosLaunchConfigurationAttributes/sdk_version=6.1
+iosLaunchConfigurationAttributes/uuid=92B90295-934D-4957-AA8C-94FF00D1C17B

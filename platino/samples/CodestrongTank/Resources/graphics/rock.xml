@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:84e8384a3b88e73602e308708df4f332$ -->
+<TextureAtlas imagePath="rock.png">
+    <SubTexture name="rock1" x="51" y="129" width="38" height="56"/>
+    <SubTexture name="rock2" x="0" y="129" width="51" height="60"/>
+    <SubTexture name="rock3" x="0" y="0" width="84" height="129"/>
+</TextureAtlas>

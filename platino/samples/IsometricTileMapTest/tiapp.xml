@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>co.lanica.platino.sample.isometrictilemap</id>
+    <name>IsometricTileMapTest</name>
+    <version>1.0</version>
+    <publisher>iguchi</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2013 by iguchi</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>36b71001-1931-4e00-81db-84b72542a864</guid>
+    <property name="ti.ui.defaultunit" type="string">system</property>
+    <ios><min-ios-ver>5.1</min-ios-ver></ios>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="android" version="1.6.0">co.lanica.platino</module>
+        <module platform="iphone" version="1.6.0">co.lanica.platino</module>
+    </modules>
+    <deployment-targets>
+        <target device="tizen">false</target>
+        <target device="blackberry">false</target>
+        <target device="android">true</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>3.1.1.GA</sdk-version>
+</ti:app>

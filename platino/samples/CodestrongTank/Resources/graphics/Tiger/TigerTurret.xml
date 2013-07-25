@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:aacacb386d3c08cbbe6ebfe3277eebb6$ -->
+<TextureAtlas imagePath="graphics/Tiger/TigerTurret.png">
+    <SubTexture name="0001" x="256" y="1280" width="256" height="256"/>
+    <SubTexture name="0002" x="768" y="1024" width="256" height="256"/>
+    <SubTexture name="0003" x="512" y="1024" width="256" height="256"/>
+    <SubTexture name="0004" x="256" y="1024" width="256" height="256"/>
+    <SubTexture name="0005" x="0" y="1792" width="256" height="256"/>
+    <SubTexture name="0006" x="0" y="1536" width="256" height="256"/>
+    <SubTexture name="0007" x="0" y="1280" width="256" height="256"/>
+    <SubTexture name="0008" x="0" y="1024" width="256" height="256"/>
+    <SubTexture name="0009" x="768" y="768" width="256" height="256"/>
+    <SubTexture name="0010" x="512" y="768" width="256" height="256"/>
+    <SubTexture name="0011" x="256" y="768" width="256" height="256"/>
+    <SubTexture name="0012" x="0" y="768" width="256" height="256"/>
+    <SubTexture name="0013" x="768" y="512" width="256" height="256"/>
+    <SubTexture name="0014" x="512" y="512" width="256" height="256"/>
+    <SubTexture name="0015" x="256" y="512" width="256" height="256"/>
+    <SubTexture name="0016" x="0" y="512" width="256" height="256"/>
+    <SubTexture name="0017" x="768" y="256" width="256" height="256"/>
+    <SubTexture name="0018" x="512" y="256" width="256" height="256"/>
+    <SubTexture name="0019" x="256" y="256" width="256" height="256"/>
+    <SubTexture name="0020" x="0" y="256" width="256" height="256"/>
+    <SubTexture name="0021" x="768" y="0" width="256" height="256"/>
+    <SubTexture name="0022" x="512" y="0" width="256" height="256"/>
+    <SubTexture name="0023" x="256" y="0" width="256" height="256"/>
+    <SubTexture name="0024" x="0" y="0" width="256" height="256"/>
+</TextureAtlas>

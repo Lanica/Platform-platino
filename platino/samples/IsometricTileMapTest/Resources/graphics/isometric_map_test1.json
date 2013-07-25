@@ -1,0 +1,39 @@
+{ "height":12,
+  "width": 12,
+  "margin":0,
+  "tilewidth": 64,
+  "tileheight":32,
+  "version":1,
+  "layers": [
+    {
+      "name":"layer1",
+      "data": [
+
+      ]
+    }
+  ],
+  "tilesets": {
+    "isometric_ground": {
+      "did":1,
+      "image":"isometric_ground.png",
+      "tileheight":32,
+      "tilewidth":64,
+      "registrationPointX":32,
+      "registrationPointY":16,
+      "spanColumns":1,
+      "spanRows":1,
+      "frameCount": 1
+    },
+    "isometric_grass_and_water": {
+      "did":2,
+      "image":"isometric_grass_and_water.png",
+      "tileheight":64,
+      "tilewidth":64,
+      "registrationPointX":32,
+      "registrationPointY":32,
+      "spanColumns":1,
+      "spanRows":1,
+      "frameCount": 24
+    }
+  } 
+}

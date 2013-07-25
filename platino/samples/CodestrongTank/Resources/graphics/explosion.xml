@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:4577dcc5afba19ead27321704b6899dc$ -->
+<TextureAtlas imagePath="graphics/explosion.png">
+    <SubTexture name="explosion2_00001" x="2" y="1162" width="274" height="230"/>
+    <SubTexture name="explosion2_00002" x="554" y="930" width="274" height="230"/>
+    <SubTexture name="explosion2_00003" x="278" y="930" width="274" height="230"/>
+    <SubTexture name="explosion2_00004" x="2" y="930" width="274" height="230"/>
+    <SubTexture name="explosion2_00005" x="554" y="698" width="274" height="230"/>
+    <SubTexture name="explosion2_00006" x="278" y="698" width="274" height="230"/>
+    <SubTexture name="explosion2_00007" x="2" y="698" width="274" height="230"/>
+    <SubTexture name="explosion2_00008" x="554" y="466" width="274" height="230"/>
+    <SubTexture name="explosion2_00009" x="278" y="466" width="274" height="230"/>
+    <SubTexture name="explosion2_00010" x="2" y="466" width="274" height="230"/>
+    <SubTexture name="explosion2_00011" x="554" y="234" width="274" height="230"/>
+    <SubTexture name="explosion2_00012" x="278" y="234" width="274" height="230"/>
+    <SubTexture name="explosion2_00013" x="2" y="234" width="274" height="230"/>
+    <SubTexture name="explosion2_00014" x="554" y="2" width="274" height="230"/>
+    <SubTexture name="explosion2_00015" x="278" y="2" width="274" height="230"/>
+    <SubTexture name="explosion2_00016" x="2" y="2" width="274" height="230"/>
+</TextureAtlas>

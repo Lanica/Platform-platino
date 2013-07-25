@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:92bed93018168a3191f160a9605fd32f$ -->
+<Imageset Name="cloud" Imagefile="graphics/cloud.png" NativeHorzRes="115" NativeVertRes="115" AutoScaled="false">
+    <Image Name="cloud0" XPos="2" YPos="2" Width="94" Height="150"/>
+    <Image Name="cloud1" XPos="2" YPos="154" Width="30" Height="43"/>
+    <Image Name="cloud2" XPos="34" YPos="154" Width="54" Height="97"/>
+    <Image Name="cloud3" XPos="90" YPos="154" Width="23" Height="55"/>
+    <Image Name="cloud4" XPos="2" YPos="253" Width="88" Height="160"/>
+</Imageset>
