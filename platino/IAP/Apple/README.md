@@ -173,3 +173,10 @@ Once you do so, **you become responsible** for 'finishing' each and every purcha
 	purchase.manualFinishTransaction(transactionIdOfDeliveredPurchase);
 
 If you enable Manual Transaction Mode, but fail to call `manualFinishTransaction` for a completed purchase, iOS will attempt to redispatch the `PURCHASE_SUCCEEDED` event on the next load until you mark the transaction complete.
+
+----------------------------------
+This Lanica sample code is licensed under the provisions also known as the MIT License, as shown:
+
+[http://lanica.co/company/legal/license-for-sample-code/](http://lanica.co/company/legal/license-for-sample-code/)
+
+Copyright © 2013 Lanica Inc. All Rights Reserved.

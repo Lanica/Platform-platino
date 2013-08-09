@@ -191,3 +191,10 @@ If an error occurs consuming the item, CONSUME_FAILED will be dispatched instead
 	});
 
 On your next request to update the inventory, the consumed item will no longer be present, and the user is free to purchase it again.
+
+----------------------------------
+This Lanica sample code is licensed under the provisions also known as the MIT License, as shown:
+
+[http://lanica.co/company/legal/license-for-sample-code/](http://lanica.co/company/legal/license-for-sample-code/)
+
+Copyright © 2013 Lanica Inc. All Rights Reserved.
