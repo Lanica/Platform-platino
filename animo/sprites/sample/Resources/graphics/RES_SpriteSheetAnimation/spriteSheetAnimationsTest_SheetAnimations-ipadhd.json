@@ -1,0 +1,218 @@
+{
+  "animations" : {
+    "fireAnim" : {
+      "spriteSheet" : "spriteSheetAnimationsTest_flames-ipadhd.xml",
+      "loops" : 1,
+      "randomReplay" : false,
+      "minRandomTime" : 0.1,
+      "frames" : [
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "flame0.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "flame1.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "flame2.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "flame3.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "flame4.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "flame5.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "flame6.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "flame7.png"
+        }
+      ],
+      "restoreOriginalFrame" : false,
+      "delayPerUnit" : 0.1,
+      "randomFrames" : true,
+      "loop" : true,
+      "maxRandomTime" : 0.1
+    },
+    "blinkingAnim" : {
+      "spriteSheet" : "spriteSheetAnimationsTest_robotBlinking-ipadhd.xml",
+      "loops" : 1,
+      "randomReplay" : true,
+      "minRandomTime" : 1.1,
+      "frames" : [
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 6,
+          "notification" : {
+
+          },
+          "spriteframe" : "robotEyesOpen.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "robotEyesClose.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 4,
+          "notification" : {
+
+          },
+          "spriteframe" : "robotEyesOpen.png"
+        }
+      ],
+      "restoreOriginalFrame" : false,
+      "delayPerUnit" : 0.1,
+      "randomFrames" : false,
+      "loop" : true,
+      "maxRandomTime" : 1.1
+    },
+    "NumbersAnim" : {
+      "spriteSheet" : "spriteSheetAnimationsTest_Numbers-ipadhd.xml",
+      "loops" : 1,
+      "randomReplay" : false,
+      "minRandomTime" : 0.1,
+      "frames" : [
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_0.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_1.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_2.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_3.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 1,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_4.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 3,
+          "notification" : {
+            "StringValue" : "Demonstrate user info",
+            "BooleanValue" : true,
+            "NumberValue" : 5
+          },
+          "spriteframe" : "number_5.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 3,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_6.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 3,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_7.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 3,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_8.png"
+        },
+        {
+          "offset" : "{0, 0}",
+          "delayUnits" : 3,
+          "notification" : {
+
+          },
+          "spriteframe" : "number_9.png"
+        }
+      ],
+      "restoreOriginalFrame" : false,
+      "delayPerUnit" : 1,
+      "randomFrames" : false,
+      "loop" : true,
+      "maxRandomTime" : 0.1
+    }
+  },
+  "about" : {
+    "app" : "SpriteHelper",
+    "web" : "http:\/\/www.gamedevhelper.com",
+    "author" : "Vladu Bogdan"
+  }
+}

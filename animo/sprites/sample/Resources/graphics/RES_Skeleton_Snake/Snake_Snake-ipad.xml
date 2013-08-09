@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This atlas was generated using SpriteHelper 2 -->
+<!-- http://www.gamedevhelper.com -->
+<Imageset Name="Snake" Imagefile="Snake_Snake-ipad.png" NativeHorzRes="95" NativeVertRes="72" AutoScaled="false">
+	<Image Name="tail" XPos="1" YPos="43" Width="70" Height="27"/>
+	<Image Name="body" XPos="62" YPos="1" Width="31" Height="27"/>
+	<Image Name="head" XPos="1" YPos="1" Width="59" Height="40"/>
+</Imageset>

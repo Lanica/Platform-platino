@@ -1,0 +1,663 @@
+{
+  "name" : "Push",
+  "skinFrames" : [
+    {
+      "skins" : {
+        "hand_R_outline.png" : "handRest.png",
+        "gun-belt.png" : "gun-belt.png",
+        "forearm_L_outline.png" : "forearm_L_outline.png",
+        "gun.png" : "gun.png",
+        "gun-holster.png" : "gun-holster.png",
+        "neck_outline.png" : "neck_outline.png",
+        "hand_L_outline.png" : "hand_L_outline.png",
+        "leg_lower_L_outline.png" : "leg_lower_L_outline.png",
+        "foot_LEFT.png" : "foot_LEFT.png",
+        "leg_upper_L_outline.png" : "leg_upper_L_outline.png",
+        "muzzleFlash.png" : "muzzleFlash.png",
+        "forearm_R_outline.png" : "forearm_R_outline.png",
+        "torso_outline.png" : "torso_outline.png",
+        "shoulder_L_outline.png" : "shoulder_L_outline.png",
+        "foot_RIGHT.png" : "foot_RIGHT.png",
+        "leg_lower_R_outline.png" : "leg_lower_R_outline.png",
+        "shoulder_R_outline.png" : "shoulder_R_outline.png",
+        "head.png" : "head.png",
+        "leg_upper_R_outline.png" : "leg_upper_R_outline.png",
+        "eyes_OPEN.png" : "eyes_OPEN.png",
+        "hat.png" : "hat.png",
+        "hair.png" : "hair.png",
+        "pelvis.png" : "pelvis.png",
+        "mouth.png" : "angry_mouth.png",
+        "tennisBall.png" : "tennisBall.png"
+      },
+      "time" : 0
+    }
+  ],
+  "connectionFrames" : [
+    {
+      "connections" : {
+        "hand_R_outline.png" : {
+          "posOff" : "{18, 18}",
+          "angleOff" : 178.4053,
+          "connAngle" : -39.31543,
+          "bone" : "rightHand"
+        },
+        "gun-belt.png" : {
+          "posOff" : "{3, -40}",
+          "angleOff" : -5.286682,
+          "connAngle" : 7.204445,
+          "bone" : "torso"
+        },
+        "forearm_L_outline.png" : {
+          "posOff" : "{1, 36}",
+          "angleOff" : 91.53283,
+          "connAngle" : 77.4986,
+          "bone" : "leftLowerArm"
+        },
+        "gun.png" : {
+          "posOff" : "{-64, -48}",
+          "angleOff" : -5.286682,
+          "connAngle" : 7.204445,
+          "bone" : "torso"
+        },
+        "gun-holster.png" : {
+          "posOff" : "{-47, -30}",
+          "angleOff" : -5.286682,
+          "connAngle" : 7.204445,
+          "bone" : "torso"
+        },
+        "neck_outline.png" : {
+          "posOff" : "{-6, -27}",
+          "angleOff" : -0.9156418,
+          "connAngle" : -14.04177,
+          "bone" : "neck"
+        },
+        "hand_L_outline.png" : {
+          "posOff" : "{8, 12}",
+          "angleOff" : 91.38203,
+          "connAngle" : 28.28668,
+          "bone" : "leftHand"
+        },
+        "leg_lower_L_outline.png" : {
+          "posOff" : "{-17, 47}",
+          "angleOff" : 181.5291,
+          "connAngle" : 15.99365,
+          "bone" : "leftLowerLeg"
+        },
+        "foot_LEFT.png" : {
+          "posOff" : "{17, 0}",
+          "angleOff" : 92.44823,
+          "connAngle" : 12.60217,
+          "bone" : "leftFoot"
+        },
+        "leg_upper_L_outline.png" : {
+          "posOff" : "{0, 36}",
+          "angleOff" : 177.6855,
+          "connAngle" : -2.924362,
+          "bone" : "leftUpperLeg"
+        },
+        "muzzleFlash.png" : {
+          "posOff" : "{107, 64}",
+          "angleOff" : 175.9736,
+          "connAngle" : -36.88376,
+          "bone" : "rightHand"
+        },
+        "forearm_R_outline.png" : {
+          "posOff" : "{3, 40}",
+          "angleOff" : 186.5777,
+          "connAngle" : -8.583984,
+          "bone" : "rightLowerArm"
+        },
+        "torso_outline.png" : {
+          "posOff" : "{13, -130}",
+          "angleOff" : -5.286682,
+          "connAngle" : 7.204445,
+          "bone" : "torso"
+        },
+        "shoulder_L_outline.png" : {
+          "posOff" : "{6, 53}",
+          "angleOff" : 155.2752,
+          "connAngle" : 10.71805,
+          "bone" : "leftUpperArm"
+        },
+        "foot_RIGHT.png" : {
+          "posOff" : "{16, -2}",
+          "angleOff" : 86.0246,
+          "connAngle" : 10.08728,
+          "bone" : "rightFoot"
+        },
+        "leg_lower_R_outline.png" : {
+          "posOff" : "{-10, 42}",
+          "angleOff" : 184.2065,
+          "connAngle" : 4.70932,
+          "bone" : "rightLowerLeg"
+        },
+        "shoulder_R_outline.png" : {
+          "posOff" : "{-6, 51}",
+          "angleOff" : 225.5096,
+          "connAngle" : -38.17676,
+          "bone" : "rightUpperArm"
+        },
+        "head.png" : {
+          "posOff" : "{24, -61}",
+          "angleOff" : 23.40515,
+          "connAngle" : 0.888504,
+          "bone" : "head"
+        },
+        "leg_upper_R_outline.png" : {
+          "posOff" : "{2, 34}",
+          "angleOff" : 185.1137,
+          "connAngle" : -5.882843,
+          "bone" : "rightUpperLeg"
+        },
+        "eyes_OPEN.png" : {
+          "posOff" : "{58, -61}",
+          "angleOff" : 23.40515,
+          "connAngle" : 0.888504,
+          "bone" : "head"
+        },
+        "hat.png" : {
+          "posOff" : "{20, -133}",
+          "angleOff" : 23.40514,
+          "connAngle" : -0.6160126,
+          "bone" : "head"
+        },
+        "hair.png" : {
+          "posOff" : "{20, -77}",
+          "angleOff" : 23.40515,
+          "connAngle" : 0.888504,
+          "bone" : "head"
+        },
+        "pelvis.png" : {
+          "posOff" : "{0, -17}",
+          "angleOff" : -5.286682,
+          "connAngle" : 7.204445,
+          "bone" : "torso"
+        },
+        "mouth.png" : {
+          "posOff" : "{63, -19}",
+          "angleOff" : 23.40515,
+          "connAngle" : 0.888504,
+          "bone" : "head"
+        },
+        "tennisBall.png" : {
+          "connAngle" : 37.82879,
+          "posOff" : "{0, 0}",
+          "angleOff" : 0
+        }
+      },
+      "time" : 0
+    }
+  ],
+  "visibilityFrames" : [
+    {
+      "sprites" : {
+        "hand_R_outline.png" : true,
+        "gun-belt.png" : true,
+        "forearm_L_outline.png" : true,
+        "gun.png" : true,
+        "gun-holster.png" : true,
+        "neck_outline.png" : true,
+        "hand_L_outline.png" : true,
+        "leg_lower_L_outline.png" : true,
+        "foot_LEFT.png" : true,
+        "leg_upper_L_outline.png" : true,
+        "muzzleFlash.png" : false,
+        "forearm_R_outline.png" : true,
+        "torso_outline.png" : true,
+        "eyes_ANGRY.png" : true,
+        "shoulder_L_outline.png" : true,
+        "foot_RIGHT.png" : true,
+        "leg_lower_R_outline.png" : true,
+        "shoulder_R_outline.png" : true,
+        "head.png" : true,
+        "leg_upper_R_outline.png" : true,
+        "tennisBall.png" : false,
+        "hat.png" : true,
+        "hair.png" : true,
+        "pelvis.png" : true,
+        "mouth.png" : true
+      },
+      "time" : 0
+    }
+  ],
+  "positionFrames" : [
+    {
+      "bones" : {
+        "neck" : "{90, 195}",
+        "leftPelvis" : "{49, -9}",
+        "leftUpperLeg" : "{50, -106}",
+        "torso" : "{74, 162}",
+        "rightUpperArm" : "{103, 113}",
+        "leftLowerArm" : "{164, 49}",
+        "rightPelvis" : "{-26, -17}",
+        "rightUpperLeg" : "{-49, -102}",
+        "leftFoot" : "{81, -214}",
+        "leftShoulder" : "{95, 143}",
+        "leftUpperArm" : "{93, 50}",
+        "rightShoulder" : "{20, 160}",
+        "head" : "{133, 279}",
+        "leftLowerLeg" : "{22, -194}",
+        "RootBone" : "{11, -21}",
+        "rightLowerArm" : "{179, 130}",
+        "rightHand" : "{181, 176}",
+        "rightFoot" : "{-85, -210}",
+        "leftHand" : "{201, 52}",
+        "rightLowerLeg" : "{-117, -187}"
+      },
+      "time" : 3.90625e-05
+    },
+    {
+      "bones" : {
+        "neck" : "{88, 187}",
+        "leftPelvis" : "{52, -23}",
+        "leftUpperLeg" : "{27, -117}",
+        "torso" : "{73, 153}",
+        "rightUpperArm" : "{101, 99}",
+        "leftLowerArm" : "{160, 61}",
+        "rightPelvis" : "{-24, -30}",
+        "rightUpperLeg" : "{-51, -114}",
+        "leftFoot" : "{30, -217}",
+        "leftShoulder" : "{99, 140}",
+        "leftUpperArm" : "{91, 47}",
+        "rightShoulder" : "{20, 149}",
+        "head" : "{129, 271}",
+        "leftLowerLeg" : "{-27, -192}",
+        "RootBone" : "{14, -31}",
+        "rightLowerArm" : "{176, 120}",
+        "rightHand" : "{175, 166}",
+        "rightFoot" : "{-112, -206}",
+        "leftHand" : "{197, 65}",
+        "rightLowerLeg" : "{-139, -178}"
+      },
+      "time" : 0.3056641
+    },
+    {
+      "bones" : {
+        "neck" : "{104, 208}",
+        "leftPelvis" : "{57, -29}",
+        "leftUpperLeg" : "{21, -118}",
+        "torso" : "{82, 178}",
+        "rightUpperArm" : "{98, 104}",
+        "leftLowerArm" : "{161, 55}",
+        "rightPelvis" : "{-12, -12}",
+        "rightUpperLeg" : "{-21, -100}",
+        "leftFoot" : "{27, -219}",
+        "leftShoulder" : "{92, 151}",
+        "leftUpperArm" : "{90, 58}",
+        "rightShoulder" : "{29, 170}",
+        "head" : "{133, 297}",
+        "leftLowerLeg" : "{-31, -195}",
+        "RootBone" : "{25, -6}",
+        "rightLowerArm" : "{174, 120}",
+        "rightHand" : "{171, 166}",
+        "rightFoot" : "{-93, -203}",
+        "leftHand" : "{198, 54}",
+        "rightLowerLeg" : "{-107, -166}"
+      },
+      "time" : 0.6505468
+    },
+    {
+      "bones" : {
+        "leftPelvis" : "{60, -24}",
+        "leftUpperLeg" : "{8, -105}",
+        "rightUpperArm" : "{97, 103}",
+        "leftLowerArm" : "{160, 56}",
+        "rightUpperLeg" : "{16, -95}",
+        "leftFoot" : "{-12, -214}",
+        "leftUpperArm" : "{89, 58}",
+        "leftLowerLeg" : "{-57, -172}",
+        "rightLowerArm" : "{172, 119}",
+        "rightHand" : "{169, 165}",
+        "rightFoot" : "{-60, -173}",
+        "leftHand" : "{197, 54}",
+        "rightLowerLeg" : "{-82, -141}"
+      },
+      "time" : 0.9248047
+    },
+    {
+      "bones" : {
+        "neck" : "{98, 199}",
+        "leftPelvis" : "{65, -27}",
+        "leftUpperLeg" : "{4, -103}",
+        "torso" : "{79, 167}",
+        "rightUpperArm" : "{99, 103}",
+        "leftLowerArm" : "{157, 52}",
+        "rightPelvis" : "{-10, -27}",
+        "rightUpperLeg" : "{34, -103}",
+        "leftFoot" : "{-40, -210}",
+        "leftShoulder" : "{96, 144}",
+        "leftUpperArm" : "{86, 51}",
+        "rightShoulder" : "{25, 164}",
+        "head" : "{129, 287}",
+        "leftLowerLeg" : "{-71, -156}",
+        "RootBone" : "{26, -19}",
+        "rightLowerArm" : "{174, 120}",
+        "rightHand" : "{172, 166}",
+        "rightFoot" : "{96, -200}",
+        "leftHand" : "{194, 53}",
+        "rightLowerLeg" : "{58, -209}"
+      },
+      "time" : 1.262344
+    },
+    {
+      "bones" : {
+        "neck" : "{105, 209}",
+        "leftPelvis" : "{72, -9}",
+        "leftUpperLeg" : "{15, -88}",
+        "torso" : "{82, 180}",
+        "rightUpperArm" : "{101, 101}",
+        "leftLowerArm" : "{153, 56}",
+        "rightPelvis" : "{-1, -23}",
+        "rightUpperLeg" : "{33, -104}",
+        "leftFoot" : "{-48, -198}",
+        "leftShoulder" : "{92, 153}",
+        "leftUpperArm" : "{82, 60}",
+        "rightShoulder" : "{31, 165}",
+        "head" : "{133, 299}",
+        "leftLowerLeg" : "{-63, -137}",
+        "RootBone" : "{32, -6}",
+        "rightLowerArm" : "{176, 120}",
+        "rightHand" : "{169, 166}",
+        "rightFoot" : "{60, -217}",
+        "leftHand" : "{190, 54}",
+        "rightLowerLeg" : "{21, -212}"
+      },
+      "time" : 1.482383
+    },
+    {
+      "bones" : {
+        "neck" : "{107, 211}",
+        "leftPelvis" : "{76, 6}",
+        "leftUpperLeg" : "{31, -80}",
+        "torso" : "{83, 183}",
+        "leftLowerArm" : "{155, 57}",
+        "rightPelvis" : "{3, -17}",
+        "rightUpperLeg" : "{12, -105}",
+        "leftFoot" : "{-35, -197}",
+        "leftShoulder" : "{91, 155}",
+        "leftUpperArm" : "{84, 62}",
+        "rightShoulder" : "{32, 167}",
+        "head" : "{134, 301}",
+        "leftLowerLeg" : "{-43, -136}",
+        "RootBone" : "{38, -5}",
+        "rightHand" : "{168, 166}",
+        "rightFoot" : "{8, -218}",
+        "leftHand" : "{192, 54}",
+        "rightLowerLeg" : "{-29, -205}"
+      },
+      "time" : 1.665703
+    },
+    {
+      "bones" : {
+        "neck" : "{112, 215}",
+        "leftPelvis" : "{80, 6}",
+        "leftUpperLeg" : "{68, -90}",
+        "torso" : "{84, 190}",
+        "rightUpperArm" : "{93, 108}",
+        "leftLowerArm" : "{148, 59}",
+        "rightPelvis" : "{7, -15}",
+        "rightUpperLeg" : "{-18, -100}",
+        "leftFoot" : "{-13, -174}",
+        "leftShoulder" : "{90, 162}",
+        "leftUpperArm" : "{77, 69}",
+        "rightShoulder" : "{32, 181}",
+        "head" : "{135, 306}",
+        "leftLowerLeg" : "{-22, -112}",
+        "RootBone" : "{40, 2}",
+        "rightLowerArm" : "{170, 120}",
+        "rightHand" : "{162, 165}",
+        "rightFoot" : "{-49, -207}",
+        "leftHand" : "{184, 56}",
+        "rightLowerLeg" : "{-83, -187}"
+      },
+      "time" : 1.813672
+    },
+    {
+      "bones" : {
+        "neck" : "{90, 195}",
+        "leftPelvis" : "{49, -9}",
+        "leftUpperLeg" : "{49, -106}",
+        "torso" : "{74, 162}",
+        "rightUpperArm" : "{103, 113}",
+        "leftLowerArm" : "{164, 49}",
+        "rightPelvis" : "{-26, -17}",
+        "rightUpperLeg" : "{-49, -102}",
+        "leftFoot" : "{81, -214}",
+        "leftShoulder" : "{95, 143}",
+        "leftUpperArm" : "{93, 50}",
+        "rightShoulder" : "{20, 160}",
+        "head" : "{133, 279}",
+        "leftLowerLeg" : "{22, -194}",
+        "RootBone" : "{11, -21}",
+        "rightLowerArm" : "{179, 130}",
+        "rightHand" : "{182, 176}",
+        "rightFoot" : "{-86, -210}",
+        "leftHand" : "{201, 52}",
+        "rightLowerLeg" : "{-117, -186}"
+      },
+      "time" : 2
+    }
+  ],
+  "playMode" : 1,
+  "spriteTransformFrames" : [
+    {
+      "time" : 0,
+      "transform" : {
+        "hand_R_outline.png" : {
+          "angleOff" : 178.4053,
+          "posOff" : "{18, 18}",
+          "connAngle" : -39.31543,
+          "angle" : -22.71936,
+          "position" : "{-65, -13}"
+        },
+        "gun-belt.png" : {
+          "angleOff" : -5.286682,
+          "posOff" : "{3, -40}",
+          "connAngle" : 7.204445,
+          "angle" : 1.792458,
+          "position" : "{7, 31}"
+        },
+        "forearm_L_outline.png" : {
+          "angleOff" : 91.53283,
+          "posOff" : "{1, 36}",
+          "connAngle" : 77.4986,
+          "angle" : 29.78532,
+          "position" : "{63, 52}"
+        },
+        "gun.png" : {
+          "angleOff" : -5.286682,
+          "posOff" : "{-64, -48}",
+          "connAngle" : 7.204445,
+          "angle" : 1.792458,
+          "position" : "{-60, 33}"
+        },
+        "gun-holster.png" : {
+          "angleOff" : -5.286682,
+          "posOff" : "{-47, -30}",
+          "connAngle" : 7.204445,
+          "angle" : 1.792458,
+          "position" : "{-42, 16}"
+        },
+        "neck_outline.png" : {
+          "angleOff" : -0.9156418,
+          "posOff" : "{-6, -27}",
+          "connAngle" : -14.04177,
+          "angle" : 10.33217,
+          "position" : "{2, 214}"
+        },
+        "hand_L_outline.png" : {
+          "angleOff" : 91.38203,
+          "posOff" : "{8, 12}",
+          "connAngle" : 28.28668,
+          "angle" : 11.81234,
+          "position" : "{107, 29}"
+        },
+        "leg_lower_L_outline.png" : {
+          "angleOff" : 181.5291,
+          "posOff" : "{-17, 47}",
+          "connAngle" : 15.99365,
+          "angle" : 7.019928,
+          "position" : "{35, -167}"
+        },
+        "foot_LEFT.png" : {
+          "angleOff" : 92.44823,
+          "posOff" : "{17, 0}",
+          "connAngle" : 12.60217,
+          "angle" : 2.437721,
+          "position" : "{49, -207}"
+        },
+        "leg_upper_L_outline.png" : {
+          "angleOff" : 177.6855,
+          "posOff" : "{0, 36}",
+          "connAngle" : -2.924362,
+          "angle" : -1.04274,
+          "position" : "{38, -58}"
+        },
+        "muzzleFlash.png" : {
+          "angleOff" : 175.9736,
+          "posOff" : "{107, 64}",
+          "connAngle" : -36.88376,
+          "angle" : -20.28769,
+          "position" : "{7, -83}"
+        },
+        "forearm_R_outline.png" : {
+          "angleOff" : 186.5777,
+          "posOff" : "{3, 40}",
+          "connAngle" : -8.583984,
+          "angle" : -16.0497,
+          "position" : "{-82, 46}"
+        },
+        "torso_outline.png" : {
+          "angleOff" : -5.286682,
+          "posOff" : "{13, -130}",
+          "connAngle" : 7.204445,
+          "angle" : 1.792458,
+          "position" : "{9, 122}"
+        },
+        "shoulder_L_outline.png" : {
+          "angleOff" : 155.2752,
+          "posOff" : "{6, 53}",
+          "connAngle" : 10.71805,
+          "angle" : 24.82825,
+          "position" : "{29, 116}"
+        },
+        "foot_RIGHT.png" : {
+          "angleOff" : 86.0246,
+          "posOff" : "{16, -2}",
+          "connAngle" : 10.08728,
+          "angle" : 4.942253,
+          "position" : "{-30, -211}"
+        },
+        "leg_lower_R_outline.png" : {
+          "angleOff" : 184.2065,
+          "posOff" : "{-10, 42}",
+          "connAngle" : 4.70932,
+          "angle" : 10.80879,
+          "position" : "{-33, -150}"
+        },
+        "shoulder_R_outline.png" : {
+          "angleOff" : 225.5096,
+          "posOff" : "{-6, 51}",
+          "connAngle" : -38.17676,
+          "angle" : -21.18059,
+          "position" : "{-71, 125}"
+        },
+        "head.png" : {
+          "angleOff" : 23.40515,
+          "posOff" : "{24, -61}",
+          "connAngle" : 0.888504,
+          "angle" : -4.31353,
+          "position" : "{20, 287}"
+        },
+        "leg_upper_R_outline.png" : {
+          "angleOff" : 185.1137,
+          "posOff" : "{2, 34}",
+          "connAngle" : -5.882843,
+          "angle" : -2.058899,
+          "position" : "{-13, -56}"
+        },
+        "eyes_OPEN.png" : {
+          "angleOff" : 23.40515,
+          "posOff" : "{58, -61}",
+          "connAngle" : 0.888504,
+          "angle" : -4.31353,
+          "position" : "{54, 290}"
+        },
+        "hat.png" : {
+          "angleOff" : 23.40514,
+          "posOff" : "{20, -133}",
+          "connAngle" : -0.6160126,
+          "angle" : -4.313515,
+          "position" : "{14, 358}"
+        },
+        "hair.png" : {
+          "angleOff" : 23.40515,
+          "posOff" : "{20, -77}",
+          "connAngle" : 0.888504,
+          "angle" : -4.31353,
+          "position" : "{15, 303}"
+        },
+        "pelvis.png" : {
+          "angleOff" : -5.286682,
+          "posOff" : "{0, -17}",
+          "connAngle" : 7.204445,
+          "angle" : 1.792458,
+          "position" : "{7, 8}"
+        },
+        "mouth.png" : {
+          "angleOff" : 23.40515,
+          "posOff" : "{63, -19}",
+          "connAngle" : 0.888504,
+          "angle" : -4.31353,
+          "position" : "{63, 248}"
+        },
+        "tennisBall.png" : {
+          "angleOff" : 0,
+          "posOff" : "{0, 0}",
+          "connAngle" : 37.82879,
+          "angle" : -1.525879e-05,
+          "position" : "{-3, 30}"
+        }
+      }
+    }
+  ],
+  "metadata" : {
+    "app" : "SpriteHelper",
+    "author" : "Vladu Bogdan",
+    "web" : "http:\/\/www.gamedevhelper.com",
+    "version" : 1
+  },
+  "zOrderFrames" : [
+    {
+      "sprites" : {
+        "hand_R_outline.png" : 20,
+        "gun-belt.png" : 10,
+        "forearm_L_outline.png" : 1,
+        "gun.png" : 13,
+        "gun-holster.png" : 14,
+        "neck_outline.png" : 11,
+        "hand_L_outline.png" : 2,
+        "leg_lower_L_outline.png" : 4,
+        "foot_LEFT.png" : 5,
+        "leg_upper_L_outline.png" : 3,
+        "muzzleFlash.png" : 23,
+        "forearm_R_outline.png" : 22,
+        "torso_outline.png" : 12,
+        "shoulder_L_outline.png" : 0,
+        "foot_RIGHT.png" : 8,
+        "leg_lower_R_outline.png" : 7,
+        "eyes_OPEN.png" : 16,
+        "head.png" : 15,
+        "leg_upper_R_outline.png" : 6,
+        "shoulder_R_outline.png" : 21,
+        "hat.png" : 19,
+        "mouth.png" : 17,
+        "hair.png" : 18,
+        "pelvis.png" : 9,
+        "tennisBall.png" : 24
+      },
+      "time" : 0
+    }
+  ],
+  "totalTime" : 2
+}

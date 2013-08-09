@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This atlas was generated using SpriteHelper 2 -->
+<!-- http://www.gamedevhelper.com -->
+<Imageset Name="robots" Imagefile="physicsCollisionTestRobots_robots-hd.png" NativeHorzRes="225" NativeVertRes="273" AutoScaled="false">
+	<Image Name="blueRobot" XPos="1" YPos="1" Width="110" Height="134"/>
+	<Image Name="greenRobot" XPos="113" YPos="1" Width="110" Height="134"/>
+	<Image Name="pinkRobot" XPos="1" YPos="137" Width="110" Height="134"/>
+</Imageset>

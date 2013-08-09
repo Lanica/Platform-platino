@@ -1,0 +1,2022 @@
+{
+  "sheet" : "Officer_Officer.png",
+  "root" : {
+    "uuid" : "78CC99DF-E49D-4A10-A543-AFC4188340F2",
+    "children" : [
+      {
+        "uuid" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+        "children" : [
+          {
+            "uuid" : "9C68329E-AC9B-4ED0-959D-FAFDB77FABDB",
+            "children" : [
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "name" : "rightHand",
+                        "localPos" : "{-51, 6}",
+                        "uuid" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300"
+                      }
+                    ],
+                    "name" : "rightLowerArm",
+                    "localPos" : "{-44, 15}",
+                    "uuid" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6"
+                  }
+                ],
+                "name" : "rightUpperArm",
+                "localPos" : "{-30, 28}",
+                "uuid" : "8B4B51F9-C980-4A17-86CE-155FA850600D"
+              }
+            ],
+            "name" : "rightShoulder",
+            "localPos" : "{-11, 45}",
+            "rigid" : true
+          },
+          {
+            "uuid" : "BE5FAEA7-5B83-4F94-88BD-38B6064A1E45",
+            "children" : [
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+
+                        ],
+                        "name" : "leftHand",
+                        "localPos" : "{53, 48}",
+                        "uuid" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450"
+                      }
+                    ],
+                    "name" : "leftLowerArm",
+                    "localPos" : "{44, 45}",
+                    "uuid" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234"
+                  }
+                ],
+                "name" : "leftUpperArm",
+                "localPos" : "{30, 41}",
+                "uuid" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0"
+              }
+            ],
+            "name" : "leftShoulder",
+            "localPos" : "{7, 44}",
+            "rigid" : true
+          },
+          {
+            "children" : [
+              {
+                "children" : [
+
+                ],
+                "name" : "head",
+                "localPos" : "{8, 77}",
+                "uuid" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C"
+              }
+            ],
+            "name" : "neck",
+            "localPos" : "{2, 60}",
+            "uuid" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8"
+          }
+        ],
+        "name" : "torso",
+        "localPos" : "{2, 48}",
+        "rigid" : true
+      },
+      {
+        "uuid" : "9FE1E9D9-F497-4616-8056-59AF71B2FA2A",
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+                  {
+                    "children" : [
+
+                    ],
+                    "name" : "leftFoot",
+                    "localPos" : "{27, -53}",
+                    "uuid" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC"
+                  }
+                ],
+                "name" : "leftLowerLeg",
+                "localPos" : "{15, -52}",
+                "uuid" : "70547121-3CA2-439C-B835-DFB20CDF9E2C"
+              }
+            ],
+            "name" : "leftUpperLeg",
+            "localPos" : "{15, -23}",
+            "uuid" : "E08EFAEF-8EE3-489F-A94E-271778E069DA"
+          }
+        ],
+        "name" : "leftPelvis",
+        "localPos" : "{10, -2}",
+        "rigid" : true
+      },
+      {
+        "uuid" : "FDEB0546-33FA-4B4E-9986-C0C901D8F501",
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+                  {
+                    "children" : [
+
+                    ],
+                    "name" : "rightFoot",
+                    "localPos" : "{-3, -52}",
+                    "uuid" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549"
+                  }
+                ],
+                "name" : "rightLowerLeg",
+                "localPos" : "{-13, -51}",
+                "uuid" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27"
+              }
+            ],
+            "name" : "rightUpperLeg",
+            "localPos" : "{-9, -25}",
+            "uuid" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2"
+          }
+        ],
+        "name" : "rightPelvis",
+        "localPos" : "{-9, -3}",
+        "rigid" : true
+      }
+    ],
+    "name" : "RootBone",
+    "root" : true,
+    "rigid" : true
+  },
+  "sprites" : [
+    {
+      "angle" : -12.44345,
+      "skinName" : "leg_upper_L_outline.png",
+      "visible" : true,
+      "skinUUID" : "B1812C41-20C7-408A-8945-2EA97E9CE215",
+      "sprName" : "leg_upper_L_outline.png",
+      "boneUUID" : "E08EFAEF-8EE3-489F-A94E-271778E069DA",
+      "localPos" : "{11, -11}"
+    },
+    {
+      "angle" : -1.491577,
+      "skinName" : "leg_lower_L_outline.png",
+      "visible" : true,
+      "skinUUID" : "24AD5D40-5C93-4E4C-84BC-4C86A494A79A",
+      "sprName" : "leg_lower_L_outline.png",
+      "boneUUID" : "70547121-3CA2-439C-B835-DFB20CDF9E2C",
+      "localPos" : "{15, -35}"
+    },
+    {
+      "angle" : 2.225342,
+      "skinName" : "foot_LEFT.png",
+      "visible" : true,
+      "skinUUID" : "83CFA6C3-87DB-4C96-BC28-64101503AA59",
+      "sprName" : "foot_LEFT.png",
+      "boneUUID" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC",
+      "localPos" : "{19, -51}"
+    },
+    {
+      "angle" : -5.314026,
+      "skinName" : "leg_upper_R_outline.png",
+      "visible" : true,
+      "skinUUID" : "EEDA778D-272C-4A87-9F04-24A861250F62",
+      "sprName" : "leg_upper_R_outline.png",
+      "boneUUID" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2",
+      "localPos" : "{-8, -11}"
+    },
+    {
+      "angle" : 5.761002,
+      "skinName" : "leg_lower_R_outline.png",
+      "visible" : true,
+      "skinUUID" : "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438",
+      "sprName" : "leg_lower_R_outline.png",
+      "boneUUID" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27",
+      "localPos" : "{-12, -36}"
+    },
+    {
+      "angle" : 10.08729,
+      "skinName" : "foot_RIGHT.png",
+      "visible" : true,
+      "skinUUID" : "8C6C2AC3-8B6C-4617-88A4-838A81B2806F",
+      "sprName" : "foot_RIGHT.png",
+      "boneUUID" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549",
+      "localPos" : "{-9, -50}"
+    },
+    {
+      "angle" : 7.204445,
+      "skinName" : "pelvis.png",
+      "visible" : true,
+      "skinUUID" : "C56DF6BD-E7ED-4944-838B-59382CA72862",
+      "sprName" : "pelvis.png",
+      "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+      "localPos" : "{0, 4}"
+    },
+    {
+      "angle" : 7.204445,
+      "skinName" : "gun-belt.png",
+      "visible" : true,
+      "skinUUID" : "E6F87935-C299-455E-AB5B-20BBC97D64F8",
+      "sprName" : "gun-belt.png",
+      "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+      "localPos" : "{1, 10}"
+    },
+    {
+      "angle" : -57.19493,
+      "skinName" : "shoulder_L_outline.png",
+      "visible" : true,
+      "skinUUID" : "E7CFF08A-92E0-47FC-98F5-D70D33BD0869",
+      "sprName" : "shoulder_L_outline.png",
+      "boneUUID" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0",
+      "localPos" : "{20, 40}"
+    },
+    {
+      "angle" : -16.02814,
+      "skinName" : "forearm_L_outline.png",
+      "visible" : true,
+      "skinUUID" : "6E45B9B7-6812-4A72-9C28-49D587AB77FE",
+      "sprName" : "forearm_L_outline.png",
+      "boneUUID" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234",
+      "localPos" : "{39, 42}"
+    },
+    {
+      "angle" : -23.98296,
+      "skinName" : "hand_L_outline.png",
+      "visible" : true,
+      "skinUUID" : "42C244EF-D4F9-4C31-AB71-CE1F92816A94",
+      "sprName" : "hand_L_outline.png",
+      "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+      "localPos" : "{49, 46}"
+    },
+    {
+      "angle" : 1.173508,
+      "skinName" : "neck_outline.png",
+      "visible" : true,
+      "skinUUID" : "3885DEE5-C83D-4FC3-ABA7-7EF736229C05",
+      "sprName" : "neck_outline.png",
+      "boneUUID" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8",
+      "localPos" : "{2, 55}"
+    },
+    {
+      "angle" : 7.204445,
+      "skinName" : "torso_outline.png",
+      "visible" : true,
+      "skinUUID" : "282622F4-9424-4B63-9F51-B7193D8D29E9",
+      "sprName" : "torso_outline.png",
+      "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+      "localPos" : "{3, 33}"
+    },
+    {
+      "angle" : 7.204445,
+      "skinName" : "gun.png",
+      "visible" : true,
+      "skinUUID" : "AB699660-3C55-417B-BD09-21E3092224F9",
+      "sprName" : "gun.png",
+      "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+      "localPos" : "{-16, 12}"
+    },
+    {
+      "angle" : 7.204445,
+      "skinName" : "gun-holster.png",
+      "visible" : true,
+      "skinUUID" : "E2009104-D6FF-4E7E-BB01-FEF467CA0277",
+      "sprName" : "gun-holster.png",
+      "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+      "localPos" : "{-12, 7}"
+    },
+    {
+      "angle" : -3.709953,
+      "skinName" : "head.png",
+      "visible" : true,
+      "skinUUID" : "A40D2FE3-2BDA-4631-9901-EAF1ED83B232",
+      "sprName" : "head.png",
+      "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+      "localPos" : "{6, 75}"
+    },
+    {
+      "angle" : -3.709953,
+      "skinName" : "eyes_OPEN.png",
+      "visible" : true,
+      "skinUUID" : "68F7F90F-00A2-4340-8A00-C5769E149A9B",
+      "sprName" : "eyes_ANGRY.png",
+      "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+      "localPos" : "{15, 76}"
+    },
+    {
+      "angle" : -3.709953,
+      "skinName" : "mouth.png",
+      "visible" : true,
+      "skinUUID" : "93A6B380-6462-4147-8A5D-5B9F800140DF",
+      "sprName" : "mouth.png",
+      "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+      "localPos" : "{17, 66}"
+    },
+    {
+      "angle" : -3.709953,
+      "skinName" : "hair.png",
+      "visible" : true,
+      "skinUUID" : "5D2948F9-482F-46BA-A09F-D655E7E3DEA4",
+      "sprName" : "hair.png",
+      "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+      "localPos" : "{5, 79}"
+    },
+    {
+      "angle" : -0.3208771,
+      "skinName" : "hat.png",
+      "visible" : true,
+      "skinUUID" : "82CAA361-C828-4CB1-8195-2C3CC4CDD172",
+      "sprName" : "hat.png",
+      "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+      "localPos" : "{5, 93}"
+    },
+    {
+      "angle" : 41.22293,
+      "skinName" : "hand_R_outline.png",
+      "visible" : true,
+      "skinUUID" : "DE2293B7-C7BE-4768-975A-0382CCBE36AC",
+      "sprName" : "hand_R_outline.png",
+      "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+      "localPos" : "{-48, 9}"
+    },
+    {
+      "angle" : 3.007507,
+      "skinName" : "shoulder_R_outline.png",
+      "visible" : true,
+      "skinUUID" : "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5",
+      "sprName" : "shoulder_R_outline.png",
+      "boneUUID" : "8B4B51F9-C980-4A17-86CE-155FA850600D",
+      "localPos" : "{-21, 36}"
+    },
+    {
+      "angle" : 40.40814,
+      "skinName" : "forearm_R_outline.png",
+      "visible" : true,
+      "skinUUID" : "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184",
+      "sprName" : "forearm_R_outline.png",
+      "boneUUID" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6",
+      "localPos" : "{-37, 21}"
+    },
+    {
+      "angle" : 43.65457,
+      "skinName" : "muzzleFlash.png",
+      "visible" : false,
+      "skinUUID" : "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C",
+      "sprName" : "muzzleFlash.png",
+      "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+      "localPos" : "{-55, -14}"
+    },
+    {
+      "skinUUID" : "B95AC68F-229F-4D81-A3C4-B2645EE5495B",
+      "skinName" : "tennisBall.png",
+      "angle" : 34.93031,
+      "localPos" : "{30, 30}",
+      "sprName" : "tennisBall.png",
+      "visible" : false
+    }
+  ],
+  "uuid" : "E8211E40-3E97-4D78-9047-C42641FE3C41",
+  "sheetAtlas" : "Officer_Officer.xml",
+  "metadata" : {
+    "app" : "SpriteHelper",
+    "author" : "Vladu Bogdan",
+    "web" : "http:\/\/www.gamedevhelper.com",
+    "version" : 1
+  },
+  "name" : "Officer",
+  "poses" : {
+    "DeathPose" : {
+      "visibility" : {
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : false,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : false
+      },
+      "connections" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : {
+          "posOff" : "{16, -4}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : {
+          "posOff" : "{4, 8}",
+          "angleOff" : 177.6855,
+          "boneUUID" : "E08EFAEF-8EE3-489F-A94E-271778E069DA",
+          "conAngle" : -32.37733
+        },
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : {
+          "posOff" : "{-10, 4}",
+          "angleOff" : 184.2065,
+          "boneUUID" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27",
+          "conAngle" : 57.17178
+        },
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 92.44823,
+          "boneUUID" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC",
+          "conAngle" : -0.5937424
+        },
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : {
+          "posOff" : "{3, -6}",
+          "angleOff" : -0.9156418,
+          "boneUUID" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8",
+          "conAngle" : 25.79298
+        },
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : {
+          "posOff" : "{4, -33}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : {
+          "posOff" : "{10, -2}",
+          "angleOff" : -173.4223,
+          "boneUUID" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6",
+          "conAngle" : 256.7582
+        },
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : {
+          "posOff" : "{7, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : {
+          "posOff" : "{12, 4}",
+          "angleOff" : -134.4904,
+          "boneUUID" : "8B4B51F9-C980-4A17-86CE-155FA850600D",
+          "conAngle" : 243.4311
+        },
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : {
+          "posOff" : "{2, 8}",
+          "angleOff" : 185.1137,
+          "boneUUID" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2",
+          "conAngle" : -15.32533
+        },
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : {
+          "posOff" : "{4, 1}",
+          "angleOff" : 86.0246,
+          "boneUUID" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549",
+          "conAngle" : 34.34711
+        },
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : {
+          "posOff" : "{1, -10}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : {
+          "posOff" : "{6, -19}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : {
+          "posOff" : "{-12, -8}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : {
+          "posOff" : "{6, -1}",
+          "angleOff" : -181.5947,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : 268.5712
+        },
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : {
+          "posOff" : "{9, 10}",
+          "angleOff" : 155.2752,
+          "boneUUID" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0",
+          "conAngle" : -27.18266
+        },
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : {
+          "posOff" : "{1, -3}",
+          "angleOff" : -268.618,
+          "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+          "conAngle" : 256.7188
+        },
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : {
+          "posOff" : "{8, -4}",
+          "angleOff" : 91.53283,
+          "boneUUID" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234",
+          "conAngle" : -38.646
+        },
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : {
+          "posOff" : "{3, -33}",
+          "angleOff" : 20.01608,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -0.3208771
+        },
+        "AB699660-3C55-417B-BD09-21E3092224F9" : {
+          "posOff" : "{-17, -11}",
+          "angleOff" : -2.395927,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 4.31369
+        },
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : {
+          "posOff" : "{0, -4}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : {
+          "posOff" : "{15, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : {
+          "conAngle" : 37.84385,
+          "posOff" : "{0, 0}",
+          "angleOff" : 0
+        },
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : {
+          "posOff" : "{-5, 11}",
+          "angleOff" : 181.5291,
+          "boneUUID" : "70547121-3CA2-439C-B835-DFB20CDF9E2C",
+          "conAngle" : 19.00671
+        },
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : {
+          "posOff" : "{29, -11}",
+          "angleOff" : 175.9736,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -88.99718
+        }
+      },
+      "zOrder" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : 17,
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : 3,
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : 7,
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : 5,
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : 11,
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : 12,
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : 22,
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : 15,
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : 21,
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : 6,
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : 8,
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : 10,
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : 18,
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : 14,
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : 20,
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : 0,
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : 2,
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : 1,
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : 19,
+        "AB699660-3C55-417B-BD09-21E3092224F9" : 13,
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : 9,
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : 16,
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : 24,
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : 4,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : 23
+      },
+      "positions" : {
+        "9C68329E-AC9B-4ED0-959D-FAFDB77FABDB" : "{90, -30}",
+        "962E5653-28E4-4DF6-9A2F-35C44B51D17C" : "{123, -44}",
+        "FF87E76B-D23A-443F-9137-6B3AFD6A2234" : "{52, -53}",
+        "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6" : "{51, -49}",
+        "9FE1E9D9-F497-4616-8056-59AF71B2FA2A" : "{53, -49}",
+        "32750077-2BA5-47F7-95C0-7E2EFA6E3D27" : "{-10, -46}",
+        "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341" : "{93, -43}",
+        "D8D11F2C-7CBE-483C-A4BC-EE1116A58300" : "{41, -55}",
+        "8B4B51F9-C980-4A17-86CE-155FA850600D" : "{68, -40}",
+        "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0" : "{69, -58}",
+        "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC" : "{-7, -50}",
+        "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450" : "{43, -55}",
+        "FDEB0546-33FA-4B4E-9986-C0C901D8F501" : "{37, -39}",
+        "371F9268-BCB2-4F4E-88DA-37796B2E1ED8" : "{100, -38}",
+        "7324475C-AEC8-4F5E-AF36-CBBF7F897549" : "{-16, -54}",
+        "BE5FAEA7-5B83-4F94-88BD-38B6064A1E45" : "{91, -50}",
+        "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2" : "{17, -47}",
+        "70547121-3CA2-439C-B835-DFB20CDF9E2C" : "{8, -47}",
+        "78CC99DF-E49D-4A10-A543-AFC4188340F2" : "{45, -45}",
+        "E08EFAEF-8EE3-489F-A94E-271778E069DA" : "{30, -55}"
+      },
+      "skinTex" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : "mouth.png",
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : "leg_upper_L_outline.png",
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : "leg_lower_R_outline.png",
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : "foot_LEFT.png",
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : "torso_outline.png",
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : "neck_outline.png",
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : "forearm_R_outline.png",
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : "head.png",
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : "shoulder_R_outline.png",
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : "leg_upper_R_outline.png",
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : "foot_RIGHT.png",
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : "hair.png",
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : "gun-belt.png",
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : "hand_R_outline.png",
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : "gun-holster.png",
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : "shoulder_L_outline.png",
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : "hand_L_outline.png",
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : "forearm_L_outline.png",
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : "hat.png",
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : "pelvis.png",
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : "eyes_CLOSED.png",
+        "AB699660-3C55-417B-BD09-21E3092224F9" : "gun.png",
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : "tennisBall.png",
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : "muzzleFlash.png",
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : "leg_lower_L_outline.png"
+      }
+    },
+    "PushPose" : {
+      "visibility" : {
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : false,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : false
+      },
+      "connections" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : {
+          "posOff" : "{16, -4}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : {
+          "posOff" : "{4, 8}",
+          "angleOff" : 177.6855,
+          "boneUUID" : "E08EFAEF-8EE3-489F-A94E-271778E069DA",
+          "conAngle" : -32.37733
+        },
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : {
+          "posOff" : "{-10, 4}",
+          "angleOff" : 184.2065,
+          "boneUUID" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27",
+          "conAngle" : 57.17178
+        },
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 92.44823,
+          "boneUUID" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC",
+          "conAngle" : -0.5937424
+        },
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : {
+          "posOff" : "{3, -6}",
+          "angleOff" : -0.9156418,
+          "boneUUID" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8",
+          "conAngle" : 25.79298
+        },
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : {
+          "posOff" : "{4, -33}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : {
+          "posOff" : "{10, -2}",
+          "angleOff" : -173.4223,
+          "boneUUID" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6",
+          "conAngle" : 256.7582
+        },
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : {
+          "posOff" : "{7, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : {
+          "posOff" : "{12, 4}",
+          "angleOff" : -134.4904,
+          "boneUUID" : "8B4B51F9-C980-4A17-86CE-155FA850600D",
+          "conAngle" : 243.4311
+        },
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : {
+          "posOff" : "{2, 8}",
+          "angleOff" : 185.1137,
+          "boneUUID" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2",
+          "conAngle" : -15.32533
+        },
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : {
+          "posOff" : "{4, 1}",
+          "angleOff" : 86.0246,
+          "boneUUID" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549",
+          "conAngle" : 34.34711
+        },
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : {
+          "posOff" : "{1, -10}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : {
+          "posOff" : "{6, -19}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : {
+          "posOff" : "{-12, -8}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : {
+          "posOff" : "{6, -1}",
+          "angleOff" : -181.5947,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : 268.5712
+        },
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : {
+          "posOff" : "{9, 10}",
+          "angleOff" : 155.2752,
+          "boneUUID" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0",
+          "conAngle" : -27.18266
+        },
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : {
+          "posOff" : "{1, -3}",
+          "angleOff" : -268.618,
+          "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+          "conAngle" : 256.7188
+        },
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : {
+          "posOff" : "{8, -4}",
+          "angleOff" : 91.53283,
+          "boneUUID" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234",
+          "conAngle" : -38.646
+        },
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : {
+          "posOff" : "{3, -33}",
+          "angleOff" : 20.01608,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -0.3208771
+        },
+        "AB699660-3C55-417B-BD09-21E3092224F9" : {
+          "posOff" : "{-17, -11}",
+          "angleOff" : -2.395927,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 4.31369
+        },
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : {
+          "posOff" : "{0, -4}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : {
+          "posOff" : "{15, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : {
+          "conAngle" : 37.82841,
+          "posOff" : "{0, 0}",
+          "angleOff" : 0
+        },
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : {
+          "posOff" : "{-5, 11}",
+          "angleOff" : 181.5291,
+          "boneUUID" : "70547121-3CA2-439C-B835-DFB20CDF9E2C",
+          "conAngle" : 19.00671
+        },
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : {
+          "posOff" : "{29, -11}",
+          "angleOff" : 175.9736,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -88.99718
+        }
+      },
+      "zOrder" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : 17,
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : 3,
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : 7,
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : 5,
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : 11,
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : 12,
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : 22,
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : 15,
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : 21,
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : 6,
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : 8,
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : 10,
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : 18,
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : 14,
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : 20,
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : 0,
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : 2,
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : 1,
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : 19,
+        "AB699660-3C55-417B-BD09-21E3092224F9" : 13,
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : 9,
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : 16,
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : 24,
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : 4,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : 23
+      },
+      "positions" : {
+        "9C68329E-AC9B-4ED0-959D-FAFDB77FABDB" : "{5, 40}",
+        "962E5653-28E4-4DF6-9A2F-35C44B51D17C" : "{33, 69}",
+        "FF87E76B-D23A-443F-9137-6B3AFD6A2234" : "{41, 13}",
+        "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6" : "{45, 32}",
+        "9FE1E9D9-F497-4616-8056-59AF71B2FA2A" : "{12, -3}",
+        "32750077-2BA5-47F7-95C0-7E2EFA6E3D27" : "{-30, -46}",
+        "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341" : "{18, 40}",
+        "D8D11F2C-7CBE-483C-A4BC-EE1116A58300" : "{45, 44}",
+        "8B4B51F9-C980-4A17-86CE-155FA850600D" : "{26, 28}",
+        "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0" : "{23, 12}",
+        "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC" : "{19, -54}",
+        "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450" : "{50, 13}",
+        "FDEB0546-33FA-4B4E-9986-C0C901D8F501" : "{-6, -5}",
+        "371F9268-BCB2-4F4E-88DA-37796B2E1ED8" : "{23, 49}",
+        "7324475C-AEC8-4F5E-AF36-CBBF7F897549" : "{-22, -52}",
+        "BE5FAEA7-5B83-4F94-88BD-38B6064A1E45" : "{24, 36}",
+        "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2" : "{-12, -26}",
+        "70547121-3CA2-439C-B835-DFB20CDF9E2C" : "{4, -49}",
+        "78CC99DF-E49D-4A10-A543-AFC4188340F2" : "{3, -5}",
+        "E08EFAEF-8EE3-489F-A94E-271778E069DA" : "{12, -27}"
+      },
+      "skinTex" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : "angry_mouth.png",
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : "leg_upper_L_outline.png",
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : "leg_lower_R_outline.png",
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : "foot_LEFT.png",
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : "torso_outline.png",
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : "neck_outline.png",
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : "forearm_R_outline.png",
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : "head.png",
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : "shoulder_R_outline.png",
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : "leg_upper_R_outline.png",
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : "foot_RIGHT.png",
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : "hair.png",
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : "gun-belt.png",
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : "handRest.png",
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : "gun-holster.png",
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : "shoulder_L_outline.png",
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : "hand_L_outline.png",
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : "forearm_L_outline.png",
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : "hat.png",
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : "pelvis.png",
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : "eyes_OPEN.png",
+        "AB699660-3C55-417B-BD09-21E3092224F9" : "gun.png",
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : "tennisBall.png",
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : "muzzleFlash.png",
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : "leg_lower_L_outline.png"
+      }
+    },
+    "BowPose" : {
+      "visibility" : {
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : false,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : false
+      },
+      "connections" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : {
+          "posOff" : "{16, -4}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : {
+          "posOff" : "{4, 8}",
+          "angleOff" : 177.6855,
+          "boneUUID" : "E08EFAEF-8EE3-489F-A94E-271778E069DA",
+          "conAngle" : -32.37733
+        },
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : {
+          "posOff" : "{-10, 4}",
+          "angleOff" : 184.2065,
+          "boneUUID" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27",
+          "conAngle" : 57.17178
+        },
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 92.44823,
+          "boneUUID" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC",
+          "conAngle" : -0.5937424
+        },
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : {
+          "posOff" : "{3, -6}",
+          "angleOff" : -0.9156418,
+          "boneUUID" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8",
+          "conAngle" : 25.79298
+        },
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : {
+          "posOff" : "{4, -33}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : {
+          "posOff" : "{10, -2}",
+          "angleOff" : -173.4223,
+          "boneUUID" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6",
+          "conAngle" : 256.7582
+        },
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : {
+          "posOff" : "{7, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : {
+          "posOff" : "{12, 4}",
+          "angleOff" : -134.4904,
+          "boneUUID" : "8B4B51F9-C980-4A17-86CE-155FA850600D",
+          "conAngle" : 243.4311
+        },
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : {
+          "posOff" : "{2, 8}",
+          "angleOff" : 185.1137,
+          "boneUUID" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2",
+          "conAngle" : -15.32533
+        },
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : {
+          "posOff" : "{4, 1}",
+          "angleOff" : 86.0246,
+          "boneUUID" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549",
+          "conAngle" : 34.34711
+        },
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : {
+          "posOff" : "{1, -10}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : {
+          "posOff" : "{6, -19}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : {
+          "posOff" : "{-12, -8}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : {
+          "posOff" : "{6, -1}",
+          "angleOff" : -181.5947,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : 268.5712
+        },
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : {
+          "posOff" : "{9, 10}",
+          "angleOff" : 155.2752,
+          "boneUUID" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0",
+          "conAngle" : -27.18266
+        },
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : {
+          "posOff" : "{1, -3}",
+          "angleOff" : -268.618,
+          "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+          "conAngle" : 256.7188
+        },
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : {
+          "posOff" : "{8, -4}",
+          "angleOff" : 91.53283,
+          "boneUUID" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234",
+          "conAngle" : -38.646
+        },
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : {
+          "posOff" : "{3, -33}",
+          "angleOff" : 20.01608,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -0.3208771
+        },
+        "AB699660-3C55-417B-BD09-21E3092224F9" : {
+          "posOff" : "{-17, -11}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 2.328262
+        },
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : {
+          "posOff" : "{0, -4}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : {
+          "posOff" : "{15, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : {
+          "conAngle" : 37.84385,
+          "posOff" : "{0, 0}",
+          "angleOff" : 0
+        },
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : {
+          "posOff" : "{-5, 11}",
+          "angleOff" : 181.5291,
+          "boneUUID" : "70547121-3CA2-439C-B835-DFB20CDF9E2C",
+          "conAngle" : 19.00671
+        },
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : {
+          "posOff" : "{29, -11}",
+          "angleOff" : 175.9736,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -88.99718
+        }
+      },
+      "zOrder" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : 17,
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : 1,
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : 5,
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : 3,
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : 9,
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : 10,
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : 22,
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : 15,
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : 21,
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : 4,
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : 6,
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : 8,
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : 18,
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : 13,
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : 20,
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : 0,
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : 14,
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : 12,
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : 19,
+        "AB699660-3C55-417B-BD09-21E3092224F9" : 11,
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : 7,
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : 16,
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : 24,
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : 2,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : 23
+      },
+      "positions" : {
+        "9C68329E-AC9B-4ED0-959D-FAFDB77FABDB" : "{7, 42}",
+        "962E5653-28E4-4DF6-9A2F-35C44B51D17C" : "{49, 56}",
+        "FF87E76B-D23A-443F-9137-6B3AFD6A2234" : "{18, 1}",
+        "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6" : "{-16, 8}",
+        "9FE1E9D9-F497-4616-8056-59AF71B2FA2A" : "{10, -5}",
+        "32750077-2BA5-47F7-95C0-7E2EFA6E3D27" : "{-12, -54}",
+        "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341" : "{19, 44}",
+        "D8D11F2C-7CBE-483C-A4BC-EE1116A58300" : "{-10, -2}",
+        "8B4B51F9-C980-4A17-86CE-155FA850600D" : "{-12, 27}",
+        "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0" : "{31, 12}",
+        "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC" : "{23, -54}",
+        "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450" : "{27, -3}",
+        "FDEB0546-33FA-4B4E-9986-C0C901D8F501" : "{-3, -5}",
+        "371F9268-BCB2-4F4E-88DA-37796B2E1ED8" : "{27, 49}",
+        "7324475C-AEC8-4F5E-AF36-CBBF7F897549" : "{-2, -54}",
+        "BE5FAEA7-5B83-4F94-88BD-38B6064A1E45" : "{26, 35}",
+        "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2" : "{-4, -27}",
+        "70547121-3CA2-439C-B835-DFB20CDF9E2C" : "{8, -53}",
+        "78CC99DF-E49D-4A10-A543-AFC4188340F2" : "{2, -2}",
+        "E08EFAEF-8EE3-489F-A94E-271778E069DA" : "{11, -30}"
+      },
+      "skinTex" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : "mouth.png",
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : "leg_upper_L_outline.png",
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : "leg_lower_R_outline.png",
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : "foot_LEFT.png",
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : "torso_outline.png",
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : "neck_outline.png",
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : "forearm_R_outline.png",
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : "head.png",
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : "shoulder_R_outline.png",
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : "leg_upper_R_outline.png",
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : "foot_RIGHT.png",
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : "hair.png",
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : "gun-belt.png",
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : "hand_R_outline.png",
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : "gun-holster.png",
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : "shoulder_L_outline.png",
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : "hand_L_outline.png",
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : "forearm_L_outline.png",
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : "hat.png",
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : "pelvis.png",
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : "eyes_CLOSED.png",
+        "AB699660-3C55-417B-BD09-21E3092224F9" : "gun.png",
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : "tennisBall.png",
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : "muzzleFlash.png",
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : "leg_lower_L_outline.png"
+      }
+    },
+    "ShootPose" : {
+      "visibility" : {
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : false,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : false
+      },
+      "connections" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : {
+          "posOff" : "{16, -4}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : {
+          "posOff" : "{4, 8}",
+          "angleOff" : 177.6855,
+          "boneUUID" : "E08EFAEF-8EE3-489F-A94E-271778E069DA",
+          "conAngle" : -32.37733
+        },
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : {
+          "posOff" : "{-10, 4}",
+          "angleOff" : 184.2065,
+          "boneUUID" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27",
+          "conAngle" : 57.17178
+        },
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 92.44823,
+          "boneUUID" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC",
+          "conAngle" : -0.5937424
+        },
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : {
+          "posOff" : "{3, -6}",
+          "angleOff" : -0.9156418,
+          "boneUUID" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8",
+          "conAngle" : 25.79298
+        },
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : {
+          "posOff" : "{4, -33}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : {
+          "posOff" : "{10, -2}",
+          "angleOff" : -173.4223,
+          "boneUUID" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6",
+          "conAngle" : 256.7582
+        },
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : {
+          "posOff" : "{7, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : {
+          "posOff" : "{12, 4}",
+          "angleOff" : -134.4904,
+          "boneUUID" : "8B4B51F9-C980-4A17-86CE-155FA850600D",
+          "conAngle" : 243.4311
+        },
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : {
+          "posOff" : "{2, 8}",
+          "angleOff" : 185.1137,
+          "boneUUID" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2",
+          "conAngle" : -15.32533
+        },
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : {
+          "posOff" : "{4, 1}",
+          "angleOff" : 86.0246,
+          "boneUUID" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549",
+          "conAngle" : 34.34711
+        },
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : {
+          "posOff" : "{1, -10}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : {
+          "posOff" : "{6, -19}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : {
+          "posOff" : "{-12, -8}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : {
+          "posOff" : "{6, -1}",
+          "angleOff" : -181.5947,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : 268.5712
+        },
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : {
+          "posOff" : "{9, 10}",
+          "angleOff" : 155.2752,
+          "boneUUID" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0",
+          "conAngle" : -27.18266
+        },
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : {
+          "posOff" : "{1, -3}",
+          "angleOff" : -268.618,
+          "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+          "conAngle" : 256.7188
+        },
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : {
+          "posOff" : "{8, -4}",
+          "angleOff" : 91.53283,
+          "boneUUID" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234",
+          "conAngle" : -38.646
+        },
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : {
+          "posOff" : "{3, -33}",
+          "angleOff" : 20.01608,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -0.3208771
+        },
+        "AB699660-3C55-417B-BD09-21E3092224F9" : {
+          "posOff" : "{13, -7}",
+          "angleOff" : 176.1456,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -88.29623
+        },
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : {
+          "posOff" : "{0, -4}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : {
+          "posOff" : "{15, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : {
+          "conAngle" : 37.84385,
+          "posOff" : "{0, 0}",
+          "angleOff" : 0
+        },
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : {
+          "posOff" : "{-5, 11}",
+          "angleOff" : 181.5291,
+          "boneUUID" : "70547121-3CA2-439C-B835-DFB20CDF9E2C",
+          "conAngle" : 19.00671
+        },
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : {
+          "posOff" : "{29, -11}",
+          "angleOff" : 175.9736,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -88.99718
+        }
+      },
+      "zOrder" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : 17,
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : 3,
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : 7,
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : 5,
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : 11,
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : 12,
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : 22,
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : 15,
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : 21,
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : 6,
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : 8,
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : 10,
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : 18,
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : 14,
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : 20,
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : 0,
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : 2,
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : 1,
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : 19,
+        "AB699660-3C55-417B-BD09-21E3092224F9" : 13,
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : 9,
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : 16,
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : 24,
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : 4,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : 23
+      },
+      "positions" : {
+        "9C68329E-AC9B-4ED0-959D-FAFDB77FABDB" : "{-7, 38}",
+        "962E5653-28E4-4DF6-9A2F-35C44B51D17C" : "{19, 70}",
+        "FF87E76B-D23A-443F-9137-6B3AFD6A2234" : "{45, 29}",
+        "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6" : "{34, 33}",
+        "9FE1E9D9-F497-4616-8056-59AF71B2FA2A" : "{10, -12}",
+        "32750077-2BA5-47F7-95C0-7E2EFA6E3D27" : "{-23, -47}",
+        "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341" : "{5, 41}",
+        "D8D11F2C-7CBE-483C-A4BC-EE1116A58300" : "{46, 33}",
+        "8B4B51F9-C980-4A17-86CE-155FA850600D" : "{15, 30}",
+        "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0" : "{31, 19}",
+        "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC" : "{31, -54}",
+        "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450" : "{43, 38}",
+        "FDEB0546-33FA-4B4E-9986-C0C901D8F501" : "{-3, -12}",
+        "371F9268-BCB2-4F4E-88DA-37796B2E1ED8" : "{9, 49}",
+        "7324475C-AEC8-4F5E-AF36-CBBF7F897549" : "{-15, -52}",
+        "BE5FAEA7-5B83-4F94-88BD-38B6064A1E45" : "{13, 33}",
+        "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2" : "{1, -34}",
+        "70547121-3CA2-439C-B835-DFB20CDF9E2C" : "{16, -53}",
+        "78CC99DF-E49D-4A10-A543-AFC4188340F2" : "{2, -9}",
+        "E08EFAEF-8EE3-489F-A94E-271778E069DA" : "{24, -32}"
+      },
+      "skinTex" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : "angry_mouth.png",
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : "leg_upper_L_outline.png",
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : "leg_lower_R_outline.png",
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : "foot_LEFT.png",
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : "torso_outline.png",
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : "neck_outline.png",
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : "forearm_R_outline.png",
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : "head.png",
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : "shoulder_R_outline.png",
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : "leg_upper_R_outline.png",
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : "foot_RIGHT.png",
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : "hair.png",
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : "gun-belt.png",
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : "hand_R_outline.png",
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : "gun-holster.png",
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : "shoulder_L_outline.png",
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : "hand_L_outline.png",
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : "forearm_L_outline.png",
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : "hat.png",
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : "pelvis.png",
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : "eyes_ANGRY.png",
+        "AB699660-3C55-417B-BD09-21E3092224F9" : "gun.png",
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : "tennisBall.png",
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : "muzzleFlash.png",
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : "leg_lower_L_outline.png"
+      }
+    },
+    "HatWave" : {
+      "visibility" : {
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : false,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : false
+      },
+      "connections" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : {
+          "posOff" : "{16, -4}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : {
+          "posOff" : "{4, 8}",
+          "angleOff" : 177.6855,
+          "boneUUID" : "E08EFAEF-8EE3-489F-A94E-271778E069DA",
+          "conAngle" : -32.37733
+        },
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : {
+          "posOff" : "{-10, 4}",
+          "angleOff" : 184.2065,
+          "boneUUID" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27",
+          "conAngle" : 57.17178
+        },
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 92.44823,
+          "boneUUID" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC",
+          "conAngle" : -0.5937424
+        },
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : {
+          "posOff" : "{3, -6}",
+          "angleOff" : -0.9156418,
+          "boneUUID" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8",
+          "conAngle" : 25.79298
+        },
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : {
+          "posOff" : "{4, -33}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : {
+          "posOff" : "{10, -2}",
+          "angleOff" : -173.4223,
+          "boneUUID" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6",
+          "conAngle" : 256.7582
+        },
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : {
+          "posOff" : "{7, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : {
+          "posOff" : "{12, 4}",
+          "angleOff" : -134.4904,
+          "boneUUID" : "8B4B51F9-C980-4A17-86CE-155FA850600D",
+          "conAngle" : 243.4311
+        },
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : {
+          "posOff" : "{2, 8}",
+          "angleOff" : 185.1137,
+          "boneUUID" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2",
+          "conAngle" : -15.32533
+        },
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : {
+          "posOff" : "{4, 1}",
+          "angleOff" : 86.0246,
+          "boneUUID" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549",
+          "conAngle" : 34.34711
+        },
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : {
+          "posOff" : "{1, -10}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : {
+          "posOff" : "{6, -19}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : {
+          "posOff" : "{-12, -8}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : {
+          "posOff" : "{6, -1}",
+          "angleOff" : -181.5947,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : 268.5712
+        },
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : {
+          "posOff" : "{9, 10}",
+          "angleOff" : 155.2752,
+          "boneUUID" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0",
+          "conAngle" : -27.18266
+        },
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : {
+          "posOff" : "{1, -3}",
+          "angleOff" : -268.618,
+          "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+          "conAngle" : 256.7188
+        },
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : {
+          "posOff" : "{8, -4}",
+          "angleOff" : 91.53283,
+          "boneUUID" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234",
+          "conAngle" : -38.646
+        },
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : {
+          "posOff" : "{-22, -9}",
+          "angleOff" : 94.78587,
+          "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+          "conAngle" : -4.319267
+        },
+        "AB699660-3C55-417B-BD09-21E3092224F9" : {
+          "posOff" : "{-17, -11}",
+          "angleOff" : -2.395927,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 4.31369
+        },
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : {
+          "posOff" : "{0, -4}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 8.497353
+        },
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : {
+          "posOff" : "{15, -15}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 3.679276
+        },
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : {
+          "conAngle" : 37.82841,
+          "posOff" : "{0, 0}",
+          "angleOff" : 0
+        },
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : {
+          "posOff" : "{-5, 11}",
+          "angleOff" : 181.5291,
+          "boneUUID" : "70547121-3CA2-439C-B835-DFB20CDF9E2C",
+          "conAngle" : 19.00671
+        },
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : {
+          "posOff" : "{29, -11}",
+          "angleOff" : 175.9736,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -88.99718
+        }
+      },
+      "zOrder" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : 17,
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : 3,
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : 7,
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : 5,
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : 11,
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : 12,
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : 22,
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : 15,
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : 21,
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : 6,
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : 8,
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : 10,
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : 18,
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : 14,
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : 20,
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : 0,
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : 2,
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : 1,
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : 19,
+        "AB699660-3C55-417B-BD09-21E3092224F9" : 13,
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : 9,
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : 16,
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : 24,
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : 4,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : 23
+      },
+      "positions" : {
+        "9C68329E-AC9B-4ED0-959D-FAFDB77FABDB" : "{-13, 43}",
+        "962E5653-28E4-4DF6-9A2F-35C44B51D17C" : "{8, 78}",
+        "FF87E76B-D23A-443F-9137-6B3AFD6A2234" : "{43, 67}",
+        "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6" : "{-19, 2}",
+        "9FE1E9D9-F497-4616-8056-59AF71B2FA2A" : "{10, -5}",
+        "32750077-2BA5-47F7-95C0-7E2EFA6E3D27" : "{-12, -54}",
+        "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341" : "{-1, 47}",
+        "D8D11F2C-7CBE-483C-A4BC-EE1116A58300" : "{-15, -8}",
+        "8B4B51F9-C980-4A17-86CE-155FA850600D" : "{-23, 21}",
+        "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0" : "{31, 54}",
+        "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC" : "{23, -54}",
+        "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450" : "{46, 58}",
+        "FDEB0546-33FA-4B4E-9986-C0C901D8F501" : "{-3, -5}",
+        "371F9268-BCB2-4F4E-88DA-37796B2E1ED8" : "{1, 56}",
+        "7324475C-AEC8-4F5E-AF36-CBBF7F897549" : "{-2, -54}",
+        "BE5FAEA7-5B83-4F94-88BD-38B6064A1E45" : "{10, 44}",
+        "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2" : "{-4, -27}",
+        "70547121-3CA2-439C-B835-DFB20CDF9E2C" : "{8, -53}",
+        "78CC99DF-E49D-4A10-A543-AFC4188340F2" : "{2, -2}",
+        "E08EFAEF-8EE3-489F-A94E-271778E069DA" : "{11, -30}"
+      },
+      "skinTex" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : "mouth.png",
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : "leg_upper_L_outline.png",
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : "leg_lower_R_outline.png",
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : "foot_LEFT.png",
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : "torso_outline.png",
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : "neck_outline.png",
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : "forearm_R_outline.png",
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : "head.png",
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : "shoulder_R_outline.png",
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : "leg_upper_R_outline.png",
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : "foot_RIGHT.png",
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : "hair.png",
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : "gun-belt.png",
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : "hand_R_outline.png",
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : "gun-holster.png",
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : "shoulder_L_outline.png",
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : "hand_L_outline.png",
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : "forearm_L_outline.png",
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : "hat.png",
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : "pelvis.png",
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : "eyes_OPEN.png",
+        "AB699660-3C55-417B-BD09-21E3092224F9" : "gun.png",
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : "tennisBall.png",
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : "muzzleFlash.png",
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : "leg_lower_L_outline.png"
+      }
+    },
+    "DefaultPose" : {
+      "visibility" : {
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : false,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : false
+      },
+      "connections" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : {
+          "posOff" : "{15, -6}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -2.791718
+        },
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : {
+          "posOff" : "{1, 9}",
+          "angleOff" : 177.6855,
+          "boneUUID" : "E08EFAEF-8EE3-489F-A94E-271778E069DA",
+          "conAngle" : -8.016846
+        },
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : {
+          "posOff" : "{-3, 10}",
+          "angleOff" : 184.2065,
+          "boneUUID" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27",
+          "conAngle" : 5.761002
+        },
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 92.44821,
+          "boneUUID" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC",
+          "conAngle" : 2.152618
+        },
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : {
+          "posOff" : "{0, -7}",
+          "angleOff" : -0.9156418,
+          "boneUUID" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8",
+          "conAngle" : 1.173508
+        },
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : {
+          "posOff" : "{3, -33}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 7.204445
+        },
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : {
+          "posOff" : "{1, 10}",
+          "angleOff" : 186.5778,
+          "boneUUID" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6",
+          "conAngle" : -8.959412
+        },
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : {
+          "posOff" : "{5, -16}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -2.791718
+        },
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : {
+          "posOff" : "{-1, 13}",
+          "angleOff" : 225.5096,
+          "boneUUID" : "8B4B51F9-C980-4A17-86CE-155FA850600D",
+          "conAngle" : -38.17657
+        },
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : {
+          "posOff" : "{0, 8}",
+          "angleOff" : 185.1136,
+          "boneUUID" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2",
+          "conAngle" : -5.314026
+        },
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 86.0246,
+          "boneUUID" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549",
+          "conAngle" : 10.08729
+        },
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : {
+          "posOff" : "{1, -10}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 7.204445
+        },
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : {
+          "posOff" : "{4, -20}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -2.791718
+        },
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : {
+          "posOff" : "{-12, -7}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 7.204445
+        },
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : {
+          "posOff" : "{5, 4}",
+          "angleOff" : 178.4052,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -41.71877
+        },
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : {
+          "posOff" : "{1, 13}",
+          "angleOff" : 155.2752,
+          "boneUUID" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0",
+          "conAngle" : 11.01419
+        },
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : {
+          "posOff" : "{1, 3}",
+          "angleOff" : 91.38203,
+          "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+          "conAngle" : 46.076
+        },
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : {
+          "posOff" : "{0, 9}",
+          "angleOff" : 91.53284,
+          "boneUUID" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234",
+          "conAngle" : 76.86893
+        },
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : {
+          "posOff" : "{3, -33}",
+          "angleOff" : 20.01608,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -0.3208771
+        },
+        "AB699660-3C55-417B-BD09-21E3092224F9" : {
+          "posOff" : "{-17, -11}",
+          "angleOff" : -2.395927,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 4.31369
+        },
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : {
+          "posOff" : "{0, -4}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 7.204445
+        },
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : {
+          "posOff" : "{13, -16}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : -2.791718
+        },
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : {
+          "conAngle" : 37.82879,
+          "posOff" : "{0, 0}",
+          "angleOff" : 0
+        },
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : {
+          "posOff" : "{-3, 12}",
+          "angleOff" : 181.5291,
+          "boneUUID" : "70547121-3CA2-439C-B835-DFB20CDF9E2C",
+          "conAngle" : 10.30273
+        },
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : {
+          "posOff" : "{27, 15}",
+          "angleOff" : 175.9736,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -39.28712
+        }
+      },
+      "zOrder" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : 17,
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : 0,
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : 4,
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : 2,
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : 11,
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : 12,
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : 22,
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : 15,
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : 21,
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : 3,
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : 5,
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : 7,
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : 18,
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : 14,
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : 20,
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : 8,
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : 10,
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : 9,
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : 19,
+        "AB699660-3C55-417B-BD09-21E3092224F9" : 13,
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : 6,
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : 16,
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : 24,
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : 1,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : 23
+      },
+      "positions" : {
+        "9C68329E-AC9B-4ED0-959D-FAFDB77FABDB" : "{-11, 45}",
+        "962E5653-28E4-4DF6-9A2F-35C44B51D17C" : "{8, 77}",
+        "FF87E76B-D23A-443F-9137-6B3AFD6A2234" : "{44, 45}",
+        "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6" : "{-44, 15}",
+        "9FE1E9D9-F497-4616-8056-59AF71B2FA2A" : "{10, -2}",
+        "32750077-2BA5-47F7-95C0-7E2EFA6E3D27" : "{-13, -51}",
+        "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341" : "{2, 48}",
+        "D8D11F2C-7CBE-483C-A4BC-EE1116A58300" : "{-51, 6}",
+        "8B4B51F9-C980-4A17-86CE-155FA850600D" : "{-30, 28}",
+        "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0" : "{30, 41}",
+        "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC" : "{27, -53}",
+        "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450" : "{53, 48}",
+        "FDEB0546-33FA-4B4E-9986-C0C901D8F501" : "{-9, -3}",
+        "371F9268-BCB2-4F4E-88DA-37796B2E1ED8" : "{2, 60}",
+        "7324475C-AEC8-4F5E-AF36-CBBF7F897549" : "{-3, -52}",
+        "BE5FAEA7-5B83-4F94-88BD-38B6064A1E45" : "{7, 44}",
+        "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2" : "{-9, -25}",
+        "70547121-3CA2-439C-B835-DFB20CDF9E2C" : "{15, -52}",
+        "78CC99DF-E49D-4A10-A543-AFC4188340F2" : "{0, 0}",
+        "E08EFAEF-8EE3-489F-A94E-271778E069DA" : "{15, -23}"
+      },
+      "skinTex" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : "mouth.png",
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : "leg_upper_L_outline.png",
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : "leg_lower_R_outline.png",
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : "foot_LEFT.png",
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : "torso_outline.png",
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : "neck_outline.png",
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : "forearm_R_outline.png",
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : "head.png",
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : "shoulder_R_outline.png",
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : "leg_upper_R_outline.png",
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : "foot_RIGHT.png",
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : "hair.png",
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : "gun-belt.png",
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : "hand_R_outline.png",
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : "gun-holster.png",
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : "shoulder_L_outline.png",
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : "hand_L_outline.png",
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : "forearm_L_outline.png",
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : "hat.png",
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : "pelvis.png",
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : "eyes_ANGRY.png",
+        "AB699660-3C55-417B-BD09-21E3092224F9" : "gun.png",
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : "tennisBall.png",
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : "muzzleFlash.png",
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : "leg_lower_L_outline.png"
+      }
+    },
+    "IdlePose" : {
+      "visibility" : {
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : false,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : false
+      },
+      "connections" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : {
+          "posOff" : "{14, 9}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 50.41402
+        },
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : {
+          "posOff" : "{0, 9}",
+          "angleOff" : 177.6855,
+          "boneUUID" : "E08EFAEF-8EE3-489F-A94E-271778E069DA",
+          "conAngle" : -1.04248
+        },
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : {
+          "posOff" : "{-4, 10}",
+          "angleOff" : 184.2065,
+          "boneUUID" : "32750077-2BA5-47F7-95C0-7E2EFA6E3D27",
+          "conAngle" : 10.80878
+        },
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 92.44821,
+          "boneUUID" : "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC",
+          "conAngle" : 2.437775
+        },
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : {
+          "posOff" : "{6, -4}",
+          "angleOff" : -0.9156418,
+          "boneUUID" : "371F9268-BCB2-4F4E-88DA-37796B2E1ED8",
+          "conAngle" : 53.06792
+        },
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : {
+          "posOff" : "{14, -30}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 25.89012
+        },
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : {
+          "posOff" : "{-2, 10}",
+          "angleOff" : 186.5778,
+          "boneUUID" : "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6",
+          "conAngle" : 4.505219
+        },
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : {
+          "posOff" : "{15, -5}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 50.41402
+        },
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : {
+          "posOff" : "{-10, 8}",
+          "angleOff" : 225.5096,
+          "boneUUID" : "8B4B51F9-C980-4A17-86CE-155FA850600D",
+          "conAngle" : 7.43103
+        },
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : {
+          "posOff" : "{0, 8}",
+          "angleOff" : 185.1136,
+          "boneUUID" : "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2",
+          "conAngle" : -2.058289
+        },
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : {
+          "posOff" : "{4, -1}",
+          "angleOff" : 86.0246,
+          "boneUUID" : "7324475C-AEC8-4F5E-AF36-CBBF7F897549",
+          "conAngle" : 4.942276
+        },
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : {
+          "posOff" : "{4, -9}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 25.89012
+        },
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : {
+          "posOff" : "{18, -9}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 50.41402
+        },
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : {
+          "posOff" : "{-9, -11}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 25.89012
+        },
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : {
+          "posOff" : "{4, 5}",
+          "angleOff" : 178.4052,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -28.60229
+        },
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : {
+          "posOff" : "{1, 13}",
+          "angleOff" : 155.2752,
+          "boneUUID" : "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0",
+          "conAngle" : 11.25133
+        },
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : {
+          "posOff" : "{2, 3}",
+          "angleOff" : 91.38203,
+          "boneUUID" : "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450",
+          "conAngle" : 21.76231
+        },
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : {
+          "posOff" : "{-8, 5}",
+          "angleOff" : 91.53284,
+          "boneUUID" : "FF87E76B-D23A-443F-9137-6B3AFD6A2234",
+          "conAngle" : 137.1059
+        },
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : {
+          "posOff" : "{28, -17}",
+          "angleOff" : 20.01608,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 53.80309
+        },
+        "AB699660-3C55-417B-BD09-21E3092224F9" : {
+          "posOff" : "{-11, -17}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 25.89012
+        },
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : {
+          "posOff" : "{1, -4}",
+          "angleOff" : -5.286682,
+          "boneUUID" : "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341",
+          "conAngle" : 25.89012
+        },
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : {
+          "posOff" : "{21, 1}",
+          "angleOff" : 23.40515,
+          "boneUUID" : "962E5653-28E4-4DF6-9A2F-35C44B51D17C",
+          "conAngle" : 50.41402
+        },
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : {
+          "conAngle" : 37.82879,
+          "posOff" : "{0, 0}",
+          "angleOff" : 0
+        },
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : {
+          "posOff" : "{-2, 12}",
+          "angleOff" : 181.5291,
+          "boneUUID" : "70547121-3CA2-439C-B835-DFB20CDF9E2C",
+          "conAngle" : 7.020264
+        },
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : {
+          "posOff" : "{23, 21}",
+          "angleOff" : 175.9736,
+          "boneUUID" : "D8D11F2C-7CBE-483C-A4BC-EE1116A58300",
+          "conAngle" : -26.17065
+        }
+      },
+      "zOrder" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : 17,
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : 3,
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : 7,
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : 5,
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : 11,
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : 12,
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : 22,
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : 15,
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : 21,
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : 6,
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : 8,
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : 10,
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : 18,
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : 14,
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : 20,
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : 0,
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : 2,
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : 1,
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : 19,
+        "AB699660-3C55-417B-BD09-21E3092224F9" : 13,
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : 9,
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : 16,
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : 24,
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : 4,
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : 23
+      },
+      "positions" : {
+        "9C68329E-AC9B-4ED0-959D-FAFDB77FABDB" : "{-11, 45}",
+        "962E5653-28E4-4DF6-9A2F-35C44B51D17C" : "{8, 77}",
+        "FF87E76B-D23A-443F-9137-6B3AFD6A2234" : "{16, 8}",
+        "2EEAEFC3-D0D6-4931-8D4D-FF952C40EDE6" : "{-14, 1}",
+        "9FE1E9D9-F497-4616-8056-59AF71B2FA2A" : "{10, -2}",
+        "32750077-2BA5-47F7-95C0-7E2EFA6E3D27" : "{-13, -51}",
+        "9A1BAD2D-B13D-44DB-9EBB-0C2F045FE341" : "{2, 48}",
+        "D8D11F2C-7CBE-483C-A4BC-EE1116A58300" : "{-6, -7}",
+        "8B4B51F9-C980-4A17-86CE-155FA850600D" : "{-14, 20}",
+        "7B7FE5B4-1B59-448F-AF51-9951A11F0AC0" : "{13, 22}",
+        "D4C64572-88E9-47A2-94EE-7AD1FA25C1AC" : "{20, -52}",
+        "A6F9F972-6AD6-466C-A6F6-9E9D28FAB450" : "{22, 1}",
+        "FDEB0546-33FA-4B4E-9986-C0C901D8F501" : "{-9, -3}",
+        "371F9268-BCB2-4F4E-88DA-37796B2E1ED8" : "{2, 60}",
+        "7324475C-AEC8-4F5E-AF36-CBBF7F897549" : "{-3, -52}",
+        "BE5FAEA7-5B83-4F94-88BD-38B6064A1E45" : "{7, 44}",
+        "248C7ABE-AB9F-4E9C-94AD-F42D905B36A2" : "{-9, -25}",
+        "70547121-3CA2-439C-B835-DFB20CDF9E2C" : "{8, -51}",
+        "78CC99DF-E49D-4A10-A543-AFC4188340F2" : "{0, 0}",
+        "E08EFAEF-8EE3-489F-A94E-271778E069DA" : "{14, -23}"
+      },
+      "skinTex" : {
+        "93A6B380-6462-4147-8A5D-5B9F800140DF" : "mouth.png",
+        "B1812C41-20C7-408A-8945-2EA97E9CE215" : "leg_upper_L_outline.png",
+        "AE7BE89E-C279-45F4-B6DA-4DF3AF8DC438" : "leg_lower_R_outline.png",
+        "83CFA6C3-87DB-4C96-BC28-64101503AA59" : "foot_LEFT.png",
+        "282622F4-9424-4B63-9F51-B7193D8D29E9" : "torso_outline.png",
+        "3885DEE5-C83D-4FC3-ABA7-7EF736229C05" : "neck_outline.png",
+        "E7B0BA6C-6B8A-4CF0-97B9-747930DBF184" : "forearm_R_outline.png",
+        "A40D2FE3-2BDA-4631-9901-EAF1ED83B232" : "head.png",
+        "C03F8BC8-293A-4D6E-B83F-7D1F5168B0E5" : "shoulder_R_outline.png",
+        "EEDA778D-272C-4A87-9F04-24A861250F62" : "leg_upper_R_outline.png",
+        "8C6C2AC3-8B6C-4617-88A4-838A81B2806F" : "foot_RIGHT.png",
+        "5D2948F9-482F-46BA-A09F-D655E7E3DEA4" : "hair.png",
+        "E6F87935-C299-455E-AB5B-20BBC97D64F8" : "gun-belt.png",
+        "DE2293B7-C7BE-4768-975A-0382CCBE36AC" : "hand_R_outline.png",
+        "E2009104-D6FF-4E7E-BB01-FEF467CA0277" : "gun-holster.png",
+        "E7CFF08A-92E0-47FC-98F5-D70D33BD0869" : "shoulder_L_outline.png",
+        "42C244EF-D4F9-4C31-AB71-CE1F92816A94" : "hand_L_outline.png",
+        "6E45B9B7-6812-4A72-9C28-49D587AB77FE" : "forearm_L_outline.png",
+        "82CAA361-C828-4CB1-8195-2C3CC4CDD172" : "hat.png",
+        "C56DF6BD-E7ED-4944-838B-59382CA72862" : "pelvis.png",
+        "68F7F90F-00A2-4340-8A00-C5769E149A9B" : "eyes_ANGRY.png",
+        "AB699660-3C55-417B-BD09-21E3092224F9" : "gun.png",
+        "B95AC68F-229F-4D81-A3C4-B2645EE5495B" : "tennisBall.png",
+        "B8BD9B57-2F7C-45EC-B6F2-E5E1FBEBAA9C" : "muzzleFlash.png",
+        "24AD5D40-5C93-4E4C-84BC-4C86A494A79A" : "leg_lower_L_outline.png"
+      }
+    }
+  }
+}

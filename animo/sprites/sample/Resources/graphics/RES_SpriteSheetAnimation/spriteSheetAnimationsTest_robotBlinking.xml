@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This atlas was generated using SpriteHelper 2 -->
+<!-- http://www.gamedevhelper.com -->
+<Imageset Name="robotBlinking" Imagefile="spriteSheetAnimationsTest_robotBlinking.png" NativeHorzRes="75" NativeVertRes="181" AutoScaled="false">
+	<Image Name="robotEyesClose.png" XPos="0" YPos="1" Width="73" Height="89"/>
+	<Image Name="robotEyesOpen.png" XPos="0" YPos="90" Width="73" Height="89"/>
+</Imageset>
