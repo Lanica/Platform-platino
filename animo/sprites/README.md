@@ -7,6 +7,10 @@
 
 See http://docs.lanica.co/docs/#!/api/animo
 
+### Animo Sprites User Guide
+
+See http://lanica.co/animosprites-docs/
+
 ### How to run sample (Titanium CLI)
 
 ```
