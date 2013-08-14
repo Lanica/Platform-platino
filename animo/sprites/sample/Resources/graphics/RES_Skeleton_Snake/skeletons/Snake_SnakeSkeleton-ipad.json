@@ -1,0 +1,512 @@
+{
+  "sheet" : "Snake_Snake.png",
+  "root" : {
+    "uuid" : "8D90C438-EECD-4D3C-A446-471711001A9D",
+    "children" : [
+      {
+        "children" : [
+          {
+            "children" : [
+              {
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "children" : [
+                          {
+                            "children" : [
+                              {
+                                "children" : [
+                                  {
+                                    "children" : [
+                                      {
+                                        "children" : [
+                                          {
+                                            "children" : [
+                                              {
+                                                "children" : [
+                                                  {
+                                                    "children" : [
+                                                      {
+                                                        "children" : [
+                                                          {
+                                                            "children" : [
+                                                              {
+                                                                "children" : [
+                                                                  {
+                                                                    "children" : [
+                                                                      {
+                                                                        "children" : [
+                                                                          {
+                                                                            "children" : [
+                                                                              {
+                                                                                "children" : [
+                                                                                  {
+                                                                                    "children" : [
+                                                                                      {
+                                                                                        "children" : [
+                                                                                          {
+                                                                                            "children" : [
+                                                                                              {
+                                                                                                "children" : [
+                                                                                                  {
+                                                                                                    "children" : [
+                                                                                                      {
+                                                                                                        "children" : [
+                                                                                                          {
+                                                                                                            "children" : [
+                                                                                                              {
+                                                                                                                "children" : [
+                                                                                                                  {
+                                                                                                                    "children" : [
+                                                                                                                      {
+                                                                                                                        "children" : [
+                                                                                                                          {
+                                                                                                                            "children" : [
+
+                                                                                                                            ],
+                                                                                                                            "name" : "UntitledNode",
+                                                                                                                            "localPos" : "{-464, 1}",
+                                                                                                                            "uuid" : "FBB668A8-0D85-49B0-8979-F82A9A0CD8C4"
+                                                                                                                          }
+                                                                                                                        ],
+                                                                                                                        "name" : "UntitledNode",
+                                                                                                                        "localPos" : "{-449, 1}",
+                                                                                                                        "uuid" : "56F60186-0203-438E-AFE4-230894103CB8"
+                                                                                                                      }
+                                                                                                                    ],
+                                                                                                                    "name" : "UntitledNode",
+                                                                                                                    "localPos" : "{-434, 1}",
+                                                                                                                    "uuid" : "F8B25AF9-F510-4A64-8735-128FC0C16F38"
+                                                                                                                  }
+                                                                                                                ],
+                                                                                                                "name" : "UntitledNode",
+                                                                                                                "localPos" : "{-418, 1}",
+                                                                                                                "uuid" : "5A1C15FB-EC57-446F-9BDA-8115C3A25E2B"
+                                                                                                              }
+                                                                                                            ],
+                                                                                                            "name" : "UntitledNode",
+                                                                                                            "localPos" : "{-403, 1}",
+                                                                                                            "uuid" : "88ABFF7A-F717-4FE9-85F5-D247C97A0AD2"
+                                                                                                          }
+                                                                                                        ],
+                                                                                                        "name" : "UntitledNode",
+                                                                                                        "localPos" : "{-387, 1}",
+                                                                                                        "uuid" : "734AB611-B77A-421D-B619-18AACB880D43"
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "name" : "UntitledNode",
+                                                                                                    "localPos" : "{-372, 1}",
+                                                                                                    "uuid" : "38B9C67C-139C-4376-A9A0-6430C784D744"
+                                                                                                  }
+                                                                                                ],
+                                                                                                "name" : "UntitledNode",
+                                                                                                "localPos" : "{-356, 1}",
+                                                                                                "uuid" : "1E1B14A0-6ADD-4EC4-B30A-E35DEA97ACEA"
+                                                                                              }
+                                                                                            ],
+                                                                                            "name" : "UntitledNode",
+                                                                                            "localPos" : "{-341, 1}",
+                                                                                            "uuid" : "4247BD8E-8255-4670-8CC9-48B3149D509E"
+                                                                                          }
+                                                                                        ],
+                                                                                        "name" : "UntitledNode",
+                                                                                        "localPos" : "{-325, 1}",
+                                                                                        "uuid" : "70152D07-17CF-4147-B747-6896756EC0EF"
+                                                                                      }
+                                                                                    ],
+                                                                                    "name" : "UntitledNode",
+                                                                                    "localPos" : "{-309, 1}",
+                                                                                    "uuid" : "4E027EE4-4003-4E96-A8AE-CFF411A57327"
+                                                                                  }
+                                                                                ],
+                                                                                "name" : "UntitledNode",
+                                                                                "localPos" : "{-293, 1}",
+                                                                                "uuid" : "F6B5B642-7A8A-4F27-9C50-38325FA81BA5"
+                                                                              }
+                                                                            ],
+                                                                            "name" : "UntitledNode",
+                                                                            "localPos" : "{-278, 1}",
+                                                                            "uuid" : "281F4C6D-0A8C-47BF-89D6-72CF4392FCB0"
+                                                                          }
+                                                                        ],
+                                                                        "name" : "UntitledNode",
+                                                                        "localPos" : "{-263, 1}",
+                                                                        "uuid" : "0CA7D579-1F05-4FDF-8C73-BA49176C5D26"
+                                                                      }
+                                                                    ],
+                                                                    "name" : "UntitledNode",
+                                                                    "localPos" : "{-247, 1}",
+                                                                    "uuid" : "2C20B11B-800A-451B-80D8-5C580A629779"
+                                                                  }
+                                                                ],
+                                                                "name" : "UntitledNode",
+                                                                "localPos" : "{-231, 1}",
+                                                                "uuid" : "C2E6830B-A66E-4904-8865-A53453BAE11F"
+                                                              }
+                                                            ],
+                                                            "name" : "UntitledNode",
+                                                            "localPos" : "{-215, 1}",
+                                                            "uuid" : "6F24B3E4-73E9-4D94-A274-910023D987C2"
+                                                          }
+                                                        ],
+                                                        "name" : "UntitledNode",
+                                                        "localPos" : "{-199, 0}",
+                                                        "uuid" : "44DCC3F6-BC09-4C20-9306-CD8F9A91C436"
+                                                      }
+                                                    ],
+                                                    "name" : "UntitledNode",
+                                                    "localPos" : "{-184, 0}",
+                                                    "uuid" : "BFF3977C-5644-43E6-9ACF-AE9E26B8F4A3"
+                                                  }
+                                                ],
+                                                "name" : "UntitledNode",
+                                                "localPos" : "{-168, 0}",
+                                                "uuid" : "BE73C46A-A108-48C1-B6AA-845DDF75C222"
+                                              }
+                                            ],
+                                            "name" : "UntitledNode",
+                                            "localPos" : "{-153, 0}",
+                                            "uuid" : "07F906A1-EAF3-436B-B591-A58EC86B3998"
+                                          }
+                                        ],
+                                        "name" : "UntitledNode",
+                                        "localPos" : "{-138, 0}",
+                                        "uuid" : "96019335-4154-4510-B76E-E2BAED164430"
+                                      }
+                                    ],
+                                    "name" : "UntitledNode",
+                                    "localPos" : "{-123, 0}",
+                                    "uuid" : "E9EDA5CA-27F3-4597-91F5-D20F3E1916DA"
+                                  }
+                                ],
+                                "name" : "UntitledNode",
+                                "localPos" : "{-108, 0}",
+                                "uuid" : "22FB78C5-0C6D-4A5D-A34E-B860AB9D0D0E"
+                              }
+                            ],
+                            "name" : "UntitledNode",
+                            "localPos" : "{-94, 0}",
+                            "uuid" : "3911259B-A40E-432A-A85E-186070651FD0"
+                          }
+                        ],
+                        "name" : "UntitledNode",
+                        "localPos" : "{-79, 0}",
+                        "uuid" : "67618177-0A8A-498F-9429-F6B7EF945C64"
+                      }
+                    ],
+                    "name" : "UntitledNode",
+                    "localPos" : "{-63, 0}",
+                    "uuid" : "226CE822-A877-4D87-A832-D6062254BF81"
+                  }
+                ],
+                "name" : "UntitledNode",
+                "localPos" : "{-48, 0}",
+                "uuid" : "EB606CB4-A271-4DBD-960C-87591798142D"
+              }
+            ],
+            "name" : "UntitledNode",
+            "localPos" : "{-32, 0}",
+            "uuid" : "4854616B-4265-4596-A4BF-E4EE9C79FE29"
+          }
+        ],
+        "name" : "UntitledNode",
+        "localPos" : "{-18, 0}",
+        "uuid" : "6BFEA53A-C1F6-4315-95C8-EBD0EBED880E"
+      }
+    ],
+    "name" : "RootBone",
+    "root" : true,
+    "rigid" : true
+  },
+  "sprites" : [
+    {
+      "angle" : -0.8194885,
+      "skinName" : "head",
+      "visible" : true,
+      "skinUUID" : "2E1B60D5-3FC3-4EA9-8CDF-F648EA1442C3",
+      "sprName" : "head",
+      "boneUUID" : "6BFEA53A-C1F6-4315-95C8-EBD0EBED880E",
+      "localPos" : "{11, 1}"
+    },
+    {
+      "angle" : -0.8194885,
+      "skinName" : "body",
+      "visible" : true,
+      "skinUUID" : "238EF025-8AC2-4CE6-8828-66D414541559",
+      "sprName" : "body",
+      "boneUUID" : "6BFEA53A-C1F6-4315-95C8-EBD0EBED880E",
+      "localPos" : "{-18, 1}"
+    },
+    {
+      "angle" : 0.3164062,
+      "skinName" : "tail",
+      "visible" : true,
+      "skinUUID" : "8D08DCAB-4B13-4461-BCD0-5389E36BCC0E",
+      "sprName" : "tail",
+      "boneUUID" : "FBB668A8-0D85-49B0-8979-F82A9A0CD8C4",
+      "localPos" : "{-484, 1}"
+    },
+    {
+      "angle" : -0.535965,
+      "skinName" : "body_1",
+      "visible" : true,
+      "skinUUID" : "F134FDED-108B-4C7E-B576-D5838D0DCB3E",
+      "sprName" : "body",
+      "boneUUID" : "4854616B-4265-4596-A4BF-E4EE9C79FE29",
+      "localPos" : "{-33, 0}"
+    },
+    {
+      "angle" : 1.660889,
+      "skinName" : "body_2",
+      "visible" : true,
+      "skinUUID" : "802905C1-A953-40F6-9968-2FBB2B046D88",
+      "sprName" : "body",
+      "boneUUID" : "EB606CB4-A271-4DBD-960C-87591798142D",
+      "localPos" : "{-48, 0}"
+    },
+    {
+      "angle" : 0.8043823,
+      "skinName" : "body_3",
+      "visible" : true,
+      "skinUUID" : "D94E92C3-8028-46D2-81AA-975818EF1AC1",
+      "sprName" : "body",
+      "boneUUID" : "226CE822-A877-4D87-A832-D6062254BF81",
+      "localPos" : "{-64, 0}"
+    },
+    {
+      "angle" : 1.463654,
+      "skinName" : "body_4",
+      "visible" : true,
+      "skinUUID" : "A44785C4-E10E-4A7E-9322-C02EC29B891E",
+      "sprName" : "body",
+      "boneUUID" : "67618177-0A8A-498F-9429-F6B7EF945C64",
+      "localPos" : "{-79, 0}"
+    },
+    {
+      "angle" : 1.692993,
+      "skinName" : "body_5",
+      "visible" : true,
+      "skinUUID" : "AFA852EA-8D24-4056-B29A-80FE85CB61EF",
+      "sprName" : "body",
+      "boneUUID" : "3911259B-A40E-432A-A85E-186070651FD0",
+      "localPos" : "{-94, 1}"
+    },
+    {
+      "angle" : 0.8421631,
+      "skinName" : "body_6",
+      "visible" : true,
+      "skinUUID" : "54140CEB-879A-40D8-97E0-1AA719E8AC07",
+      "sprName" : "body",
+      "boneUUID" : "22FB78C5-0C6D-4A5D-A34E-B860AB9D0D0E",
+      "localPos" : "{-109, 1}"
+    },
+    {
+      "angle" : 0.1366577,
+      "skinName" : "body_7",
+      "visible" : true,
+      "skinUUID" : "451BB40E-FDD4-417F-9BD3-0CFBB03D2CF3",
+      "sprName" : "body",
+      "boneUUID" : "E9EDA5CA-27F3-4597-91F5-D20F3E1916DA",
+      "localPos" : "{-124, 0}"
+    },
+    {
+      "angle" : 0.8140259,
+      "skinName" : "body_8",
+      "visible" : true,
+      "skinUUID" : "C3E96279-CBF7-48CD-8E27-B768644D59C0",
+      "sprName" : "body",
+      "boneUUID" : "96019335-4154-4510-B76E-E2BAED164430",
+      "localPos" : "{-139, 0}"
+    },
+    {
+      "angle" : 1.933624,
+      "skinName" : "body_9",
+      "visible" : true,
+      "skinUUID" : "3B0421AF-990F-46FE-94F5-F5DD6DDBF893",
+      "sprName" : "body",
+      "boneUUID" : "07F906A1-EAF3-436B-B591-A58EC86B3998",
+      "localPos" : "{-154, 1}"
+    },
+    {
+      "angle" : -2.012726,
+      "skinName" : "body_10",
+      "visible" : true,
+      "skinUUID" : "86667A4F-9973-4183-BC26-B4927A903E4E",
+      "sprName" : "body",
+      "boneUUID" : "BE73C46A-A108-48C1-B6AA-845DDF75C222",
+      "localPos" : "{-168, 1}"
+    },
+    {
+      "angle" : -0.5269775,
+      "skinName" : "body_11",
+      "visible" : true,
+      "skinUUID" : "1431B8DB-62F8-4A0E-BA9A-B3A39079E597",
+      "sprName" : "body",
+      "boneUUID" : "BFF3977C-5644-43E6-9ACF-AE9E26B8F4A3",
+      "localPos" : "{-184, 0}"
+    },
+    {
+      "angle" : 2.150391,
+      "skinName" : "body_12",
+      "visible" : true,
+      "skinUUID" : "2993F8B1-BABA-46D3-A080-67C40B773F30",
+      "sprName" : "body",
+      "boneUUID" : "44DCC3F6-BC09-4C20-9306-CD8F9A91C436",
+      "localPos" : "{-200, 1}"
+    },
+    {
+      "angle" : -1.77449,
+      "skinName" : "body_13",
+      "visible" : true,
+      "skinUUID" : "4E056EAE-8BEB-46FA-BA54-37C5FEC9A58A",
+      "sprName" : "body",
+      "boneUUID" : "6F24B3E4-73E9-4D94-A274-910023D987C2",
+      "localPos" : "{-215, 0}"
+    },
+    {
+      "angle" : 2.035522,
+      "skinName" : "body_14",
+      "visible" : true,
+      "skinUUID" : "06BF76B3-E4EC-4FDF-BB13-9A01273D23B5",
+      "sprName" : "body",
+      "boneUUID" : "C2E6830B-A66E-4904-8865-A53453BAE11F",
+      "localPos" : "{-231, 0}"
+    },
+    {
+      "angle" : 0.9772339,
+      "skinName" : "body_15",
+      "visible" : true,
+      "skinUUID" : "30518335-4FCA-4838-AE6A-68DB277D9B4C",
+      "sprName" : "body",
+      "boneUUID" : "2C20B11B-800A-451B-80D8-5C580A629779",
+      "localPos" : "{-247, 1}"
+    },
+    {
+      "angle" : -1.03038,
+      "skinName" : "body_16",
+      "visible" : true,
+      "skinUUID" : "E3A914EE-7EB6-4E0F-9D07-9E89CE9BE532",
+      "sprName" : "body",
+      "boneUUID" : "0CA7D579-1F05-4FDF-8C73-BA49176C5D26",
+      "localPos" : "{-263, 1}"
+    },
+    {
+      "angle" : -0.1483612,
+      "skinName" : "body_17",
+      "visible" : true,
+      "skinUUID" : "B952E507-C740-4EDC-A6F2-2FA0520FB381",
+      "sprName" : "body",
+      "boneUUID" : "281F4C6D-0A8C-47BF-89D6-72CF4392FCB0",
+      "localPos" : "{-279, 1}"
+    },
+    {
+      "angle" : -0.2972107,
+      "skinName" : "body_18",
+      "visible" : true,
+      "skinUUID" : "25322F3B-8AB3-43B4-B5BC-5266E08BA49D",
+      "sprName" : "body",
+      "boneUUID" : "F6B5B642-7A8A-4F27-9C50-38325FA81BA5",
+      "localPos" : "{-294, 1}"
+    },
+    {
+      "angle" : -1.960342,
+      "skinName" : "body_19",
+      "visible" : true,
+      "skinUUID" : "8E6ACC2E-F3DF-4EBC-8092-07C0AA5E1FD9",
+      "sprName" : "body",
+      "boneUUID" : "4E027EE4-4003-4E96-A8AE-CFF411A57327",
+      "localPos" : "{-310, 0}"
+    },
+    {
+      "angle" : 0.1422119,
+      "skinName" : "body_20",
+      "visible" : true,
+      "skinUUID" : "21E866BF-0A2B-4500-AC48-F99A1336437F",
+      "sprName" : "body",
+      "boneUUID" : "70152D07-17CF-4147-B747-6896756EC0EF",
+      "localPos" : "{-326, 1}"
+    },
+    {
+      "angle" : -0.4836578,
+      "skinName" : "body_21",
+      "visible" : true,
+      "skinUUID" : "AD5AC493-2DA3-4857-BA02-03DB36E781F2",
+      "sprName" : "body",
+      "boneUUID" : "4247BD8E-8255-4670-8CC9-48B3149D509E",
+      "localPos" : "{-342, 1}"
+    },
+    {
+      "angle" : 0.8276367,
+      "skinName" : "body_22",
+      "visible" : true,
+      "skinUUID" : "AA0DC7F2-130F-49CC-BD95-7C39F99B6D27",
+      "sprName" : "body",
+      "boneUUID" : "1E1B14A0-6ADD-4EC4-B30A-E35DEA97ACEA",
+      "localPos" : "{-357, 1}"
+    },
+    {
+      "angle" : 2.114594,
+      "skinName" : "body_23",
+      "visible" : true,
+      "skinUUID" : "37E3BDE7-1C3C-45B6-9E59-4A2ED7E9EA8E",
+      "sprName" : "body",
+      "boneUUID" : "38B9C67C-139C-4376-A9A0-6430C784D744",
+      "localPos" : "{-372, 2}"
+    },
+    {
+      "angle" : -3.79924,
+      "skinName" : "body_24",
+      "visible" : true,
+      "skinUUID" : "BA290E78-BC1A-430A-A615-EAE4BB86CAAF",
+      "sprName" : "body",
+      "boneUUID" : "734AB611-B77A-421D-B619-18AACB880D43",
+      "localPos" : "{-388, 1}"
+    },
+    {
+      "angle" : -0.4350586,
+      "skinName" : "body_25",
+      "visible" : true,
+      "skinUUID" : "2EC4A252-3976-449F-A494-AD0865B77946",
+      "sprName" : "body",
+      "boneUUID" : "88ABFF7A-F717-4FE9-85F5-D247C97A0AD2",
+      "localPos" : "{-403, 1}"
+    },
+    {
+      "angle" : -1.083115,
+      "skinName" : "body_26",
+      "visible" : true,
+      "skinUUID" : "9DD0AA25-A886-4126-9A34-FDAA3019A183",
+      "sprName" : "body",
+      "boneUUID" : "5A1C15FB-EC57-446F-9BDA-8115C3A25E2B",
+      "localPos" : "{-418, 1}"
+    },
+    {
+      "angle" : 1.554932,
+      "skinName" : "body_27",
+      "visible" : true,
+      "skinUUID" : "4DDC60D1-56CF-4AA1-8525-3EB8D394281C",
+      "sprName" : "body",
+      "boneUUID" : "F8B25AF9-F510-4A64-8735-128FC0C16F38",
+      "localPos" : "{-434, 1}"
+    },
+    {
+      "angle" : -0.391983,
+      "skinName" : "body_28",
+      "visible" : true,
+      "skinUUID" : "031F89C0-691F-4F55-A173-9516563A7944",
+      "sprName" : "body",
+      "boneUUID" : "56F60186-0203-438E-AFE4-230894103CB8",
+      "localPos" : "{-449, 1}"
+    }
+  ],
+  "uuid" : "97BF2E68-794B-409D-A8FB-872A8C98AD3F",
+  "sheetAtlas" : "Snake_Snake-ipad.xml",
+  "metadata" : {
+    "app" : "SpriteHelper",
+    "author" : "Vladu Bogdan",
+    "web" : "http:\/\/www.gamedevhelper.com",
+    "version" : 1
+  },
+  "name" : "SnakeSkeleton"
+}

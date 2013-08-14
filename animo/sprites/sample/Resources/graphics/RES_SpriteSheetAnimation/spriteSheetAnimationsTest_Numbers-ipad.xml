@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This atlas was generated using SpriteHelper 2 -->
+<!-- http://www.gamedevhelper.com -->
+<Imageset Name="Numbers" Imagefile="spriteSheetAnimationsTest_Numbers-ipad.png" NativeHorzRes="66" NativeVertRes="254" AutoScaled="false">
+	<Image Name="number_1.png" XPos="34" YPos="128" Width="25" Height="40"/>
+	<Image Name="number_2.png" XPos="1" YPos="212" Width="30" Height="40"/>
+	<Image Name="number_8.png" XPos="1" YPos="85" Width="31" Height="41"/>
+	<Image Name="number_0.png" XPos="1" YPos="128" Width="31" Height="41"/>
+	<Image Name="number_4.png" XPos="1" YPos="1" Width="32" Height="40"/>
+	<Image Name="number_3.png" XPos="34" YPos="43" Width="29" Height="41"/>
+	<Image Name="number_5.png" XPos="36" YPos="1" Width="28" Height="40"/>
+	<Image Name="number_9.png" XPos="1" YPos="170" Width="31" Height="40"/>
+	<Image Name="number_7.png" XPos="34" YPos="86" Width="30" Height="40"/>
+	<Image Name="number_6.png" XPos="1" YPos="43" Width="31" Height="41"/>
+</Imageset>

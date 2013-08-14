@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This atlas was generated using SpriteHelper 2 -->
+<!-- http://www.gamedevhelper.com -->
+<Imageset Name="flames" Imagefile="spriteSheetAnimationsTest_flames.png" NativeHorzRes="30" NativeVertRes="81" AutoScaled="false">
+	<Image Name="flame4.png" XPos="1" YPos="1" Width="14" Height="19"/>
+	<Image Name="flame6.png" XPos="15" YPos="20" Width="13" Height="19"/>
+	<Image Name="flame1.png" XPos="1" YPos="21" Width="13" Height="19"/>
+	<Image Name="flame3.png" XPos="1" YPos="60" Width="11" Height="19"/>
+	<Image Name="flame5.png" XPos="14" YPos="40" Width="12" Height="19"/>
+	<Image Name="flame7.png" XPos="15" YPos="1" Width="13" Height="19"/>
+	<Image Name="flame0.png" XPos="1" YPos="41" Width="11" Height="19"/>
+	<Image Name="flame2.png" XPos="12" YPos="60" Width="9" Height="19"/>
+</Imageset>

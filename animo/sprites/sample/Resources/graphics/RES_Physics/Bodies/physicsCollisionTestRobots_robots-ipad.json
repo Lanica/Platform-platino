@@ -1,0 +1,92 @@
+{
+  "greenRobot" : {
+    "bullet" : false,
+    "active" : true,
+    "shapes" : [
+      {
+        "sensor" : false,
+        "category" : 2,
+        "fixtures" : [
+          [
+            "{-53.5, -68}",
+            "{56, -68}",
+            "{56, 65.5}",
+            "{-53.5, 65.5}"
+          ]
+        ],
+        "density" : 1,
+        "mask" : 13,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "type" : 3,
+        "name" : "UntitledShape",
+        "shapeID" : 0
+      }
+    ],
+    "gravityScale" : 1,
+    "awake" : true,
+    "type" : 2,
+    "sleep" : true,
+    "fixed" : true
+  },
+  "pinkRobot" : {
+    "bullet" : false,
+    "active" : true,
+    "shapes" : [
+      {
+        "sensor" : false,
+        "category" : 4,
+        "fixtures" : [
+          [
+            "{-53.5, -68}",
+            "{56, -68}",
+            "{56, 65.5}",
+            "{-53.5, 65.5}"
+          ]
+        ],
+        "density" : 1,
+        "mask" : 15,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "type" : 3,
+        "name" : "UntitledShape",
+        "shapeID" : 0
+      }
+    ],
+    "gravityScale" : 1,
+    "awake" : true,
+    "type" : 2,
+    "sleep" : true,
+    "fixed" : true
+  },
+  "blueRobot" : {
+    "bullet" : false,
+    "active" : true,
+    "shapes" : [
+      {
+        "sensor" : false,
+        "category" : 8,
+        "fixtures" : [
+          [
+            "{-53.5, -68}",
+            "{56, -68}",
+            "{56, 65.5}",
+            "{-53.5, 65.5}"
+          ]
+        ],
+        "density" : 1,
+        "mask" : 7,
+        "friction" : 0.2,
+        "restitution" : 0,
+        "type" : 3,
+        "name" : "UntitledShape",
+        "shapeID" : 0
+      }
+    ],
+    "gravityScale" : 1,
+    "awake" : true,
+    "type" : 2,
+    "sleep" : true,
+    "fixed" : true
+  }
+}

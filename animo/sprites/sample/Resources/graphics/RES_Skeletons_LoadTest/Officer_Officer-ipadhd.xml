@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This atlas was generated using SpriteHelper 2 -->
+<!-- http://www.gamedevhelper.com -->
+<Imageset Name="Officer" Imagefile="Officer_Officer-ipadhd.png" NativeHorzRes="256" NativeVertRes="1717" AutoScaled="false">
+	<Image Name="neck_outline.png" XPos="145" YPos="1304" Width="65" Height="55"/>
+	<Image Name="hand_R_outline.png" XPos="75" YPos="1122" Width="68" Height="71"/>
+	<Image Name="pelvis.png" XPos="4" YPos="585" Width="135" Height="100"/>
+	<Image Name="foot_LEFT.png" XPos="102" YPos="1367" Width="115" Height="59"/>
+	<Image Name="gun-holster.png" XPos="4" YPos="1148" Width="53" Height="82"/>
+	<Image Name="hair.png" XPos="100" YPos="816" Width="143" Height="137"/>
+	<Image Name="handRest.png" XPos="4" YPos="1043" Width="63" Height="97"/>
+	<Image Name="pant_bottom_RIGHT.png" XPos="45" YPos="1317" Width="73" Height="32"/>
+	<Image Name="vest_outline.png" XPos="4" YPos="219" Width="151" Height="185"/>
+	<Image Name="muzzleFlash.png" XPos="4" YPos="1298" Width="33" Height="62"/>
+	<Image Name="mouth.png" XPos="4" YPos="1402" Width="47" Height="32"/>
+	<Image Name="hat.png" XPos="4" YPos="1501" Width="199" Height="115"/>
+	<Image Name="eyes_CLOSED.png" XPos="149" YPos="1246" Width="73" Height="50"/>
+	<Image Name="leg_lower_L_outline.png" XPos="154" YPos="571" Width="80" Height="131"/>
+	<Image Name="hand_L_outline.png" XPos="151" YPos="1168" Width="62" Height="70"/>
+	<Image Name="angry_mouth.png" XPos="45" YPos="1357" Width="49" Height="37"/>
+	<Image Name="gun.png" XPos="184" YPos="1076" Width="61" Height="84"/>
+	<Image Name="torso_outline.png" XPos="4" YPos="4" Width="153" Height="207"/>
+	<Image Name="shoulder_R_outline.png" XPos="4" YPos="693" Width="108" Height="108"/>
+	<Image Name="eyes_OPEN.png" XPos="65" YPos="1201" Width="76" Height="50"/>
+	<Image Name="foot_RIGHT.png" XPos="59" YPos="1434" Width="115" Height="59"/>
+	<Image Name="tennisBall.png" XPos="4" YPos="1238" Width="52" Height="52"/>
+	<Image Name="leg_upper_L_outline.png" XPos="165" YPos="4" Width="75" Height="147"/>
+	<Image Name="leg_upper_R_outline.png" XPos="154" YPos="425" Width="90" Height="138"/>
+	<Image Name="eyes_ANGRY.png" XPos="64" YPos="1259" Width="73" Height="50"/>
+	<Image Name="head.png" XPos="4" YPos="412" Width="142" Height="165"/>
+	<Image Name="SUNGLASSES.png" XPos="4" YPos="1673" Width="140" Height="40"/>
+	<Image Name="handPoint.png" XPos="4" YPos="922" Width="73" Height="113"/>
+	<Image Name="hand_OpenGrab.png" XPos="85" YPos="961" Width="95" Height="88"/>
+	<Image Name="gun-belt.png" XPos="4" YPos="1624" Width="142" Height="41"/>
+	<Image Name="forearm_R_outline.png" XPos="188" YPos="961" Width="63" Height="107"/>
+	<Image Name="handOpen.png" XPos="4" YPos="809" Width="88" Height="105"/>
+	<Image Name="leg_lower_R_outline.png" XPos="163" YPos="292" Width="84" Height="125"/>
+	<Image Name="handOpenBackHand.png" XPos="120" YPos="710" Width="96" Height="98"/>
+	<Image Name="shoulder_L_outline.png" XPos="165" YPos="159" Width="87" Height="125"/>
+	<Image Name="forearm_L_outline.png" XPos="75" YPos="1057" Width="101" Height="57"/>
+</Imageset>

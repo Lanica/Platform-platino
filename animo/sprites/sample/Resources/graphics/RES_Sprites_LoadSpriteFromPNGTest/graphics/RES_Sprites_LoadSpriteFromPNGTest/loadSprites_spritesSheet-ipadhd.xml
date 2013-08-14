@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This atlas was generated using SpriteHelper 2 -->
+<!-- http://www.gamedevhelper.com -->
+<Imageset Name="spritesSheet" Imagefile="graphics/RES_Sprites_LoadSpriteFromPNGTest/loadSprites_spritesSheet-ipadhd.png" NativeHorzRes="488" NativeVertRes="474" AutoScaled="false">
+	<Image Name="hat" XPos="165" YPos="282" Width="217" Height="126"/>
+	<Image Name="banana" XPos="190" YPos="2" Width="163" Height="111"/>
+	<Image Name="backpack" XPos="2" YPos="282" Width="159" Height="190"/>
+	<Image Name="pineapple" XPos="386" YPos="2" Width="100" Height="251"/>
+	<Image Name="canteen" XPos="386" YPos="257" Width="84" Height="129"/>
+	<Image Name="bananabunch" XPos="190" YPos="117" Width="154" Height="109"/>
+	<Image Name="statue" XPos="2" YPos="2" Width="184" Height="276"/>
+</Imageset>
