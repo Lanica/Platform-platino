@@ -1,6 +1,9 @@
 var platino = require('co.lanica.platino');
-var chipmunk2dmodule = require('co.lanica.chipmunk2d');
-var chipmunk = chipmunk2d;
+// Note: Yes, the module loading technique is a little different in this case.
+// Instead of using a return value, a global variable called co_lanica_chipmunk2d was registered.
+// We can alias that with a local variable called chipmunk for brevity.
+require('co.lanica.chipmunk2d');
+var chipmunk = co_lanica_chipmunk2d;
 var v = chipmunk.cpv;
 
 var MainScene = function(window, game) {
