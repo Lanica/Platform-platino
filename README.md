@@ -1,8 +1,7 @@
 #Welcome to Lanica™ 
 ###Game Development Platform
 
-![image](http://lanica.co/wp-content/uploads/2013/07/Lanica_game_dev_banner-TM.png)
-The Lanica™ Game Development Platform
+![image](http://lanica.co/wp-content/uploads/2013/07/Lanica-Banner-blackonwhite.png)
 
 The Lanica Game Development Platform allows Developers, Artists and Game Designers to create new and engaging mobile game experiences. Lanica’s state of the art technology is built from the ground up for mobile, and delivers all you need during the game development lifecycle. It includes: Platino™, our game engine SDK, Animo™, a set of designer and developer tools and Cosmo™, our cloud service infrastructure.
 
@@ -31,7 +30,7 @@ Coming soon… Stay in touch or sign up for the Prerelease Beta
 ![image](http://lanica.co/wp-content/uploads/2013/07/CosmoGroupLogo.png)
 
 ### Cosmo™ Cloud Services for Game Developers
-Focus on creating the best fun game mechanics and let Cosmo cloud services handle the heavy lifting, scale the servers, store achievements, manage the leaderboards, capture and show analytics, and add real-time multiplayer capabilities and notifications to your mobile games on both iOS or Android. Coming soon…  Stay in touch or sign up for the Prerelease Beta 
+Focus on creating the best fun game mechanics and let Cosmo cloud services handle the heavy lifting, scale the servers, store achievements, capture and show analytics, and notifications to your mobile games on both iOS or Android. Coming soon…  Stay in touch or sign up for the Prerelease Beta 
 [http://lanica.co/company/about/signup/](http://lanica.co/company/about/signup/)
 
 ## [Support](http:/lanica.co/support/) 
