@@ -8,7 +8,7 @@ The demo starts with 10 bouncing bunnies, with more bunnies being added on every
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ccUJ9ctfknk
 " target="_blank"><img src="http://img.youtube.com/vi/ccUJ9ctfknk/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="420" height="315" border="0" /></a>
+alt="BunnyMark Sample" width="420" height="315" border="0" /></a>
 
 
 ----------------------------------
