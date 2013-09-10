@@ -24,6 +24,9 @@ var MainScene = function(window, game) {
 	var pMoments = null;
 	var pBodies = null;
 	var pShapes = null;
+
+	var DebugDraw = require("ChipmunkDebugDraw");
+	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:true, Circle:false, Vertex:false, Poly:false});
 	
 	// chipmunk y-coordinates are reverse value of platino's, so use the following
 	// function to convert chipmunk y-coordinate values to platino y-coordinates and vice versa
@@ -237,6 +240,11 @@ var MainScene = function(window, game) {
 				pSprites[i].angle = angle;
 			}
 		}
+
+		if (debugDraw !== null) {
+			debugDraw.update();
+		}
+
 	};
 	
 	// game loop (enterframe listener)
@@ -267,6 +275,10 @@ var MainScene = function(window, game) {
 		
 		createGroundAndWalls();
 		createSpritesMomentsBodiesAndShapes();
+
+		if (debugDraw !== null) {
+			debugDraw.addBodies(pBodies);
+		}
 		
 		// wait 3 seconds after the scene loads and start the game loop
 		setTimeout(function() {
