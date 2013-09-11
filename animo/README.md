@@ -1,15 +1,8 @@
-![image](http://lanica.co/wp-content/uploads/2013/07/PlatinoGroupLogo.png)
 
-### Platino™ SDK
+![image](http://lanica.co/wp-content/uploads/2013/07/AnimoGroupLogo.png)
 
-#### [Get Started](http://docs.lanica.co/#!/guide/dev_environment)
-All you need to know to get your (game) engine started! [link](http://docs.lanica.co/#!/guide/dev_environment)
-
-#### [Sample Code](./platino/samples)
-To help you understand some fundamental Lanica Platino APIs and coding practices [link](./platino/samples)
-
-#### [API Reference](http://docs.lanica.co/#!/api)
-Platino SDK APIs [link](http://docs.lanica.co/#!/api)
+### Animo™ Design and Developers Tools
+Designers and developers can now work together with Animo tools to rapidly build, prototype, iterate, test and deploy games cross-platform.  [Download](http://lanica.co/members/signup/)
 
 
 ## [Support](http:/lanica.co/support/) 

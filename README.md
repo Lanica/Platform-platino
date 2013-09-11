@@ -23,15 +23,13 @@ Platino SDK APIs [link](http://docs.lanica.co/#!/api)
 ![image](http://lanica.co/wp-content/uploads/2013/07/AnimoGroupLogo.png)
 
 ### Animo™ Design and Developers Tools
-Designers and developers can now work together with Animo tools to rapidly build, prototype, iterate, test and deploy games cross-platform. 
-Coming soon… Stay in touch or sign up for the Prerelease Beta 
-[http://lanica.co/company/about/signup/](http://lanica.co/company/about/signup/)
+Designers and developers can now work together with Animo tools to rapidly build, prototype, iterate, test and deploy games cross-platform.  [Download](http://lanica.co/members/signup/)
 
 ![image](http://lanica.co/wp-content/uploads/2013/07/CosmoGroupLogo.png)
 
 ### Cosmo™ Cloud Services for Game Developers
-Focus on creating the best fun game mechanics and let Cosmo cloud services handle the heavy lifting, scale the servers, store achievements, capture and show analytics, and notifications to your mobile games on both iOS or Android. Coming soon…  Stay in touch or sign up for the Prerelease Beta 
-[http://lanica.co/company/about/signup/](http://lanica.co/company/about/signup/)
+Focus on creating the best fun game mechanics and let Cosmo cloud services handle the heavy lifting, scale the servers, store achievements, capture and show analytics, and notifications to your mobile games on both iOS or Android. Coming soon…  Stay in touch! 
+[http://lanica.co/members/signup/](http://lanica.co/members/signup/)
 
 ## [Support](http:/lanica.co/support/) 
 
