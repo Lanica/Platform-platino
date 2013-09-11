@@ -1,49 +1,99 @@
-#Lanica Platino SDK™
+#Lanica Platino SDK™ - Sample Code
 
-The core of our Lanica Game Development Platform. Platino delivers the APIs to build cross-platform, high quality 2D and 2.5D games.  Your work-horse to build, efficiently run, deploy and monetize your games.
-![image](http://lanica.co/wp-content/uploads/2013/07/PlatinoGroupLogo.png)
+The Lanica Platino SDK includes a list of sample code apps.
 
-### Lanica Platino Engine™
-![image](http://lanica.co/wp-content/uploads/2013/07/smallPlatinoEngine.png)
+We think you’ll find helpful to understand some of the API fundamentals and get you started. You can find additional samples in the Lanica development open source project on our github repository.
 
-An optimized, native-built, cross-platform game engine for JavaScript developers, with a rich API set to support iOS and Android mobile games! The Lanica Platino Engine leverages the Appcelerator Titanium SDK, which has over 5,000 device and mobile operating system APIs. Additionally, you can use the many modules created by the Titanium community of over a half-million developers, ISVs, and partners who have extended the SDK with user interface controls, access to 3rd party services, and hundreds of native platform APIs.
-
-**OpenGL**:  We’re bringing you the industry standard in hardware-accelerated, cross-platform API for 2D and 3D graphics.  The OpenGL engine is a flexible and powerful low-level interface between software and graphics acceleration, so you get the best performance with the most efficient (i.e. lowest possible) use of resources.
-
-**Isometric Tile Engine**:  Our native isometric engine is written entirely in C++.  The best part? It features direct hardware rendering and occlusion detection for your maps to be rendered at full hardware speed, giving them near real-time interactivity.
-
-**Sprite Sheets**: Our internal sprite sheet engine is optimized for performance and rendering.
-
-**Box2D**: The same physics engine that drives Angry Birds and some of the most popular mobile games on the market is embedded in the Platino game engine.
-
-**Particles**: We know you’re too creative for a “one size fits all” approach. You can now create stunning visual effects at hardware speeds by customizing every aspect of your particle emitters.
-
-**2.5D Support**: Built natively (yet again!) to give your game that extra “depth” needed to create pseudo-3D effects.
-
-**Native Interface Access**: Full access to your creations, so you can tinker with the native UI, mouse events, accelerometer, and more through Titanium’s powerful JavaScript methods and classes.
-
-**JavaScript**: Leveraging the most popular language and its ecosystem, including hundreds of client-side Appcelerator Marketplace Modules and cloud-based services for extended capabilities.
+We encourage you to participate and contribute to these samples if you improve any of the code. Fork the repo, make your changes, and submit a pull request.
 
 
-### [Get Started](http://docs.lanica.co/#!/guide/dev_environment)
-All you need to know to get your (game) engine started! [link](http://docs.lanica.co/#!/guide/dev_environment)
+## Camera View
 
-### [Sample Code](./platino/samples)
-To help you understand some fundamental Lanica Platino APIs and coding practices [link](./samples)
+Demonstrates the use of the Platino GameView's Camera object. Learn how to create a [Transform](http://docs.lanica.co/docs/#!/api/Transform) instance for use with the [GameView](http://docs.lanica.co/docs/#!/api/GameView)'s camera to pan/zoom the screen.
+
+APIs covered:
+
+* [platino.createTransform()](http://docs.lanica.co/docs/#!/api/Platino-method-createTransform)
+* [game.moveCamera()](http://docs.lanica.co/docs/#!/api/GameView-method-moveCamera)
+
+[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/Camera)
+
+## Multiplayer Tank Sample Game
+
+Multi-player tank game demo. Annihilate your remote opponent in this 2D top-down action game. As seen at CodeStrong 2012.
+
+[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/CodestrongTank)
+
+## Events
+
+Demonstrates event listeners in Platino. Learn how to direct touch events to individual sprites, and how to listen to {@link GameView game} and {@link Scene scene}-specific events.
+
+APIs covered:
+
+* sprite.addEventListener() (Individual Sprite Touch Events)
+* game.addEventListener() (Global screen touch events)
+* scene.addEventListener() (activation/deactivation of scenes)
+* [platino.createSprite()](http://docs.lanica.co/docs/#!/api/Platino-method-createSprite)
+
+[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/Events)
+
+## Isometric Tile Map
+
+Demonstrates usage of Platino APIs to create an isometric tilemap.
+
+[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/IsometricTileMapTest)
+
+## Physics Chipmunk 2D Sample
+
+Bouncing soccer balls and tumbling crates with our physics module. Covers basic Chipmunk2D module usage (physics demo).
+
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/samples/ChipmunkSample)
+
+## Platino Samples
+
+A collection of different modules that demonstrates the usage of almost every Platino API.
+
+[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/PlatinoSamples)
+
+## Shooter Game Sample
+
+Fun shooter action game demo. Learn how to create {@link sprite sprites}, animate objects with {@link transform transforms}, and apply cool particle effects to make your game scenes come alive. As seen at CodeStrong 2012.
+
+[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/PlatinoShooter)
+
+## Scenes
+
+Demonstrates the use of the Platino {@link Scene}s. Learn how to create, activate, deactivate, and transition between scenes.
+
+APIs covered:
+
+* [platino.createScene()](http://docs.lanica.co/docs/#!/api/Platino-method-createScene)
+* [game.replaceScene()](http://docs.lanica.co/docs/#!/api/GameView-method-replaceScene) (Transitioning between scenes)
+* scene.addEventListener() (activation/deactivation of scenes)
+* [scene.add()](http://docs.lanica.co/docs/#!/api/Scene-method-add) (adding sprites to scenes)
+
+[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/Scenes)
+
+## Transforms
+
+Demonstrates the use of the Platino {@link transform transform} objects. Learn how to animate an object by "tweening" specific properties (such as x/y location, alpha, etc).
+
+APIs covered:
+
+* [platino.createTransform()](http://docs.lanica.co/docs/#!/api/Platino-method-createTransform)
+* [sprite.transform()](http://docs.lanica.co/docs/#!/api/Sprite-method-transform)
+* [sprite.clearTransforms()](http://docs.lanica.co/docs/#!/api/Sprite-method-clearTransforms)
+* transform.addEventListener() (start/completion of transform sequences)
+
+## BunnyMark
+
+A fun 2D sprite benchmark sample app, based on [Iain Lobb's original](http://blog.iainlobb.com/2010/11/display-list-vs-blitting-results.html).
+
+The demo starts with 10 bouncing bunnies, with more bunnies being added on every screen tap. Monitor the app's frames-per-second (FPS) in realtime as bunnies invade your device!
+
+[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/BunnyMark)
+
 
 ### [API Reference](http://docs.lanica.co/#!/api)
-Platino SDK APIs [link](http://docs.lanica.co/#!/api)
-
-### Lanica Platino IAP™
-![image](http://lanica.co/wp-content/uploads/2013/07/smallPlatinoIAP.png)
-
-In-App-Purchasing (IAP) module provides a set of APIs  for purchasing  within your own cross platform game on iOS, Android, Amazon Kindle and more! Coming soon… Stay in touch or sign up for the Prerelease Beta 
-[http://lanica.co/company/about/signup/](http://lanica.co/company/about/signup/)
-
-## [Support](http:/lanica.co/support/) 
-
-Lanica offers several types of support for our developers: extensive API and product documentation, tutorials and samples, community-supported and moderated forums. Individual help with a rapid turnaround is available through our professional services, you can choose for a professional paid support subscription or, if you are a larger studio with specialized support needs, please contact our team.
-
-Check out our website for various options [http:/lanica.co/support/](http:/lanica.co/support/)
-
+Platino SDK APIs [Get Started](http://docs.lanica.co/#!/api)
 
