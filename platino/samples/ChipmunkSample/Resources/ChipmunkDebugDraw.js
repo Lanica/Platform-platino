@@ -45,7 +45,11 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
     
     // convert chipmunk angle (radians) to platino angles (degrees)
     function cpAngle(angle) {
-        return -(angle) * (180/Math.PI);
+        return -(angle) * 180 / Math.PI;
+    }
+
+    function toRad(angle) {
+        return -(angle) * Math.PI / 180;
     }
 
     function empty(value) {
@@ -119,6 +123,15 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
 
         var pos   = chipmunk.cpBodyGetPos(body); pos.y = cpY(pos.y);
 
+        var anchr1 = null;
+        var anchr2 = null;
+
+        if (chipmunk.cpConstraintIsPinJoint(constraint)) {
+            joint  = chipmunk.cpConstraintGetPinJoint(constraint);
+            anchr1 = joint.anchr1;
+            anchr2 = joint.anchr2;
+        }
+
         if (!empty(canvas)) {
             var parent = pDebugCanvas[ptr];
             if (!empty(parent)) {
@@ -129,19 +142,39 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
             }
 
             if (canvas.shouldReload) {
-                if (chipmunk.cpConstraintIsPinJoint(constraint)) {
-                    var joint = chipmunk.cpConstraintGetPinJoint(constraint);
-                    var anchr1 = joint.anchr1;
-                    drawDot(canvas, anchr1.x, anchr1.y);
+                if (anchr1 !== null && constraint.a.equals(body)) {
+                    drawDot(canvas, anchr1.x, -anchr1.y);
+                }
+                if (anchr2 !== null && constraint.b.equals(body)) {
+                    drawDot(canvas, anchr2.x, -anchr2.y);
                 }
                 canvas.shouldReload = false;
                 canvas.reload();
             }
         }
 
-        if (!empty(joint_canvas)) {
-            var posA = chipmunk.cpBodyGetPos(constraint.a); posA.y = cpY(posA.y);
-            var posB = chipmunk.cpBodyGetPos(constraint.b); posB.y = cpY(posB.y);
+        if (!empty(joint_canvas) && constraint.b.equals(body)) {
+            var posA = chipmunk.cpBodyGetPos(constraint.a);
+            var posB = chipmunk.cpBodyGetPos(constraint.b);
+
+            var c, s, rad;
+            if (anchr1 !== null) {
+                rad = chipmunk.cpBodyGetAngle(constraint.a);
+                c = Math.cos(rad);
+                s = Math.sin(rad);
+                posA.x = posA.x + (anchr1.x * c - anchr1.y * s);
+                posA.y = posA.y + (anchr1.x * s + anchr1.y * c);
+            }
+            if (anchr2 !== null) {
+                rad = chipmunk.cpBodyGetAngle(constraint.b);
+                c = Math.cos(rad);
+                s = Math.sin(rad);
+                posB.x = posB.x + (anchr2.x * c - anchr2.y * s);
+                posB.y = posB.y + (anchr2.x * s + anchr2.y * c);
+            }
+
+            posA.y = cpY(posA.y);
+            posB.y = cpY(posB.y);
 
             var distx = posB.x - posA.x;
             var disty = posB.y - posA.y;
