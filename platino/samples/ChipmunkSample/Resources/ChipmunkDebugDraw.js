@@ -30,7 +30,7 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
     var pDebugCanvas = {};
     var pConstraintDebugCanvas = {};
     var pConstraintJointDebugCanvas = {};
-    var pBodies      = [];
+    var pBodies      = {};
 
     var cpBodyEachBodyCallbackContainer = new chipmunk.cpBodyCallbackContainer();
     var cpBodyEachConstraintCallbackContainer = new chipmunk.cpBodyCallbackContainer();
@@ -306,7 +306,7 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
         var canvas = pDebugCanvas[ptr];
         if (empty(canvas)) {
             canvas = platino.createCanvasSprite(getShapeBounding(shape));
-            canvas.z = options.z + pBodies.length;
+            canvas.z = options.z;
             pDebugCanvas[ptr] = canvas;
 
             canvas.v_xmin =  Infinity;
@@ -344,7 +344,7 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
         if (empty(canvas)) {
             canvas = platino.createCanvasSprite({width:options.dotsize, height:options.dotsize});
             canvas.color(options.red, options.green, options.blue);
-            canvas.z = options.z + pBodies.length;
+            canvas.z = options.z;
             pConstraintDebugCanvas[ptr] = canvas;
 
             var parent = pDebugCanvas[ptr];
@@ -360,7 +360,7 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
             canvas.anchorPoint = {x:0.5, y:0.5};
             canvas.center = {x: pos.x, y:pos.y};
             canvas.color(options.red, options.green, options.blue);
-            canvas.z = options.z + pBodies.length;
+            canvas.z = options.z;
             pConstraintJointDebugCanvas[constraint_ptr] = constraint_canvas;
 
             scene.add(constraint_canvas);
@@ -377,20 +377,71 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
     /* 
      * Public Methods
      */
+
+    /*
+     * Add single body
+     */
     this.addBody = function(body) {
-        pBodies.push(body);
+        if (empty(body)) return;
+        pBodies[body.getCPtr()] = body;
         initDebugCanvas(body);
     };
 
+    /*
+     * Add bodies at once
+     */
     this.addBodies = function(bodies) {
         for (var i = 0; i < bodies.length; i++) {
             this.addBody(bodies[i]);
         }
     };
 
+    /*
+     * Remove single body
+     */
+    this.removeBody = function(body) {
+        if (empty(body)) return;
+
+        var key = body.getCPtr();
+
+        delete pBodies[key];
+        if (!empty(pDebugCanvas[key])) {
+            scene.remove(pDebugCanvas[key]);
+            pDebugCanvas[key].dispose();
+            delete pDebugCanvas[key];
+        }
+
+        chipmunk.cpBodyEachConstraint(body, function(_body, constraint, data) {
+            if (!empty(pConstraintDebugCanvas[key])) {
+                scene.remove(pConstraintDebugCanvas[key]);
+                pConstraintDebugCanvas[key].dispose();
+                delete pConstraintDebugCanvas[key];
+            }
+            var ckey = constraint.getCPtr();
+            if (!empty(pConstraintJointDebugCanvas[ckey])) {
+                scene.remove(pConstraintJointDebugCanvas[ckey]);
+                pConstraintJointDebugCanvas[ckey].dispose();
+                delete pConstraintJointDebugCanvas[ckey];
+            }
+        }, cpBodyEachConstraintCallbackContainer);
+
+    };
+
+    /*
+     * Remove bodies at once
+     */
+    this.removeBodies = function(bodies) {
+        for (var i = 0; i < bodies.length; i++) {
+            this.removeBody(bodies[i]);
+        }
+    };
+
+    /*
+     * Update debug draw
+     */
     this.update = function(reload) {
-        for (var i = 0; i < pBodies.length; i++) {
-            drawBody(pBodies[i], reload);
+        for (var key in pBodies) {
+            drawBody(pBodies[key], reload);
         }
     };
 };
