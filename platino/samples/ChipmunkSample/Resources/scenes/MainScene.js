@@ -288,8 +288,8 @@ var MainScene = function(window, game) {
 		
 		// Create chipmunk space
 		space = chipmunk.cpSpaceNew();
-		data = new chipmunk.cpSpaceAddCollisionHandlerContainer();
-		chipmunk.cpSpaceAddCollisionHandler(space, 0, 0, begin, preSolve, postSolve, separate, data);
+		//data = new chipmunk.cpSpaceAddCollisionHandlerContainer();
+		//chipmunk.cpSpaceAddCollisionHandler(space, 0, 0, begin, preSolve, postSolve, separate, data);
 		chipmunk.cpSpaceSetGravity(space, v(0, -200));
 		chipmunk.cpSpaceSetSleepTimeThreshold(space, 0.5);
 		chipmunk.cpSpaceSetCollisionSlop(space, 0.5);
