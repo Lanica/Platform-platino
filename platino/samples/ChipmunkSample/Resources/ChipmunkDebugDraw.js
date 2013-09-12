@@ -1,6 +1,29 @@
 
 /*
+ * ChipmunkDebugDraw ... visualize debug information for chipmunk
  *
+ *   // DebugDraw options: 
+ *   // 
+ *   // BB = draw bounding box
+ *   // Circle = draw circle shape
+ *   // Vertex = draw polygon vertex
+ *   // Poly = draw polygon shape
+ *   // Constraint = draw constraint anchor
+ *   // ConstraintConnection = draw constraint connection between bodies
+ *   // 
+ *   var DebugDraw = require("ChipmunkDebugDraw");
+ *   var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:false, Circle:false, Vertex:false, Poly:false, Constraint:true, ConstraintConnection:true});
+ *
+ *   // In update loop...
+ *   debugDraw.update();
+ *
+ *   // When you create chipmunk bodies...
+ *
+ *   // Add all bodies at once to debug draw
+ *    debugDraw.addBodies(pBodies);
+ *
+ *    // Or you can add single body individually
+ *    debugDraw.addBody(body);
  */
 var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
 
