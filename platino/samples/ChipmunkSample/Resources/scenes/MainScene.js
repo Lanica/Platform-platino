@@ -6,12 +6,30 @@ require('co.lanica.chipmunk2d');
 var chipmunk = co_lanica_chipmunk2d;
 var v = chipmunk.cpv;
 
+var DebugDraw = require("co.lanica.chipmunk2d.debugdraw");
+// DebugDraw options: 
+// 
+// BB = draw bounding box
+// Circle = draw circle shape
+// Vertex = draw polygon vertex
+// Poly = draw polygon shape
+// Constraint = draw constraint anchor
+// ConstraintConnection = draw constraint connection between bodies
+//
+// Methods:
+// DebugDraw.addBody(body)
+// DebugDraw.removeBody(body)
+// DebugDraw.addBodies(arrayOfBodies)
+// DebugDraw.removeBodies(arrayOfBodies)
+//
+
+
 var MainScene = function(window, game) {
 	var scene = platino.createScene();
 	scene.color(0.85, 0.96, 0.96);
 	
 	// constants
-	var TIMESTEP = 1.0 / game.fps;
+	var TICKS_PER_SECOND = 180.0; // recommended between 60 and 240; higher = more accuracy (but higher CPU load)
 	var PYRAMID_ROW_COUNT = 6;
 
 	// forward declarations
@@ -28,17 +46,8 @@ var MainScene = function(window, game) {
 	var pConstraint1 = [];
 	var pConstraint2 = [];
 	var pConstraint3 = [];
+	var _accumulator = 0.0;
 
-	var DebugDraw = require("ChipmunkDebugDraw");
-	// DebugDraw options: 
-	// 
-	// BB = draw bounding box
-	// Circle = draw circle shape
-	// Vertex = draw polygon vertex
-	// Poly = draw polygon shape
-	// Constraint = draw constraint anchor
-	// ConstraintConnection = draw constraint connection between bodies
-	// 
 	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:false, Circle:false, Vertex:false, Poly:false, Constraint:true, ConstraintConnection:true});
 	
 	// chipmunk y-coordinates are reverse value of platino's, so use the following
@@ -277,10 +286,23 @@ var MainScene = function(window, game) {
 		}
 
 	};
+
+	var stepPhysics = function(delta) {
+		var dt = delta/1000.0;
+        var fixed_dt = 1.0/TICKS_PER_SECOND;
+
+        // add the current dynamic timestep to the accumulator
+        _accumulator += dt;
+
+        while(_accumulator > fixed_dt) {
+        	chipmunk.cpSpaceStep(space, fixed_dt);
+        	_accumulator -= fixed_dt;
+        }
+	};
 	
 	// game loop (enterframe listener)
-	var update = function() {
-        chipmunk.cpSpaceStep(space, TIMESTEP);
+	var update = function(e) {
+        stepPhysics(e.delta);
 		syncSpritesWithPhysics();
 	};
 	
