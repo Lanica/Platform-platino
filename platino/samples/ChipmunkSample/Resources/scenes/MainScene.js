@@ -25,8 +25,21 @@ var MainScene = function(window, game) {
 	var pBodies = null;
 	var pShapes = null;
 
+	var pConstraint1 = [];
+	var pConstraint2 = [];
+	var pConstraint3 = [];
+
 	var DebugDraw = require("ChipmunkDebugDraw");
-	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:true, Circle:false, Vertex:false, Poly:false});
+	// DebugDraw options: 
+	// 
+	// BB = draw bounding box
+	// Circle = draw circle shape
+	// Vertex = draw polygon vertex
+	// Poly = draw polygon shape
+	// Constraint = draw constraint anchor
+	// ConstraintConnection = draw constraint connection between bodies
+	// 
+	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:false, Circle:false, Vertex:false, Poly:false, Constraint:true, ConstraintConnection:true});
 	
 	// chipmunk y-coordinates are reverse value of platino's, so use the following
 	// function to convert chipmunk y-coordinate values to platino y-coordinates and vice versa
@@ -187,6 +200,24 @@ var MainScene = function(window, game) {
 				pMoments.push(moment);
 				pBodies.push(body);
 				pShapes.push(shape);
+
+				var body_index = (i * j) + j;
+				if (body_index > 0 && body_index % 4 === 0) {
+					//var constraint1 = chipmunk.cpPinJointNew(pBodies[0], body, v(-20,-20), v(20,20));
+					var constraint1 = chipmunk.cpSlideJointNew(pBodies[0], body, v(-20,-20), v(20,20), 0, 240);
+					//var constraint1 = chipmunk.cpDampedSpringNew(pBodies[0], body, v(-20,-20), v(20,20), 0, 240, 0.5);
+					var constraint2 = chipmunk.cpGearJointNew(pBodies[0], body, 0, 2);
+					var constraint3 = chipmunk.cpSimpleMotorNew(pBodies[0], body, 3);
+
+					chipmunk.cpSpaceAddConstraint(space, constraint1);
+					chipmunk.cpSpaceAddConstraint(space, constraint2);
+					chipmunk.cpSpaceAddConstraint(space, constraint3);
+
+					// IMPORTANT: save constraint pointer to protect from gc
+					pConstraint1.push(constraint1);
+					pConstraint2.push(constraint2);
+					pConstraint3.push(constraint3);
+				}
 			}
 		}
 		

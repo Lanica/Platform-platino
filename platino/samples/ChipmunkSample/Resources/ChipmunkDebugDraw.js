@@ -79,9 +79,9 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
     };
 
     var drawDot = function(canvas, x, y) {
-        var w  = options.dotsizex4;
-        var ww = w / 2;
-        canvas.fillRect(canvas._local_center_x + x - ww, canvas._local_center_y + y - ww, w, w);
+        var w  = options.dotsize * 4;
+        var w2 = w / 2;
+        canvas.fillRect(canvas._local_center_x + x - w2, canvas._local_center_y + y - w2, w, w);
     };
 
     var cpBodyEachShapeDrawCallback = function(body, shape, data) {
@@ -98,7 +98,7 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
                 var vert  = chipmunk.cpPolyShapeGetVert(shape, i);
                 var point = {x:vert.x + canvas._local_center_x, y:canvas.height - (vert.y + canvas._local_center_y)};
                 if (options.Vertex) {
-                    canvas.drawCircle(point.x, point.y, options.dotsize);
+                    drawDot(canvas, vert.x, -vert.y);
                 }
                 if (options.Poly) {
                     if (i > 0) {
@@ -114,6 +114,34 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
         }
     };
 
+    var getJointFromConstraint = function(constraint) {
+        var joint = {anchr1:null, anchr2:null};
+
+        if (chipmunk.cpConstraintIsPinJoint(constraint)) {
+            joint  = chipmunk.cpConstraintGetPinJoint(constraint);
+        } else if (chipmunk.cpConstraintIsSlideJoint(constraint)) {
+            joint  = chipmunk.cpConstraintGetSlideJoint(constraint);
+        } else if (chipmunk.cpConstraintIsPivotJoint(constraint)) {
+            joint  = chipmunk.cpConstraintGetPivotJoint(constraint);
+        } else if (chipmunk.cpConstraintIsGrooveJoint(constraint)) {
+            joint  = chipmunk.cpConstraintGetGrooveJoint(constraint);
+        } else if (chipmunk.cpConstraintIsDampedSpring(constraint)) {
+            joint  = chipmunk.cpConstraintGetDampedSpring(constraint);
+        } else if (chipmunk.cpConstraintIsDampedRotarySpring(constraint)) {
+            joint  = chipmunk.cpConstraintGetDampedRotarySpring(constraint);
+        } else if (chipmunk.cpConstraintIsRotaryLimitJoint(constraint)) {
+            joint  = chipmunk.cpConstraintGetRotaryLimitJoint(constraint);
+        } else if (chipmunk.cpConstraintIsRatchetJoint(constraint)) {
+            joint  = chipmunk.cpConstraintGetRatchetJoint(constraint);
+        } else if (chipmunk.cpConstraintIsGearJoint(constraint)) {
+            joint  = chipmunk.cpConstraintGetGearJoint(constraint);
+        } else if (chipmunk.cpConstraintIsSimpleMotor(constraint)) {
+            joint  = chipmunk.cpConstraintGetSimpleMotor(constraint);
+        }
+
+        return joint;
+    };
+
     var cpBodyEachConstraintDrawCallback = function(body, constraint, data) {
         var ptr = body.getCPtr();
         var canvas = pConstraintDebugCanvas[ptr];
@@ -123,14 +151,11 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
 
         var pos   = chipmunk.cpBodyGetPos(body); pos.y = cpY(pos.y);
 
-        var anchr1 = null;
-        var anchr2 = null;
+        var joint  = getJointFromConstraint(constraint);
+        var anchr1 = joint.anchr1;
+        var anchr2 = joint.anchr2;
 
-        if (chipmunk.cpConstraintIsPinJoint(constraint)) {
-            joint  = chipmunk.cpConstraintGetPinJoint(constraint);
-            anchr1 = joint.anchr1;
-            anchr2 = joint.anchr2;
-        }
+        var dirty = false;
 
         if (!empty(canvas)) {
             var parent = pDebugCanvas[ptr];
@@ -141,37 +166,36 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
                 canvas.angle = parent.angle;
             }
 
-            if (canvas.shouldReload) {
-                if (anchr1 !== null && constraint.a.equals(body)) {
-                    drawDot(canvas, anchr1.x, -anchr1.y);
-                }
-                if (anchr2 !== null && constraint.b.equals(body)) {
-                    drawDot(canvas, anchr2.x, -anchr2.y);
-                }
-                canvas.shouldReload = false;
-                canvas.reload();
+            if (!empty(anchr1) && constraint.a.equals(body)) {
+                drawDot(canvas, anchr1.x, -anchr1.y);
+                dirty = true;
             }
+            if (!empty(anchr2) && constraint.b.equals(body)) {
+                drawDot(canvas, anchr2.x, -anchr2.y);
+                dirty = true;
+            }
+
+            if (dirty) canvas.reload();
         }
 
-        if (!empty(joint_canvas) && constraint.b.equals(body)) {
+        // Connect two bodies with line
+        if (!empty(joint_canvas) && constraint.b.equals(body) && !empty(anchr1) && !empty(anchr2)) {
             var posA = chipmunk.cpBodyGetPos(constraint.a);
             var posB = chipmunk.cpBodyGetPos(constraint.b);
 
             var c, s, rad;
-            if (anchr1 !== null) {
-                rad = chipmunk.cpBodyGetAngle(constraint.a);
-                c = Math.cos(rad);
-                s = Math.sin(rad);
-                posA.x = posA.x + (anchr1.x * c - anchr1.y * s);
-                posA.y = posA.y + (anchr1.x * s + anchr1.y * c);
-            }
-            if (anchr2 !== null) {
-                rad = chipmunk.cpBodyGetAngle(constraint.b);
-                c = Math.cos(rad);
-                s = Math.sin(rad);
-                posB.x = posB.x + (anchr2.x * c - anchr2.y * s);
-                posB.y = posB.y + (anchr2.x * s + anchr2.y * c);
-            }
+
+            rad = chipmunk.cpBodyGetAngle(constraint.a);
+            c = Math.cos(rad);
+            s = Math.sin(rad);
+            posA.x = posA.x + (anchr1.x * c - anchr1.y * s);
+            posA.y = posA.y + (anchr1.x * s + anchr1.y * c);
+
+            rad = chipmunk.cpBodyGetAngle(constraint.b);
+            c = Math.cos(rad);
+            s = Math.sin(rad);
+            posB.x = posB.x + (anchr2.x * c - anchr2.y * s);
+            posB.y = posB.y + (anchr2.x * s + anchr2.y * c);
 
             posA.y = cpY(posA.y);
             posB.y = cpY(posB.y);
@@ -298,7 +322,6 @@ var ChipmunkDebugDraw = function(platino, chipmunk, game, scene, options) {
             canvas = platino.createCanvasSprite({width:options.dotsize, height:options.dotsize});
             canvas.color(options.red, options.green, options.blue);
             canvas.z = options.z + pBodies.length;
-            canvas.shouldReload = true;
             pConstraintDebugCanvas[ptr] = canvas;
 
             var parent = pDebugCanvas[ptr];
