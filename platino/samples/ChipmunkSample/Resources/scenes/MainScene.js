@@ -48,12 +48,12 @@ var MainScene = function(window, game) {
 	var pConstraint3 = [];
 	var _accumulator = 0.0;
 
-	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:false, Circle:false, Vertex:false, Poly:false, Constraint:true, ConstraintConnection:true});
+	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:false, Circle:true, Vertex:false, Poly:true, Constraint:true, ConstraintConnection:true});
 	
 	// chipmunk y-coordinates are reverse value of platino's, so use the following
 	// function to convert chipmunk y-coordinate values to platino y-coordinates and vice versa
 	var cpY = function(y) {
-		return game.STAGE_START.y + game.TARGET_SCREEN.height - y;
+		return (game.screen.height - y);
 	};
 	
 	// convert chipmunk angle (radians) to platino angles (degrees)
