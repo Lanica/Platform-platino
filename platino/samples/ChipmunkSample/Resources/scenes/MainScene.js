@@ -6,12 +6,30 @@ require('co.lanica.chipmunk2d');
 var chipmunk = co_lanica_chipmunk2d;
 var v = chipmunk.cpv;
 
+var DebugDraw = require("co.lanica.chipmunk2d.debugdraw");
+// DebugDraw options: 
+// 
+// BB = draw bounding box
+// Circle = draw circle shape
+// Vertex = draw polygon vertex
+// Poly = draw polygon shape
+// Constraint = draw constraint anchor
+// ConstraintConnection = draw constraint connection between bodies
+//
+// Methods:
+// DebugDraw.addBody(body)
+// DebugDraw.removeBody(body)
+// DebugDraw.addBodies(arrayOfBodies)
+// DebugDraw.removeBodies(arrayOfBodies)
+//
+
+
 var MainScene = function(window, game) {
 	var scene = platino.createScene();
 	scene.color(0.85, 0.96, 0.96);
 	
 	// constants
-	var TIMESTEP = 1.0 / game.fps;
+	var TICKS_PER_SECOND = 180.0; // recommended between 60 and 240; higher = more accuracy (but higher CPU load)
 	var PYRAMID_ROW_COUNT = 6;
 
 	// forward declarations
@@ -24,6 +42,13 @@ var MainScene = function(window, game) {
 	var pMoments = null;
 	var pBodies = null;
 	var pShapes = null;
+
+	var pConstraint1 = [];
+	var pConstraint2 = [];
+	var pConstraint3 = [];
+	var _accumulator = 0.0;
+
+	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:false, Circle:false, Vertex:false, Poly:false, Constraint:true, ConstraintConnection:true});
 	
 	// chipmunk y-coordinates are reverse value of platino's, so use the following
 	// function to convert chipmunk y-coordinate values to platino y-coordinates and vice versa
@@ -184,6 +209,24 @@ var MainScene = function(window, game) {
 				pMoments.push(moment);
 				pBodies.push(body);
 				pShapes.push(shape);
+
+				var body_index = (i * j) + j;
+				if (body_index > 0 && body_index % 4 === 0) {
+					//var constraint1 = chipmunk.cpPinJointNew(pBodies[0], body, v(-20,-20), v(20,20));
+					var constraint1 = chipmunk.cpSlideJointNew(pBodies[0], body, v(-20,-20), v(20,20), 0, 240);
+					//var constraint1 = chipmunk.cpDampedSpringNew(pBodies[0], body, v(-20,-20), v(20,20), 0, 240, 0.5);
+					var constraint2 = chipmunk.cpGearJointNew(pBodies[0], body, 0, 2);
+					var constraint3 = chipmunk.cpSimpleMotorNew(pBodies[0], body, 3);
+
+					chipmunk.cpSpaceAddConstraint(space, constraint1);
+					chipmunk.cpSpaceAddConstraint(space, constraint2);
+					chipmunk.cpSpaceAddConstraint(space, constraint3);
+
+					// IMPORTANT: save constraint pointer to protect from gc
+					pConstraint1.push(constraint1);
+					pConstraint2.push(constraint2);
+					pConstraint3.push(constraint3);
+				}
 			}
 		}
 		
@@ -237,11 +280,29 @@ var MainScene = function(window, game) {
 				pSprites[i].angle = angle;
 			}
 		}
+
+		if (debugDraw !== null) {
+			debugDraw.update();
+		}
+
+	};
+
+	var stepPhysics = function(delta) {
+		var dt = delta/1000.0;
+        var fixed_dt = 1.0/TICKS_PER_SECOND;
+
+        // add the current dynamic timestep to the accumulator
+        _accumulator += dt;
+
+        while(_accumulator > fixed_dt) {
+        	chipmunk.cpSpaceStep(space, fixed_dt);
+        	_accumulator -= fixed_dt;
+        }
 	};
 	
 	// game loop (enterframe listener)
-	var update = function() {
-        chipmunk.cpSpaceStep(space, TIMESTEP);
+	var update = function(e) {
+        stepPhysics(e.delta);
 		syncSpritesWithPhysics();
 	};
 	
@@ -249,8 +310,8 @@ var MainScene = function(window, game) {
 		
 		// Create chipmunk space
 		space = chipmunk.cpSpaceNew();
-		data = new chipmunk.cpSpaceAddCollisionHandlerContainer();
-		chipmunk.cpSpaceAddCollisionHandler(space, 0, 0, begin, preSolve, postSolve, separate, data);
+		//data = new chipmunk.cpSpaceAddCollisionHandlerContainer();
+		//chipmunk.cpSpaceAddCollisionHandler(space, 0, 0, begin, preSolve, postSolve, separate, data);
 		chipmunk.cpSpaceSetGravity(space, v(0, -200));
 		chipmunk.cpSpaceSetSleepTimeThreshold(space, 0.5);
 		chipmunk.cpSpaceSetCollisionSlop(space, 0.5);
@@ -267,6 +328,10 @@ var MainScene = function(window, game) {
 		
 		createGroundAndWalls();
 		createSpritesMomentsBodiesAndShapes();
+
+		if (debugDraw !== null) {
+			debugDraw.addBodies(pBodies);
+		}
 		
 		// wait 3 seconds after the scene loads and start the game loop
 		setTimeout(function() {

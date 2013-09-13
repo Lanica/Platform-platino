@@ -10,7 +10,6 @@ The demo starts with 10 bouncing bunnies, with more bunnies being added on every
 " target="_blank"><img src="http://img.youtube.com/vi/ccUJ9ctfknk/0.jpg" 
 alt="BunnyMark Sample" width="420" height="315" border="0" /></a>
 
-
 ----------------------------------
 This Lanica sample code is licensed under the provisions also known as the MIT License, as shown:
 

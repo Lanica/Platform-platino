@@ -11,7 +11,7 @@
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>
-    <statusbar-hidden>false</statusbar-hidden>
+    <statusbar-hidden>true</statusbar-hidden>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
@@ -42,6 +42,7 @@
         <module platform="iphone">co.lanica.platino</module>
         <module platform="iphone">co.lanica.chipmunk2d</module>
         <module platform="android">co.lanica.chipmunk2d</module>
+        <module platform="commonjs">co.lanica.chipmunk2d.debugdraw</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>
