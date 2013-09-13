@@ -1,7 +1,7 @@
 #Welcome to Lanica™ 
 ###Game Development Platform
 
-![image](http://lanica.co/wp-content/uploads/2013/07/Lanica-Banner-blackonwhite.png)
+![image](http://lanica.co/wp-content/uploads/2013/09/Lanica-Banner-WhiteOnRed.jpg)
 
 The Lanica Game Development Platform allows Developers, Artists and Game Designers to create new and engaging mobile game experiences. Lanica’s state of the art technology is built from the ground up for mobile, and delivers all you need during the game development lifecycle. It includes: Platino™, our game engine SDK, Animo™, a set of designer and developer tools and Cosmo™, our cloud service infrastructure.
 
@@ -20,10 +20,13 @@ To help you understand some fundamental Lanica Platino APIs and coding practices
 #### [API Reference](http://docs.lanica.co/#!/api)
 Platino SDK APIs [link](http://docs.lanica.co/#!/api)
 
+#### [SDK Download](http://lanica.co/members/signup/)
+Create, play and deploy!
+
 ![image](http://lanica.co/wp-content/uploads/2013/07/AnimoGroupLogo.png)
 
 ### Animo™ Design and Developers Tools
-Designers and developers can now work together with Animo tools to rapidly build, prototype, iterate, test and deploy games cross-platform.  [Download](http://lanica.co/members/signup/)
+Designers and developers can now work together with Animo tools to rapidly build, prototype, iterate, test and deploy games cross-platform. [Download](http://lanica.co/members/signup/)
 
 ![image](http://lanica.co/wp-content/uploads/2013/07/CosmoGroupLogo.png)
 
