@@ -4,6 +4,8 @@ var window = Ti.UI.createWindow({backgroundColor:'black'});
 var platino = require('co.lanica.platino');
 var box2d = require('co.lanica.box2djs');
 
+//MAKE SURE TO CHANGE config.js to specify which physics engine you want to use.
+
 // box2d functions
 var b2settings = box2d.Common.b2Settings;
 var b2Vec2 = box2d.Common.Math.b2Vec2;

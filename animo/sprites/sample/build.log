@@ -1,0 +1,43 @@
+Logfile initialized
+[INFO] logfile = /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build.log
+[INFO] logfile = /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build.log
+[DEBUG] /Users/bogdanvladu/Library/Application Support/Titanium/mobilesdk/osx/3.1.1.GA/android/builder.py emulator AlloyExample /Users/bogdanvladu/android-sdk /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample co.lanica.platino.example 1 HVGA armeabi
+[DEBUG] /Users/bogdanvladu/Library/Application Support/Titanium/mobilesdk/osx/3.1.1.GA/android/builder.py simulator AlloyExample /Users/bogdanvladu/android-sdk /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample co.lanica.platino.example 1 HVGA
+[INFO] Launching Android emulator...one moment
+[DEBUG] From: /Users/bogdanvladu/android-sdk/tools/emulator
+[DEBUG] SDCard: /Users/bogdanvladu/.titanium/android2.sdcard
+[DEBUG] AVD ID: 1
+[DEBUG] AVD Skin: HVGA
+[DEBUG] AVD ABI: armeabi
+[DEBUG] SDK: /Users/bogdanvladu/android-sdk
+[INFO] Building AlloyExample for Android ... one moment
+[INFO] Titanium SDK version: 3.1.1 (06/15/13 16:09 f7592c1)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
+[DEBUG] /Users/bogdanvladu/android-sdk/tools/emulator -avd titanium_1_HVGA_armeabi -port 5560 -sdcard /Users/bogdanvladu/.titanium/titanium_1_HVGA_armeabi.sdcard -logcat *:d,*,TiAPI:V -no-boot-anim -partition-size 128
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 20 seconds)
+[DEBUG] waited 20.124586 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
+[DEBUG] co.lanica.platino.example installed? True
+[WARN] Fastdev enabled, but server isn't running, deploying normally
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/android/appicon.png => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/appicon.png
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/android/default.png => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/default.png
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/AffineTransform.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/AffineTransform.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/Bone.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/Bone.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/BoneSkin.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/BoneSkin.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/config.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/config.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/Director.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/Director.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/SkeletalAnimation.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/SkeletalAnimation.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/Skeleton.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/Skeleton.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/Sprite.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/Sprite.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/SpriteSheetAnimation.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/SpriteSheetAnimation.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo/Utils.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo/Utils.js
+[TRACE] COPYING CREATED FILE: /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/Resources/animo.js => /PersonalFiles/Projects/PrivateProjects/Lanica/Platform/animoChipmunk/sprites/sample/build/android/bin/assets/Resources/animo.js
+[INFO] Android Emulator has exited
