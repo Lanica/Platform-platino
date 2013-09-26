@@ -29,8 +29,6 @@ In-App-Purchase [Sample Code](./In-App-Purchase)
 The Platino Physics module, included with the Platino SDK, provides a set of APIs to add realistic physics to your games.
 Physics [Sample Code](./Physics)
 
-
-
 ## [Support](http:/lanica.co/support/) 
 
 Lanica offers several types of support for our developers: extensive API and product documentation, tutorials and samples, community-supported and moderated forums. Individual help with a rapid turnaround is available through our professional services, you can choose for a professional paid support subscription or, if you are a larger studio with specialized support needs, please contact our team.
