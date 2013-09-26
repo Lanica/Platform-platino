@@ -1,31 +1,27 @@
-###May 29, 2013: IAP update
+### Lanica Platino IAP™
+![image](http://lanica.co/wp-content/uploads/2013/07/smallPlatinoIAP.png)
 
-####Instructions:
+In-App-Purchasing (IAP) module provides a set of APIs  for purchasing  within your own cross platform game on iOS, Android and Amazon Kindle. Check the 
+In-App-Purchase [Sample Code](./In-App-Purchase)
 
-Unzip both [co.lanica.purchase.google](Google%20Play/co.lanica.purchase.google.zip) and [co.lanica.purchase.amazon](Amazon/co.lanica.purchase.amazon.zip), and place the unzipped modules into Library/Application Support/Titanium/modules/android or or your app's /modules/android folder.
+###Instructions:
 
-####Amazon
-1 - Look at the Amazon [example app](Amazon/FirstView.js).
+Application Support/Titanium module folder to avoid conflicts when placing the new modules.
 
-2 - Setup json products as shown here: https://developer.amazon.com/sdk/in-app-purchasing/documentation/testing-iap.html
+In-App-Purchasing (IAP) module provides a set of APIs for purchasing within your own cross platform game on iOS, Android, Amazon Kindle and more!
 
-3 - Download the amazonSDKTester.apk from amazon and Install it by typing the following command in Terminal:
-./android-sdk/platform-tools/install -r AmazonSDKTester.apk
+You can find the sample code for Apple, Amazon and Google IAP [here](https://github.com/Lanica/Platform/tree/master/platino/IAP).
 
-4 - Copy the json from step 2 to the sdcard using:
-./android-sdk/platform-tools/adb push amazon.sdktester.json /mnt/sdcard
+If you decide to update to the full module, be sure to remove the trial from ~/Library/Application Support/Titanium module folder to avoid conflicts when placing the new modules.
 
-5 - Run the app on the device itself, not the emulator.
+###Amazon
+You can find the Amazon [example app](Amazon/FirstView.js), for more more intructions check [http://docs.lanica.co/docs/#!/guide/iap_amazon](http://docs.lanica.co/docs/#!/guide/iap_amazon)
 
-####Google Play
-1 - Check out the Google Play [example app](Google%20Play/FirstView.js).
+###Google Play
+You can find the Google Play [example app](Google%20Play/FirstView.js) for more more intructions check [http://docs.lanica.co/docs/#!/guide/iap_google](http://docs.lanica.co/docs/#!/guide/iap_google)
 
-2 - Setup products in the Google Play Store (see http://developer.android.com/google/play/billing/billing_admin.html - Creating A Product List.)
 
-3 - Add your key from the Google Play Store to your app
+###Apple App Store (iOS)
 
-4 - Create a full signed APK and upload an unpublished build to the Google Play Store to test
-
-####Apple App Store (iOS)
-Coming soon
+You can find the Apple Store [example app](Apple/FirstView.js), for more more intructions check [http://docs.lanica.co/docs/#!/guide/iap_apple](http://docs.lanica.co/docs/#!/guide/iap_apple)
 
