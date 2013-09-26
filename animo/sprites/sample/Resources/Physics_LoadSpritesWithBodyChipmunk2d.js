@@ -30,6 +30,8 @@ game.color(0, 0, 0);
 var scene = platino.createScene();
 
 
+var TOUCH_SCALE = 1;
+    
 // constants
 var TIMESTEP = 1.0 / game.fps;
 var PYRAMID_ROW_COUNT = 8;
@@ -64,7 +66,7 @@ var createGroundAndWalls = function() {
 	chipmunk.cpShapeSetElasticity(leftWall, 1);
 	chipmunk.cpShapeSetFriction(leftWall, 1);
 	chipmunk.cpSpaceAddShape(space, leftWall);
-	
+	 
 	rightWall = chipmunk.cpSegmentShapeNew(space.staticBody, v(game.screen.width, cpY(0)), v(game.screen.width, 0), 0);
 	chipmunk.cpShapeSetElasticity(rightWall, 1);
 	chipmunk.cpShapeSetFriction(rightWall, 1);
@@ -143,10 +145,6 @@ var update = function() {
 game.addEventListener('onload', function(e) {
     // Your game screen size is set here if you did not specifiy game width and height using screen property.
     // Note: game.size.width and height may be changed due to the parent layout so check them here.
-    Ti.API.info("view size: " + game.size.width + "x" + game.size.height + "W" + game.screen.width + "H" + game.screen.height);
-    Ti.API.info("game screen size: " + game.screen.width + "x" + game.screen.height);
-
-    
     
     // Start the game
     game.start();
@@ -201,6 +199,10 @@ game.addEventListener('onload', function(e) {
 var currentSprIdx = 0;
 function createSpriteAtPosition(posX, posY)
 {
+    Ti.API.info("Should create sprite at position " + posX + " " + posY);
+    Ti.API.info("SCREEN SIZE IS " + game.screen.width + " " + game.screen.height);
+
+    
     var spriteNames=new Array("backpack","banana", "bananabunch", "canteen", "hat", "pineapple", "statue", "ball");
     var spriteNameToLoad = spriteNames[currentSprIdx];
         
@@ -231,10 +233,8 @@ function createSpriteAtPosition(posX, posY)
         }
         else if(game.screen.width == 1536 || game.screen.width == 2048) { //ipad 3, 4 (retina)
             suffix = "-ipadhd";    
-        }   		
-
-        Ti.API.info("should create sprite");
-
+        }
+        
         var mySprite = animo.createSpriteWithFile("graphics/RES_Physics/PhysicalSpritesObjects_Objects" + suffix + ".xml",
                                                   spriteNameToLoad);
                                                             
@@ -251,10 +251,9 @@ function createSpriteAtPosition(posX, posY)
 
 
 game.addEventListener('touchstart', function(e) {
-    Ti.API.info("Touch start was called");
-        
-    createSpriteAtPosition(e.x, e.y);
-
+     // We should calculate the view scale because game.size.width and height may be changed due to the parent layout.
+    TOUCH_SCALE = game.screen.width  / game.size.width;
+    createSpriteAtPosition(e.x*TOUCH_SCALE, e.y*TOUCH_SCALE);
 });
 
 
