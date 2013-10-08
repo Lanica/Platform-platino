@@ -14,6 +14,8 @@ var chipmunk2dmodule = null;
 var chipmunk = null;
 var box2d = null;
 
+var platino = require('co.lanica.platino');
+
 if (require("animo/config").useChipmunk2dModule) {
     chipmunk2dmodule = require('co.lanica.chipmunk2d');
     chipmunk = co_lanica_chipmunk2d;
