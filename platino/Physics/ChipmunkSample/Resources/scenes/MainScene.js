@@ -50,6 +50,7 @@ var MainScene = function(window, game) {
 
 	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:false, Circle:true, Vertex:false, Poly:true, Constraint:true, ConstraintConnection:true});
 	
+	//pragma-mark - HELP FUNCTIONS
 	// chipmunk y-coordinates are reverse value of platino's, so use the following
 	// function to convert chipmunk y-coordinate values to platino y-coordinates and vice versa
 	var cpY = function(y) {
@@ -94,6 +95,7 @@ var MainScene = function(window, game) {
 		}
 	};
 	
+	//pragma-mark - COLLISION FUNCTIONS
     // [begin] phase collision callback
 	var begin = function(arbiter, space) {		
 		var sprites;
@@ -138,6 +140,7 @@ var MainScene = function(window, game) {
 		}
     };
 	
+	//pragma-mark - CREATION FUNCTIONS
 	var createGroundAndWalls = function() {
 		// Create left and right walls
 		leftWall = chipmunk.cpSegmentShapeNew(space.staticBody, v(0, cpY(0)), v(0, 0), 0);
@@ -265,6 +268,7 @@ var MainScene = function(window, game) {
 		pShapes.push(shape);
 	};
 	
+	//pragma-mark - UPDATE FUNCTIONS
 	// Polls the position and angle of all physics bodies, and adjusts the
 	// properties of the corresponding sprite to match
 	var syncSpritesWithPhysics = function() {
@@ -306,6 +310,7 @@ var MainScene = function(window, game) {
 		syncSpritesWithPhysics();
 	};
 	
+	//pragma-mark - EVENTS FUNCTIONS
 	var onSceneActivated = function(e) {
 		
 		// Create chipmunk space
