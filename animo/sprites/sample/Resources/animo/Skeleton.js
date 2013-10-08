@@ -8,7 +8,7 @@
 var Bone = require('animo/Bone');
 var BoneSkin = require('animo/BoneSkin');
 require('animo/Utils');
-
+var platino = require('co.lanica.platino');
 var SkeletalAnimation = require('animo/SkeletalAnimation').SkeletalAnimation;
 
 function Skeleton() 
@@ -20,6 +20,7 @@ function Skeleton()
     this.batchNode = null;
     this.name = "";
     this.animation = null;//combined animations currently not supported
+    this.scene = null;
     
     this.transitionTime = null;//not nil only when transtioning to a new animation
     this.currentTranstionTime = 0.0;
@@ -61,8 +62,9 @@ Skeleton.prototype.createWithFile = function(skeletonFileName, scene)
     }
 
 
-    if(dict != null)
+    if(dict !== null)
     {
+        this.scene = scene;
         this.name = dict.name;
         this.loadBones(dict.root);
         
@@ -1064,7 +1066,7 @@ Skeleton.prototype.loadSprites = function(spritesInfo, spriteAtlastFileName)
 		}	
 	}
 	
-	scene.add(this.batchNode);
+	this.scene.add(this.batchNode);
     
 }
 
