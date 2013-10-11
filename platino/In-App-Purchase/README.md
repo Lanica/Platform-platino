@@ -25,3 +25,10 @@ You can find the Google Play [example app](Google%20Play/FirstView.js) for more 
 
 You can find the Apple Store [example app](Apple/FirstView.js), for more more intructions check [http://docs.lanica.co/docs/#!/guide/iap_apple](http://docs.lanica.co/docs/#!/guide/iap_apple)
 
+
+----------------------------------
+This Lanica sample code is licensed under the provisions also known as the MIT License, as shown:
+
+[http://lanica.co/company/legal/license-for-sample-code/](http://lanica.co/company/legal/license-for-sample-code/)
+
+Copyright © 2013 Lanica Inc. All Rights Reserved.
