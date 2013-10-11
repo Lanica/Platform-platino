@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.lanica.samples.box2d</id>
-    <name>PlatinoBox2DSample</name>
+    <id>co.lanica.platino.blankproject</id>
+    <name>Blank-Project</name>
     <version>1.0</version>
     <publisher>Lanica, Inc.</publisher>
     <url>http://lanica.co</url>
-    <description>Box2D sample app for Platino Game Engine by Lanica, Inc.</description>
+    <description>Blank Platino Project.</description>
     <copyright>2013 by Lanica, Inc.</copyright>
-    <icon>appicon.png</icon>
+    <icon>Icon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>
@@ -15,23 +15,20 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>2cad72db-8402-4ab6-908a-244edc5a62df</guid>
+    <guid>eb16ae26-1d04-45ed-b388-af95de20e434</guid>
     <property name="ti.ui.defaultunit" type="string">system</property>
     <iphone>
         <orientations device="iphone">
-            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
-            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+            <orientation>Ti.UI.PORTRAIT</orientation>
         </orientations>
         <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
             <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android">
-    <manifest>
-        <application android:debuggable="true" />
-    </manifest>
- 	</android>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
     <mobileweb>
         <precache/>
         <splash>
@@ -43,7 +40,6 @@
     <modules>
         <module platform="android">co.lanica.platino</module>
         <module platform="iphone">co.lanica.platino</module>
-        <module platform="commonjs">co.lanica.box2djs</module>
     </modules>
     <deployment-targets>
         <target device="tizen">false</target>
@@ -53,5 +49,5 @@
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
     </deployment-targets>
-    <sdk-version>3.1.1</sdk-version>
+    <sdk-version>3.1.3.GA</sdk-version>
 </ti:app>
