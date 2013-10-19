@@ -31,25 +31,31 @@ var MainScene = function(window, game) {
 	// constants
 	var TICKS_PER_SECOND = 180.0; // recommended between 60 and 240; higher = more accuracy (but higher CPU load)
 	var PYRAMID_ROW_COUNT = 6;
+	var FLUID_DENSITY = 0.00014;
+	var FLUID_DRAG = 2.0;
 
 	// forward declarations
+	var space = null;
 	var ground = null;
 	var leftWall = null;
 	var rightWall = null;
-	var space = null;
+	var waterSensor = null;
 	var data = null;
 	var pSprites = null;
 	var pMoments = null;
 	var pBodies = null;
 	var pShapes = null;
+	var waterCollisionContainer = null;
 
 	var pConstraint1 = [];
 	var pConstraint2 = [];
 	var pConstraint3 = [];
 	var _accumulator = 0.0;
 
-	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:false, Circle:true, Vertex:false, Poly:true, Constraint:true, ConstraintConnection:true});
-	debugDraw.active = false;
+	var obj1, obj2;
+
+	var debugDraw = new DebugDraw(platino, chipmunk, game, scene, {BB:true, Circle:true, Vertex:true, Poly:true, Constraint:false, ConstraintConnection:false});
+	debugDraw.active = true;
 	
 	// chipmunk y-coordinates are reverse value of platino's, so use the following
 	// function to convert chipmunk y-coordinate values to platino y-coordinates and vice versa
@@ -157,6 +163,120 @@ var MainScene = function(window, game) {
 		chipmunk.cpShapeSetFriction(ground, 1);
 		chipmunk.cpSpaceAddShape(space, ground);
 	};
+
+	var waterPreSolve = function(arbiter, space) {
+		var shapes, bodies, water, poly;
+		shapes = [];
+		
+		chipmunk.cpArbiterGetShapes(arbiter, shapes);
+		var water = shapes[0];
+		var poly = shapes[1];
+		
+		var body = poly.body
+		var level = water.bb.t;
+		var count = chipmunk.cpPolyShapeGetNumVerts(poly);
+
+		var clipped = [];
+		var j = count - 1;
+		for (var i = 0; i < count; i++) {
+			var vj = chipmunk.cpPolyShapeGetVert(poly, j);
+			var vi = chipmunk.cpPolyShapeGetVert(poly, i);
+			var a = chipmunk.cpBodyLocal2World(body, vj);
+			var b = chipmunk.cpBodyLocal2World(body, vi);
+
+			if (a.y < level) {
+				clipped.push(a);
+			}
+
+			var a_level = a.y - level;
+			var b_level = b.y - level;
+
+			if (a_level*b_level < 0.0) {
+				var t = Math.abs(a_level)/(Math.abs(a_level) + Math.abs(b_level));
+				var v1 = chipmunk.cpvlerp(a, b, t);
+				clipped.push(v1);
+			}
+			j=i;
+		}
+
+		var clippedArea = chipmunk.cpAreaForPoly(clipped.length, clipped);
+
+		var displacedMass = clippedArea * FLUID_DENSITY;
+		var centroid = chipmunk.cpCentroidForPoly(clipped.length, clipped);
+		var r = chipmunk.cpvsub(centroid, chipmunk.cpBodyGetPos(body));
+
+		var dt = chipmunk.cpSpaceGetCurrentTimeStep(space);
+		var g = space.gravity;
+
+		// Apply the buoyancy force as an impulse
+		chipmunk.cpBodyApplyImpulse(body, chipmunk.cpvmult(g, -displacedMass*dt), r);
+
+		// Apply linear damping for the fluid drag
+		var v_centroid = chipmunk.cpvadd(chipmunk.cpBodyGetVel(body), chipmunk.cpvmult(chipmunk.cpvperp(r), body.w));
+    	var k = 1;
+    	var damping = clippedArea * FLUID_DRAG * FLUID_DENSITY;
+    	var v_coef = Math.exp(-damping*dt*k);
+    	chipmunk.cpBodyApplyImpulse(body, chipmunk.cpvmult(chipmunk.cpvsub(chipmunk.cpvmult(v_centroid, v_coef), v_centroid), 1.0/k), r);
+
+    	// Apply angular damping for the fluid drag
+    	var w_damping = chipmunk.cpMomentForPoly(FLUID_DRAG * FLUID_DENSITY * clippedArea, clipped.length, clipped, chipmunk.cpvneg(body.p));
+    	body.w *= Math.exp(-w_damping*dt* (1/body.i));
+
+    	return true;
+    };
+
+	var createWater = function() {
+		// chipmunk.cpBBNew(left, bottom, right, top) -- in chipmunk coordinates
+		var bb = chipmunk.cpBBNew(0, 0, game.screen.width * 2, 200);
+		waterSensor = chipmunk.cpBoxShapeNew2(space.staticBody, bb);
+		chipmunk.cpShapeSetSensor(waterSensor, 1);
+		chipmunk.cpShapeSetCollisionType(waterSensor, 1);
+		chipmunk.cpSpaceAddShape(space, waterSensor);
+		pShapes.push(waterSensor);
+
+		waterCollisionContainer = new chipmunk.cpSpaceAddCollisionHandlerContainer();
+		chipmunk.cpSpaceAddCollisionHandler(space, 1, 0, null, waterPreSolve, null, null, waterCollisionContainer);
+
+		// two boxes to float in the water
+		var width = 200.0;
+		var height = 50.0;
+		var mass = 0.3*FLUID_DENSITY*width*height;
+		var moment = chipmunk.cpMomentForBox(mass, width, height);
+		pMoments.push(moment);
+
+		var body = chipmunk.cpBodyNew(mass, moment);
+		chipmunk.cpBodySetPos(body, v(600, 700)); // 140
+		chipmunk.cpBodySetVel(body, v(0, -100));
+		chipmunk.cpBodySetAngVel(body, 1);
+		chipmunk.cpSpaceAddBody(space, body);
+		debugDraw.addBody(body);
+		pBodies.push(body);
+		obj1 = body;
+
+		var shape = chipmunk.cpBoxShapeNew(body, width, height);
+		chipmunk.cpShapeSetFriction(shape, 0.8);
+		chipmunk.cpSpaceAddShape(space, shape);
+		pShapes.push(shape);
+
+		width = 40.0;
+		height = width*2;
+		mass = 0.4*FLUID_DENSITY*width*height;
+		var moment = chipmunk.cpMomentForBox(mass, width, height);
+		pMoments.push(moment);
+
+		var body = chipmunk.cpBodyNew(mass, moment);
+		chipmunk.cpBodySetPos(body, v(120, 700)); // 190
+		chipmunk.cpBodySetVel(body, v(0, -100));
+		chipmunk.cpBodySetAngVel(body, 1);
+		chipmunk.cpSpaceAddBody(space, body);
+		debugDraw.addBody(body);
+		pBodies.push(body);
+
+		var shape = chipmunk.cpBoxShapeNew(body, width, height);
+		chipmunk.cpShapeSetFriction(shape, 0.8);
+		chipmunk.cpSpaceAddShape(space, shape);
+		pShapes.push(shape);
+	};
 	
 	var createSpritesMomentsBodiesAndShapes = function() {
 		var i, j, sprite, width, height, mass, moment, body, shape, radius;
@@ -167,8 +287,10 @@ var MainScene = function(window, game) {
 		radius = width * 0.5 - 1;
 		
 		// create a pyramid of basketballs starting at slightly off-screen (top)
-		for (i = 0; i < PYRAMID_ROW_COUNT; i++) {
-			for (j = 0; j <= i; j++) {
+		//for (i = 0; i < PYRAMID_ROW_COUNT; i++) {
+		for (i = 0; i < 2; i++) {
+			//for (j = 0; j <= i; j++) {
+				j = i;
 				sprite = platino.createSprite({
 					tag: 'basketball',
 					image: 'graphics/basketball' + game.imageSuffix + '.png',
@@ -208,11 +330,12 @@ var MainScene = function(window, game) {
 				chipmunk.cpShapeSetFriction(shape, 0.1);
 				
 				// store references for sprite, moment, body, and shape
-				pSprites.push(sprite);
-				pMoments.push(moment);
-				pBodies.push(body);
-				pShapes.push(shape);
+				//pSprites.push(sprite);
+				//pMoments.push(moment);
+				//pBodies.push(body);
+				//pShapes.push(shape);
 
+				/*
 				var body_index = (i * j) + j;
 				if (body_index > 0 && body_index % 4 === 0) {
 					var constraint1 = chipmunk.cpSlideJointNew(pBodies[0], body, v(-20,-20), v(20,20), 0, 240);
@@ -228,7 +351,8 @@ var MainScene = function(window, game) {
 					pConstraint2.push(constraint2);
 					pConstraint3.push(constraint3);
 				}
-			}
+				*/
+			//}
 		}
 	};
 	
@@ -248,7 +372,7 @@ var MainScene = function(window, game) {
 			}
 		}
 
-		if ((debugDraw != null) && (debugDraw.active)) {
+		if ((debugDraw) && (debugDraw.active)) {
 			debugDraw.update();
 		}
 
@@ -273,9 +397,10 @@ var MainScene = function(window, game) {
 		syncSpritesWithPhysics();
 	};
 
-	// touch listener for the screen (turn debug draw on)
-	var onScreenTouch = function() {
-		debugDraw.active = true;
+	var onScreenTouchStart = function(_e) {
+		var e = game.locationInView(_e);
+
+		chipmunk.cpBodyApplyImpulse(obj1, v(0,500*obj1.m), v(0,0));
 	};
 	
 	var onSceneActivated = function(e) {
@@ -284,7 +409,8 @@ var MainScene = function(window, game) {
 		space = chipmunk.cpSpaceNew();
 		//data = new chipmunk.cpSpaceAddCollisionHandlerContainer();
 		//chipmunk.cpSpaceAddCollisionHandler(space, 0, 0, begin, preSolve, postSolve, separate, data);
-		chipmunk.cpSpaceSetGravity(space, v(0, -200));
+		chipmunk.cpSpaceSetIterations(space, 30);
+		chipmunk.cpSpaceSetGravity(space, v(0, -500));
 		chipmunk.cpSpaceSetSleepTimeThreshold(space, 0.5);
 		chipmunk.cpSpaceSetCollisionSlop(space, 0.5);
 		
@@ -297,33 +423,10 @@ var MainScene = function(window, game) {
 		pMoments = [];
 		pBodies = [];
 		pShapes = [];
-		
-		// add background image
-		scene.add(platino.createSprite({
-			image: 'graphics/bg.png',
-			width: 320,
-			height: 480,
-			x: 0,
-			y: 0
-		}));
-
-		// add message to let user know they can touch the screen to activate debug draw
-		var message = platino.createTextSprite({
-			text: 'Tap screen to activate debug draw.',
-			fontSize: 16,
-			x: 25,
-			y: 25
-		});
-		var messageSize = message.sizeWithText(message.text);
-		message.width = messageSize.width;
-		message.height = messageSize.height;
-		message.color(1.0, 1.0, 1.0);
-		message.hide();
-		scene.add(message);
-		
 
 		createGroundAndWalls();
-		createSpritesMomentsBodiesAndShapes();
+		createWater();
+		//createSpritesMomentsBodiesAndShapes();
 
 		if (debugDraw !== null) {
 			debugDraw.addBodies(pBodies);
@@ -332,15 +435,14 @@ var MainScene = function(window, game) {
 		// wait 3 seconds after the scene loads and start the game loop
 		setTimeout(function() {
 			game.addEventListener('enterframe', update);
-			game.addEventListener('touchstart', onScreenTouch);
-			message.show();
-		}, 3000);
+			game.addEventListener('touchstart', onScreenTouchStart);
+		}, 1000);
 	};
 
 	// scene 'deactivated' event listener function (scene exit-point)
 	var onSceneDeactivated = function(e) {
+		game.removeEventListener('touchstart', onScreenTouchStart);
 		game.removeEventListener('enterframe', update);
-		game.removeEventListener('touchstart', onScreenTouch);
 		scene.dispose();
 	};
 
