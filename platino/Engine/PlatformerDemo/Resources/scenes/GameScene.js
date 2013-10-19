@@ -375,7 +375,7 @@ var GameScene = function(window, game) {
 
 		bodies.player = chipmunk.cpBodyNew(mass, INFINITY); // set to INFINITY instead of moment instance to disable rotation
 		chipmunk.cpBodySetPos(bodies.player, v(555, cpY(0))); // 190
-		chipmunk.cpBodySetVel(bodies.player, v(0, -100));
+		//chipmunk.cpBodySetVel(bodies.player, v(0, -100));
 		chipmunk.cpSpaceAddBody(space, bodies.player);
 
 		shapes.player = chipmunk.cpBoxShapeNew(bodies.player, width, height);
@@ -401,8 +401,6 @@ var GameScene = function(window, game) {
 			y: cpY(0)
 		});
 		game.setupSpriteSize(sprites.player);
-		sprites.player.lastValidX = sprites.player.x;
-		sprites.player.lastValidY = sprites.player.y;
 		sprites.player.moveDirection = 1;
 		sprites.player.moveSpeed = PLAYER_MOVE_SPEED;
 		sprites.player.isWalking = false;
@@ -474,15 +472,13 @@ var GameScene = function(window, game) {
 				y: game.STAGE_START.y - (height * 2)
 			});
 			game.setupSpriteSize(sprites[boxName]);
-			sprites[boxName].lastValidX = sprites[boxName].x;
-			sprites[boxName].lastValidY = sprites[boxName].y;
 			scene.add(sprites[boxName]);
 
 			// create body and shape for box
 			var moment = chipmunk.cpMomentForBox(mass, width, height);
 			bodies[boxName] = chipmunk.cpBodyNew(mass, moment);
 			chipmunk.cpBodySetPos(bodies[boxName], v(sprites[boxName].x, cpY(sprites[boxName].y)));
-			chipmunk.cpBodySetVel(bodies[boxName], v(0, -100));
+			//chipmunk.cpBodySetVel(bodies[boxName], v(0, -100));
 			chipmunk.cpBodySetAngVel(bodies[boxName], 1);
 			chipmunk.cpSpaceAddBody(space, bodies[boxName]);
 			debugDraw.addBody(bodies[boxName]);
@@ -523,19 +519,8 @@ var GameScene = function(window, game) {
 					pos = chipmunk.cpBodyGetPos(bodies[key]);
 					angle = cpAngle(chipmunk.cpBodyGetAngle(bodies[key]));
 
-					if (pos.x !== NaN) {
-						sprites[key].lastValidX = pos.x;
-						sprites[key].x = pos.x - (sprites[key].width * 0.5);
-					} else {
-						sprites[key].x = sprites[key].lastValidX;
-					}
-
-					if (pos.y !== NaN) {
-						sprites[key].lastValidY = pos.y;
-						sprites[key].y = cpY(pos.y) - (sprites[key].height * 0.5);
-					} else {
-						sprites[key].y = sprites[key].lastValidY;
-					}
+					sprites[key].x = pos.x - (sprites[key].width * 0.5);
+					sprites[key].y = cpY(pos.y) - (sprites[key].height * 0.5);
 					sprites[key].angle = angle;
 				}
 			}
