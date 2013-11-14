@@ -10,10 +10,10 @@ var RADTODEG = 57.295779513082320876;
 
 //Application Window Component Constructor
 function ApplicationWindow() {
-	//create component instance
-	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff'
-	});
+    //create component instance
+    var self = Ti.UI.createWindow({
+        backgroundColor:'#ffffff'
+    });
 
     game  = platino.createGameView();
     var scene = platino.createScene();
@@ -67,7 +67,7 @@ function ApplicationWindow() {
     });
 
     self.add(game);
-	return self;
+    return self;
 }
 
 var step = 1.0 / 30.0;
