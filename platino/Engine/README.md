@@ -16,13 +16,13 @@ APIs covered:
 * [platino.createTransform()](http://docs.lanica.co/docs/#!/api/Platino-method-createTransform)
 * [game.moveCamera()](http://docs.lanica.co/docs/#!/api/GameView-method-moveCamera)
 
-[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/Camera)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/Camera)
 
 ## Multiplayer Tank Sample Game
 
 Multi-player tank game demo. Annihilate your remote opponent in this 2D top-down action game. As seen at CodeStrong 2012.
 
-[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/CodestrongTank)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/CodestrongTank)
 
 ## Events
 
@@ -35,31 +35,31 @@ APIs covered:
 * scene.addEventListener() (activation/deactivation of scenes)
 * [platino.createSprite()](http://docs.lanica.co/docs/#!/api/Platino-method-createSprite)
 
-[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/Events)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/Events)
 
 ## Isometric Tile Map
 
 Demonstrates usage of Platino APIs to create an isometric tilemap.
 
-[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/IsometricTileMapTest)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/IsometricTileMapTest)
 
 ## Physics Chipmunk 2D Sample
 
 Bouncing soccer balls and tumbling crates with our physics module. Covers basic Chipmunk2D module usage (physics demo).
 
-[Get Started](https://github.com/Lanica/Platform/tree/master/platino/samples/ChipmunkSample)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/ChipmunkSample)
 
 ## Platino Samples
 
 A collection of different modules that demonstrates the usage of almost every Platino API.
 
-[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/PlatinoSamples)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/PlatinoSamples)
 
 ## Shooter Game Sample
 
 Fun shooter action game demo. Learn how to create {@link sprite sprites}, animate objects with {@link transform transforms}, and apply cool particle effects to make your game scenes come alive. As seen at CodeStrong 2012.
 
-[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/PlatinoShooter)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/PlatinoShooter)
 
 ## Scenes
 
@@ -72,7 +72,7 @@ APIs covered:
 * scene.addEventListener() (activation/deactivation of scenes)
 * [scene.add()](http://docs.lanica.co/docs/#!/api/Scene-method-add) (adding sprites to scenes)
 
-[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/Scenes)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/Camera)
 
 ## Transforms
 
@@ -91,7 +91,7 @@ A fun 2D sprite benchmark sample app, based on [Iain Lobb's original](http://blo
 
 The demo starts with 10 bouncing bunnies, with more bunnies being added on every screen tap. Monitor the app's frames-per-second (FPS) in realtime as bunnies invade your device!
 
-[Get Started](https://github.com/Lanica/platform/tree/master/platino/samples/BunnyMark)
+[Get Started](https://github.com/Lanica/Platform/tree/master/platino/Engine/BunnyMark)
 
 
 ### [API Reference](http://docs.lanica.co/#!/api)
