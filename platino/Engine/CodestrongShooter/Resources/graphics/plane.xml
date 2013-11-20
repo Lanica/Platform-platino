@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:cac76e5693c965cd5c7ee00e71e36af5$ -->
+<TextureAtlas imagePath="graphics/plane.png">
+    <SubTexture name="focke" x="2" y="203" width="183" height="157"/>
+    <SubTexture name="messerschmitt" x="277" y="189" width="223" height="184"/>
+    <SubTexture name="p38" x="2" y="2" width="273" height="199"/>
+    <SubTexture name="p51" x="2" y="362" width="181" height="157"/>
+    <SubTexture name="zero" x="277" y="2" width="226" height="185"/>
+</TextureAtlas>

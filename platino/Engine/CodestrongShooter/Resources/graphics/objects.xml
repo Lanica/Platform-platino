@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:82ba40ed6b35f6f5cfef881c4623ab5d$ -->
+<TextureAtlas imagePath="graphics/objects.png">
+    <SubTexture name="halftrack" x="294" y="372" width="133" height="157"/>
+    <SubTexture name="oilBarrels" x="928" y="0" width="58" height="53"/>
+    <SubTexture name="quonsetHut" x="0" y="0" width="600" height="372"/>
+    <SubTexture name="stoneLarge" x="600" y="0" width="328" height="510"/>
+    <SubTexture name="tank" x="178" y="802" width="255" height="188"/>
+    <SubTexture name="tree1" x="0" y="510" width="294" height="292"/>
+    <SubTexture name="tree2" x="433" y="824" width="158" height="164"/>
+    <SubTexture name="tree3" x="433" y="372" width="163" height="278"/>
+    <SubTexture name="tree4" x="0" y="802" width="178" height="209"/>
+    <SubTexture name="tree5" x="433" y="650" width="179" height="174"/>
+</TextureAtlas>
