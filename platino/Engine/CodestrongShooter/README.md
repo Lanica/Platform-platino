@@ -1,28 +1,6 @@
-# Lanica Alloy Shooter Game Example
-
-## How to run
-
-```
-$ make clean && make run platform=ipad
-$ make clean && make run platform=phone
-$ make clean && make run platform=android
-```
-
-## How to deploy
-
-```
-$ make clean && make deploy platform=ipad cert=0
-$ make clean && make deploy platform=phone cert=0
-$ make clean && make deploy platform=android
-```
-
 ----------------------------------
-Stuff our legal folk make us say:
+This Lanica sample code is licensed under the provisions also known as the MIT License, as shown:
 
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
+[http://lanica.co/company/legal/license-for-sample-code/](http://lanica.co/company/legal/license-for-sample-code/)
 
-Titanium is Copyright (c) 2009-2012 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
+Copyright © 2013 Lanica Inc. All Rights Reserved.
