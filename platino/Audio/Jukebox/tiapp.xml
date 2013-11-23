@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>co.lanica.sample.audio.simpleaudioplayer</id>
-    <name>SimpleAudioPlayer</name>
+    <id>co.lanica.sample.audio.jukebox</id>
+    <name>Jukebox</name>
     <version>1.0</version>
     <publisher>Lanica, Inc</publisher>
     <url>http://lanica.co/</url>
-    <description>Simple Audio Player by ALmixer</description>
+    <description>Simple Jukebox by ALmixer</description>
     <copyright>2013 by Lanica, Inc.</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
@@ -38,6 +38,8 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
+        <module platform="android">co.lanica.platino</module>
+        <module platform="iphone">co.lanica.platino</module>
         <module platform="android">co.lanica.almixer</module>
         <module platform="iphone">co.lanica.almixer</module>
     </modules>

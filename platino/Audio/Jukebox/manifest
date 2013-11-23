@@ -1,9 +1,9 @@
-#appname:SimpleAudioPlayer
-#appid:co.lanica.sample.audio.simpleaudioplayer
+#appname:Jukebox
+#appid:co.lanica.sample.audio.jukebox
 #type:mobile
 #guid:b0b0876d-6316-4436-8b30-0f549b893ad7
 #version:1.0
 #publisher:Lanica, Inc
 #url:http://lanica.co/
 #image:appicon.png
-#desc:Simple Audio Player by ALmixer
+#desc:Simple Jukebox by ALmixer

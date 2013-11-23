@@ -1,5 +1,7 @@
-var almixerproxy = require('co.lanica.almixer');
-var ALmixer      = co_lanica_almixer;
+var platino = require('co.lanica.platino');
+// Use platino.require(), not regular require(), to load ALmixer. (platino.require has extra magic)
+var ALmixer = platino.require('co.lanica.almixer');
+
 var ALmixer_Initialized = false;
 
 var SUPPORTED_AUDIO_FORMAT = {
@@ -31,7 +33,7 @@ function ApplicationWindow() {
 		
 	//construct UI
 	var view = Ti.UI.createView({layout:'vertical', top:20, width:Ti.UI.FILL, height:Ti.UI.FILL});
-	var headerLabel = Ti.UI.createLabel({text:'Audio Player', color:'#000'});
+	var headerLabel = Ti.UI.createLabel({text:'Jukebox', color:'#000'});
 	var tableRows = [];
 
 	var files = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory).getDirectoryListing();
@@ -44,20 +46,33 @@ function ApplicationWindow() {
 	var tableView = Ti.UI.createTableView({data:tableRows});
 
 	tableView.addEventListener('click', function(e) {
+			Ti.API.info("click");
+		
 		if (currentPlayingAudioData !== null) {
+			Ti.API.info("HaltChannel");
+			
 			ALmixer.HaltChannel(0);
 			currentPlayingAudioData = null;
 		}
+		var filename = e.source.title.toString();
+		Ti.API.info("Loading file: '" + filename + "' ");
+		currentPlayingAudioData = ALmixer.LoadStream(filename);
+//		currentPlayingAudioData = ALmixer.LoadAll(filename);
+//		ALmixer.RewindData(currentPlayingAudioData);
+		/*
 		if (Ti.Platform.osname == 'android') {
-			currentPlayingAudioData = ALmixer.LoadAll("Resources/" + e.source.title, 0);
+//			currentPlayingAudioData = ALmixer.LoadStream("Resources/" + e.source.title, 0, 0, 0, 0, 0);
+			//currentPlayingAudioData = ALmixer.LoadStream(e.source.title, 0, 0, 0, 0, 0);
+			currentPlayingAudioData = ALmixer.LoadStream(e.source.title);
 			Ti.API.info("Loading file: '" + e.source.title + "' " + ALmixer.GetError());
 		} else {
 			var resource = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, e.source.title);
-			currentPlayingAudioData = ALmixer.LoadAll(resource.resolve(), 0);
+			currentPlayingAudioData = ALmixer.LoadStream(resource.resolve(), 0, 0, 0, 0, 0);
 			Ti.API.info("Loading file: '" + resource.resolve() + "' " + ALmixer.GetError());
 		}
+		*/
 		if (currentPlayingAudioData !== null) {
-			var res = ALmixer.PlayChannelTimed(0, currentPlayingAudioData, 0, -1);
+			var res = ALmixer.PlayChannel(0, currentPlayingAudioData);
 			if (res < 0) {
 				alert("ALmixer.PlayChannel failed for " + e.source.title + " [" + res + "]\n" + ALmixer.GetError());
 			}
@@ -78,6 +93,14 @@ function ApplicationWindow() {
 			currentPlayingAudioData = null;
 		}
 		ALmixer.Quit();
+    });
+    self.addEventListener('blur', function(){
+		ALmixer.BeginInterruption();
+
+    });
+
+	self.addEventListener('focus', function(){
+		ALmixer.EndInterruption();
     });
 
 	if (!ALmixer_Initialized && !ALmixer.Init(0, 0, 0)) {
