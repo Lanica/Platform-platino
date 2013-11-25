@@ -57,20 +57,7 @@ function ApplicationWindow() {
 		var filename = e.source.title.toString();
 		Ti.API.info("Loading file: '" + filename + "' ");
 		currentPlayingAudioData = ALmixer.LoadStream(filename);
-//		currentPlayingAudioData = ALmixer.LoadAll(filename);
-//		ALmixer.RewindData(currentPlayingAudioData);
-		/*
-		if (Ti.Platform.osname == 'android') {
-//			currentPlayingAudioData = ALmixer.LoadStream("Resources/" + e.source.title, 0, 0, 0, 0, 0);
-			//currentPlayingAudioData = ALmixer.LoadStream(e.source.title, 0, 0, 0, 0, 0);
-			currentPlayingAudioData = ALmixer.LoadStream(e.source.title);
-			Ti.API.info("Loading file: '" + e.source.title + "' " + ALmixer.GetError());
-		} else {
-			var resource = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, e.source.title);
-			currentPlayingAudioData = ALmixer.LoadStream(resource.resolve(), 0, 0, 0, 0, 0);
-			Ti.API.info("Loading file: '" + resource.resolve() + "' " + ALmixer.GetError());
-		}
-		*/
+		/* if (Ti.Platform.osname == 'android') {*/
 		if (currentPlayingAudioData !== null) {
 			var res = ALmixer.PlayChannel(0, currentPlayingAudioData);
 			if (res < 0) {
