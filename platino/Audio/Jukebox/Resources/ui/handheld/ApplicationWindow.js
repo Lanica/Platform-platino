@@ -57,7 +57,6 @@ function ApplicationWindow() {
 		var filename = e.source.title.toString();
 		Ti.API.info("Loading file: '" + filename + "' ");
 		currentPlayingAudioData = ALmixer.LoadStream(filename);
-		/* if (Ti.Platform.osname == 'android') {*/
 		if (currentPlayingAudioData !== null) {
 			var res = ALmixer.PlayChannel(0, currentPlayingAudioData);
 			if (res < 0) {
