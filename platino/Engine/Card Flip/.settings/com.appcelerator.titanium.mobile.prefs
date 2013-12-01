@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=FieldTest
+iosLaunchConfigurationAttributes/appid=com.peachpellen.platino
+iosLaunchConfigurationAttributes/certificate=Gemma Tyndall (W288D7K4SA)
+iosLaunchConfigurationAttributes/distribute_path=/Users/peachpellen/Desktop
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/output_format=ipa
+iosLaunchConfigurationAttributes/sdk_version=7.0
+iosLaunchConfigurationAttributes/uuid=C4D3A46A-906A-4899-8DAE-8D8DC0B0E1C1
