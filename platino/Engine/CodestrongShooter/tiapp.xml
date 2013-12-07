@@ -39,16 +39,6 @@
         <tool-api-level>19</tool-api-level>
         <manifest>
             <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
-			<application>
-				<activity
-					android:name="org.appcelerator.titanium.TiActivity"
-					android:configChanges="keyboardHidden"
-					android:screenOrientation="landscape"
-				/>
-				<activity android:name="ti.modules.titanium.ui.TiTabActivity"
-					android:configChanges="keyboardHidden"
-				/>
-			</application>
 		</manifest>
     </android>
     <mobileweb>
