@@ -60,10 +60,8 @@ function MainScene(window, game) {
 
     var propellerSound = ALmixer.LoadAll('sounds/propeller-plane-flying-steady-loop.wav');
     var machinegunSound = ALmixer.LoadAll('sounds/machine-gun-loop2.wav');
-    var explosionSoundShared = ALmixer.LoadAll('sounds/explode-3.wav');
+    var explosionSound = ALmixer.LoadAll('sounds/explode-3.wav');
 	
-    var explosionSound = [];
-
     /*
      * Move our ship at the center of the touch-event position
      * Move the background a bit, that causes parallized effect
@@ -344,9 +342,6 @@ function MainScene(window, game) {
             }
             explosions[i].started = false;
 
-			// We don't want to load new copies of the same sound into memory, so we just share the reference.
-            explosionSound[i] = explosionSoundShared;
-
             bulletMover[i] = platino.createTransform();
             bulletMover[i].index = i;
         
@@ -444,7 +439,7 @@ function MainScene(window, game) {
                             explosions[j].animate(0, 16, 66, 0);
                         }
 
-						ALmixer.PlayChannel(explosionSound[j]);
+						ALmixer.PlayChannel(explosionSound);
 
                         enemies[i].hide();
                         enemies[i].clearTransforms();
