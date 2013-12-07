@@ -4,6 +4,7 @@
  * Touch screen to move our ship. The bullets are fired automatically.
  */
 var platino = require('co.lanica.platino');
+var ALmixer = platino.require('co.lanica.almixer');
 
 function MainScene(window, game) {
 
@@ -57,9 +58,10 @@ function MainScene(window, game) {
 
     var updateTimerID = 0;
 
-    var propellerSound = Ti.Media.createSound({url:'sounds/propeller-plane-flying-steady-loop.wav'});
-    propellerSound.looping = true;
-    var machinegunSound = Ti.Media.createSound({url:'sounds/machine-gun-loop2.wav'});
+    var propellerSound = ALmixer.LoadAll('sounds/propeller-plane-flying-steady-loop.wav');
+    var machinegunSound = ALmixer.LoadAll('sounds/machine-gun-loop2.wav');
+    var explosionSoundShared = ALmixer.LoadAll('sounds/explode-3.wav');
+	
     var explosionSound = [];
 
     /*
@@ -153,7 +155,8 @@ function MainScene(window, game) {
 
         game.addEventListener('touchstart', touchstart);
 
-        propellerSound.play();
+		// loop infinitely
+		ALmixer.PlayChannel(propellerSound, -1);
 
         game.startCurrentScene();
     });
@@ -341,7 +344,8 @@ function MainScene(window, game) {
             }
             explosions[i].started = false;
 
-            explosionSound[i] = Ti.Media.createSound({url:'sounds/explode-3.wav'});
+			// We don't want to load new copies of the same sound into memory, so we just share the reference.
+            explosionSound[i] = explosionSoundShared;
 
             bulletMover[i] = platino.createTransform();
             bulletMover[i].index = i;
@@ -440,8 +444,7 @@ function MainScene(window, game) {
                             explosions[j].animate(0, 16, 66, 0);
                         }
 
-                        explosionSound[j].stop();
-                        explosionSound[j].play();
+						ALmixer.PlayChannel(explosionSound[j]);
 
                         enemies[i].hide();
                         enemies[i].clearTransforms();
@@ -488,6 +491,12 @@ function MainScene(window, game) {
      * Fire next bullet
      */
     function fireBullet() {
+		// Since the gun is always firing, it's easier to loop the sampling infinitely than try to play for each bullet.
+		if(lastTimeBulletFired === 0)
+		{
+			ALmixer.PlayChannel(machinegunSound, -1);
+		}
+		
         // Wait 200 msec for firing next bullet
         if (+new Date() - lastTimeBulletFired > 200 && bullets[bulletIndex].ready) {
             bullets[bulletIndex].clearTransform(bulletMover[bulletIndex]);
@@ -509,7 +518,6 @@ function MainScene(window, game) {
         
             lastTimeBulletFired = +new Date();
 
-            machinegunSound.play();
         }
     }
 

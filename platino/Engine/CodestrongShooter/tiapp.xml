@@ -35,7 +35,22 @@
             <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+   <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <tool-api-level>19</tool-api-level>
+        <manifest>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+			<application>
+				<activity
+					android:name="org.appcelerator.titanium.TiActivity"
+					android:configChanges="keyboardHidden"
+					android:screenOrientation="landscape"
+				/>
+				<activity android:name="ti.modules.titanium.ui.TiTabActivity"
+					android:configChanges="keyboardHidden"
+				/>
+			</application>
+		</manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
@@ -47,5 +62,7 @@
     <modules>
         <module platform="android">co.lanica.platino</module>
         <module platform="iphone">co.lanica.platino</module>
+		<module platform="android">co.lanica.almixer</module>
+        <module platform="iphone">co.lanica.almixer</module>
     </modules>
 </ti:app>
