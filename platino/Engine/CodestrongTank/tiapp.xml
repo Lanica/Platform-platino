@@ -46,6 +46,8 @@
     <modules>
         <module platform="android">co.lanica.platino</module>
         <module platform="iphone">co.lanica.platino</module>
-    </modules>
+        <module platform="android">co.lanica.almixer</module>
+		<module platform="iphone">co.lanica.almixer</module>
+	</modules>
     <sdk-version>3.1.3.GA</sdk-version>
 </ti:app>

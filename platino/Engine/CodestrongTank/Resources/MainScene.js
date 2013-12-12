@@ -2,7 +2,9 @@
  * Tank game example
  */
 var platino = require('co.lanica.platino');
+var ALmixer = platino.require('co.lanica.almixer');
 
+ALmixer.Init(0,0,0);
 function MainScene(window, game) {
 
     // Create scene
@@ -17,10 +19,10 @@ function MainScene(window, game) {
     var tankRect    = [];
     var bulletRect    = [];
 
-    var tankMovingSound = [];
-    var tankBulletSound = [];
-    var tankExplosionSound = [];
-    var tankRotateSound = [];
+    var tankMovingSound = ALmixer.LoadAll("sounds/tankloop-5.wav");
+    var tankBulletSound = ALmixer.LoadAll("sounds/fire-tank1.wav");
+    var tankExplosionSound = ALmixer.LoadAll("sounds/explosion-3.wav");
+    var tankRotateSound = ALmixer.LoadAll("sounds/rotate-tank3.wav");
 
     var tankMovingBullet  = [];
     var tankMovingBulletTransform  = [];
@@ -36,7 +38,7 @@ function MainScene(window, game) {
     var pubnub = null;
     var canUsePubNub = true;
 
-    var useMultiplayer = true;
+    var useMultiplayer = false;
 
     var myUUID = null;
     var myTankIndex = 0;
@@ -61,6 +63,12 @@ function MainScene(window, game) {
     var cloud = [];
     var cloudTransform = [];
     var rock = [];
+
+	// Each tank needs to play a (looping) unique "moving" sound, that way when the specific tank stops moving, we know which sound to stop playing.
+	// So play the sound, and save the channel in an array (keyed by which tank it belongs to).
+	var	tankMovingCurrentPlayingChannel = [];
+	// Similar case for the rotating sound.
+	var tankRotatingCurrentPlayingChannel = [];
 
     var canFire = true;
 
@@ -162,7 +170,14 @@ function MainScene(window, game) {
         var distance = Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
         tankTransform[index].duration = distance / speed * 1000;
 
-        tankMovingSound[index].play();
+		// Each tank needs to play a (looping) unique "moving" sound, that way when the specific tank stops moving, we know which sound to stop playing.
+		// So play the sound, and save the channel in an array (keyed by which tank it belongs to).
+		// If the tank is already playing a sound, we want to skip playing another sound.
+		if(tankMovingCurrentPlayingChannel[index] === -1)
+		{
+			var saved_channel = ALmixer.PlayChannel(tankMovingSound, -1);
+			tankMovingCurrentPlayingChannel[index] = saved_channel;
+		}
 
         tank[index].transform(tankTransform[index]);
     }
@@ -268,10 +283,21 @@ function MainScene(window, game) {
             tank[index].animate(frames, ANIMATION_INTERVAL, 0, 0);
             tankTurret[index].animate(frames, ANIMATION_INTERVAL, 0, 0);
 
-            if (frames.length > 5) {
-                tankRotateSound[index].stop();
-                tankRotateSound[index].play();
-            }
+			// If the tank was already playing a turning sound, let's halt that one first.
+			// The abrupt sound restart will give clear audio feedback that the player changed their turn action and the game responded.
+			if(tankRotatingCurrentPlayingChannel[index] > -1)
+			{
+				ALmixer.HaltChannel(tankRotatingCurrentPlayingChannel[index]);
+			}
+			// Since we know how long the turning animation is, we can use PlayChannelTimed to automatically stop the audio at the right time, especially if the turning time is shorter than the sample.
+			// If the animation interval is longer than the audio file, it will stop playing before that unless we loop the audio.
+			// But this audio file we're using doesn't sound very good looping, so let's not do that.
+			var total_animation_time_in_msec = frames.length * ANIMATION_INTERVAL;
+			tankRotatingCurrentPlayingChannel[index] = ALmixer.PlayChannelTimed(tankRotateSound, 0, total_animation_time_in_msec, function(sound_finished_event) {
+					// Now that we know the sound finished via the callback, we should clear our variable indicating that the sound was playing.
+					tankRotatingCurrentPlayingChannel[index] = -1;
+				}
+			);
         }
         //tank[index].selectFrame(zeroPad(to_frame, 4));
 
@@ -313,7 +339,7 @@ function MainScene(window, game) {
     // Fire bullet
     function fireBullet(param, index) {
 
-        tankBulletSound[index].play();
+		ALmixer.PlayChannel(tankBulletSound);
 
         var speed = 400;
 
@@ -341,8 +367,7 @@ function MainScene(window, game) {
     }
 
     function explode(toX, toY, index) {
-        tankExplosionSound[index].stop();
-        tankExplosionSound[index].play();
+		ALmixer.PlayChannel(tankExplosionSound);
 
         if (!useParticle) {
             bulletExplosion[index].x = toX - (bulletExplosion[index].width  * 0.5);
@@ -362,6 +387,18 @@ function MainScene(window, game) {
             }
         }
     }
+
+	var stopTankMovingAudioLoop = function (index) {
+		// If the tank was playing a moving sound, we want to stop that specific sound now.
+		var playing_channel = tankMovingCurrentPlayingChannel[index]
+		// There is the possibility that so many sounds were playing at the same time (i.e. more than 32),
+		// that PlayChannel refused to play and returned -1. Don't do anything in the -1 case.
+		if(playing_channel > -1) {
+			ALmixer.HaltChannel(playing_channel);
+			// reset the value to -1 to represent no sound is playing
+			tankMovingCurrentPlayingChannel[index] = -1;
+		}
+	}
 
     var aim = function(_e) {
         var e = locationInView(_e);
@@ -504,6 +541,9 @@ function MainScene(window, game) {
                         tankTurret[index].selectFrame(zeroPad(message.data.frame, 4));
                         tank[index].clearTransform(tankTransform[index]);
                         movetank({x:message.data.x, y:message.data.y}, index);
+						// Since we're clearing the tank stopped moving transform and we're stopping the tank, we need to cancel its moving audio sound.
+						// This is tricky, but we need to stop the audio after movetank(), otherwise movetank will start playing audio again.
+						stopTankMovingAudioLoop(index);
                         fire(index, message.data);
                     }
                     send_position();
@@ -561,10 +601,11 @@ function MainScene(window, game) {
         cloud[index].transform(cloudTransform[index]);
     };
 
+
     var tankTransformCompleted = function(e) {
         var index = e.source.index;
 
-        tankMovingSound[index].stop();
+		stopTankMovingAudioLoop(index);
     };
 
     self.addEventListener('activated', function(e) {
@@ -583,6 +624,9 @@ function MainScene(window, game) {
         tankTurretTransform = [];
 
         rock = [];
+		
+		tankMovingCurrentPlayingChannel = [];
+		tankRotatingCurrentPlayingChannel = [];
 
         // Create on-screen controller
         buttonA = platino.createSprite({image:'graphics/A.png'});
@@ -690,10 +734,12 @@ function MainScene(window, game) {
             tank[i].hide();
             tankTurret[i].hide();
 
-            tankMovingSound[i]   = Ti.Media.createSound({url:'sounds/tankloop-5.wav'});
-            tankBulletSound[i]   = Ti.Media.createSound({url:'sounds/fire-tank1.wav'});
-            tankExplosionSound[i] = Ti.Media.createSound({url:'sounds/explosion-3.wav'});
-            tankRotateSound[i]   = Ti.Media.createSound({url:'sounds/rotate-tank3.wav'});
+			// We need each tank to record which sounds they are currently playing so we can shut off the right sound when needed.
+			// (This is also useful if we want to add positional audio effects because each tank has a unique position.)
+			// Initialize each tank's playing channel to -1 which means it is not playing.
+			tankMovingCurrentPlayingChannel[i] = -1;
+			tankRotatingCurrentPlayingChannel[i] = -1;
+			
         }
 
         // Create terrain map
