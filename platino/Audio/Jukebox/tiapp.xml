@@ -28,7 +28,14 @@
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+		<tool-api-level>19</tool-api-level>
+		<manifest>
+			<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+			<application android:debuggable="false" android:icon="@drawable/appicon" android:label="Jukebox" android:name="JukeboxApplication" android:theme="@android:style/Theme.Holo.Light">
+			</application>
+		</manifest>
+	</android>
     <mobileweb>
         <precache/>
         <splash>
