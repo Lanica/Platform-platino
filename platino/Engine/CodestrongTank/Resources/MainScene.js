@@ -37,7 +37,7 @@ function MainScene(window, game) {
     var pubnub = null;
     var canUsePubNub = true;
 
-    var useMultiplayer = false;
+    var useMultiplayer = true;
 
     var myUUID = null;
     var myTankIndex = 0;
