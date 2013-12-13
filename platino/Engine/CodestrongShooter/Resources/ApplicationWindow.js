@@ -1,5 +1,4 @@
 var platino = require('co.lanica.platino');
-var ALmixer = platino.require('co.lanica.almixer');
 
 //Application Window Component Constructor
 function ApplicationWindow() {
@@ -10,7 +9,9 @@ function ApplicationWindow() {
     //create component instance
     var self = Ti.UI.createWindow({
         backgroundColor:'black',
-        orientationModes: [Ti.UI.PORTRAIT, Ti.UI.UPSIDE_PORTRAIT]
+        orientationModes: [Ti.UI.PORTRAIT, Ti.UI.UPSIDE_PORTRAIT],
+		fullscreen:true,
+		navBarHidden:true
     });
     
     //construct UI
@@ -156,7 +157,7 @@ function ApplicationWindow() {
     });
     
     self.addEventListener('open', function(e) {
-        Ti.API.info("ApplicationWindow is opend");
+        Ti.API.info("ApplicationWindow is opened");
     });
     
     self.addEventListener('close', function(e) {
@@ -166,24 +167,6 @@ function ApplicationWindow() {
         rightCurtain = null;
         game         = null;
     });
-
-   	// The Titanium.Android.currentActivity.addEventListener pause, resume don't work.
-	// As a fallback, we'll use the window focus to pause/resume audio when the application is backgrounded.
-	self.addEventListener('blur', 
-		function(e) 
-		{
-			Ti.API.info("in window blur");
- 			ALmixer.BeginInterruption();
-		}
-	);
-
-	self.addEventListener('focus', 
-		function(e)
-		{
-			Ti.API.info("in window focus");
-			ALmixer.EndInterruption();
-		}
-	);
  
     return self;
 }
