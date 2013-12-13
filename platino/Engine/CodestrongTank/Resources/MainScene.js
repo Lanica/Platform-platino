@@ -4,7 +4,6 @@
 var platino = require('co.lanica.platino');
 var ALmixer = platino.require('co.lanica.almixer');
 
-ALmixer.Init(0,0,0);
 function MainScene(window, game) {
 
     // Create scene
