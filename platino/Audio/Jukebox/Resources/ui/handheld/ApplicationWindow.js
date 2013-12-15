@@ -52,6 +52,15 @@ function ApplicationWindow() {
 			Ti.API.info("HaltChannel");
 			
 			ALmixer.HaltChannel(0);
+			// Calling FreeData is somewhat optional because garbage collection will eventually clean up for you.
+			// However, beause audio resources are often more limited (they open file handles, use hardware resources, eat lots of memory)
+			// it FreeData will release all the low-level resources immediately. 
+			// So for example, without this call, if you keep changing the song really fast, if you are unlucky and the GC doesn't kick in fast enough,
+			// you will get an error when you try to call LoadStream because you exhausted one of several potential resources.
+			// Calling FreeData will avoid that particular problem.
+			ALmixer.FreeData(currentPlayingAudioData);
+			// FreeData frees the underlying audio resources, but not the JavaScript proxy object that refers to it.
+			// Remember to release your references in JavaScript to the audio handle.
 			currentPlayingAudioData = null;
 		}
 		var filename = e.source.title.toString();
@@ -76,9 +85,9 @@ function ApplicationWindow() {
     self.addEventListener('close', function(){
 		if (currentPlayingAudioData !== null) {
 			ALmixer.HaltChannel(0);
+			ALmixer.FreeData(currentPlayingAudioData);			
 			currentPlayingAudioData = null;
 		}
-		ALmixer.Quit();
     });
     self.addEventListener('blur', function(){
 		ALmixer.BeginInterruption();
