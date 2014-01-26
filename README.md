@@ -15,7 +15,7 @@ The Lanica Game Development Platform enables rapid development  to build cross-p
 All you need to know to get your (game) engine started! [link](http://docs.lanica.co/#!/guide/dev_environment)
 
 #### [Sample Code](./platino/samples)
-To help you understand some fundamental Lanica Platino APIs and coding practices [link](./platino/samples)
+To help you understand some fundamental Lanica Platino APIs and coding practices [link](./platino/Engine)
 
 #### [API Reference](http://docs.lanica.co/#!/api)
 Platino SDK APIs [link](http://docs.lanica.co/#!/api)
