@@ -10,7 +10,19 @@
 * Has friendly methods to load a sprite together with its physical representation. 
 */
 
-var box2d = require('co.lanica.box2djs');
+var chipmunk2dmodule = null;
+var chipmunk = null;
+var box2d = null;
+
+if (require("animo/config").useChipmunk2dModule) {
+    chipmunk2dmodule = require('co.lanica.chipmunk2d');
+    chipmunk = co_lanica_chipmunk2d;
+    var v = chipmunk.cpv;
+}
+else if(require("animo/config").useBox2dModule) 
+{
+box2d = require('co.lanica.box2djs');
+    
 var b2Vec2 = box2d.Common.Math.b2Vec2;
 var b2BodyDef = box2d.Dynamics.b2BodyDef;
 var b2Body = box2d.Dynamics.b2Body;
@@ -19,6 +31,7 @@ var b2Fixture = box2d.Dynamics.b2Fixture;
 var b2World = box2d.Dynamics.b2World;
 var b2PolygonShape = box2d.Collision.Shapes.b2PolygonShape;
 var b2CircleShape = box2d.Collision.Shapes.b2CircleShape;
+}
     
     
 require ("animo/Utils");
@@ -28,6 +41,7 @@ function Sprite()
 {
     this.sprite = null; //the platino sprite sheet object
     this.body = null;//if sprite has a body associated with it - this will contain the body object
+    this.shapes = null; 
     this.name = "";
     this.bodyInfo = null;//dictionary with body info
     this.spriteName = "";
@@ -137,7 +151,17 @@ Sprite.prototype.setPosition = function(pointX, pointY)
             return;
         }
         
-        this.body.SetPosition(new b2Vec2(pointX, game.screen.height - pointY));
+        if(box2d){
+            this.body.SetPosition(new b2Vec2(pointX, game.screen.height - pointY));
+        }
+        else if(chipmunk){
+            var world = Director.sharedDirector().getPhysicalWorld();
+              
+            chipmunk.cpBodySetPos(this.body, v(pointX,  game.screen.height - pointY));
+            chipmunk.cpSpaceReindexStatic(world);
+            //chipmunk.cpSpaceRehashStatic(world);//smaller memory - low performance
+            //chipmunk.cpHashResizeStaticHash(world);//improved performance - bigger memory
+        }
     }
 }
 
@@ -214,143 +238,322 @@ Sprite.prototype.createBody = function()
         return;//no body information so drop the action
     }
     
-    // box2d functions
-    var b2settings = box2d.Common.b2Settings;
-    var b2MassData = box2d.Collision.Shapes.b2MassData;
-    
-    var pi = Math.PI;
-    var ceil = Math.ceil;
-    var atan2 = Math.atan2;
-    var sqrt = Math.sqrt;
-    var round = Math.random;
-    var random = Math.random;
-    
     var world = Director.sharedDirector().getPhysicalWorld();
-    
     if(world == null)return;
-   
     var type = this.bodyInfo.type;
-   
     if(type == 3)//no physics
-        return 
-    
-    
-    var bodyDef = new b2BodyDef();
-    bodyDef.type = type;
-    
-    this.body = world.CreateBody(bodyDef);
-    
-    this.body.SetFixedRotation(this.bodyInfo.fixed);
-    //not available in this version of box2d
-    //this.body.SetGravityScale(new b2Vec2(0.5,-2));
-    this.body.SetSleepingAllowed(this.bodyInfo.sleep);
-    this.body.SetBullet(this.bodyInfo.bullet);
-    this.body.SetAwake(this.bodyInfo.awake);
-    this.body.SetActive(this.bodyInfo.active); 
-    
-    this.body.SetUserData(this.sprite);
-    
-    
-    var shapesInfo = this.bodyInfo.shapes;
-    for(var s = 0; s< shapesInfo.length; ++s)
+        return;
+        
+        
+    if(box2d)
     {
-        var shInfo = shapesInfo[s];
+        // box2d functions
+        var b2settings = box2d.Common.b2Settings;
+        var b2MassData = box2d.Collision.Shapes.b2MassData;
         
-        var density = shInfo.density;
-        var friction= shInfo.friction;
-        var restitution = shInfo.restitution;
-        var sensor = shInfo.sensor;
+        var pi = Math.PI;
+        var ceil = Math.ceil;
+        var atan2 = Math.atan2;
+        var sqrt = Math.sqrt;
+        var round = Math.random;
+        var random = Math.random;
         
-        var shType = shInfo.type;
+        var bodyDef = new b2BodyDef();
+        bodyDef.type = type;
         
-        if(shType == 2)//circle
+        this.body = world.CreateBody(bodyDef);
+        
+        this.body.SetFixedRotation(this.bodyInfo.fixed);
+        //not available in this version of box2d
+        //this.body.SetGravityScale(new b2Vec2(0.5,-2));
+        this.body.SetSleepingAllowed(this.bodyInfo.sleep);
+        this.body.SetBullet(this.bodyInfo.bullet);
+        this.body.SetAwake(this.bodyInfo.awake);
+        this.body.SetActive(this.bodyInfo.active); 
+        
+        this.body.SetUserData(this.sprite);
+        
+        
+        var shapesInfo = this.bodyInfo.shapes;
+        for(var s = 0; s< shapesInfo.length; ++s)
         {
-            var fixDef = new b2FixtureDef();
-            var circle = new b2CircleShape();
+            var shInfo = shapesInfo[s];
             
-            var circleRadius = parseFloat(shInfo.radius);
-            var offset = ANPointFromString(shInfo.circleOffset);
-
-            var x = offset[0];
-            var y = offset[1];
+            var density = shInfo.density;
+            var friction= shInfo.friction;
+            var restitution = shInfo.restitution;
+            var sensor = shInfo.sensor;
             
-            //flip y for platino coordinate system
-            y = this.sprite.height - y;
-            y = y - this.sprite.height;
-              
-            fixDef.shape = new b2CircleShape(circleRadius/2);
+            var shType = shInfo.type;
             
-            fixDef.shape.SetLocalPosition(new b2Vec2(x, y));
-            fixDef.density = density;
-            fixDef.friction = friction;
-            fixDef.restitution = restitution;
-            fixDef.isSensor = sensor;
-            
-            var cat  = shInfo.category;
-            var mask = shInfo.mask;
-            if(cat != null && mask != null)
+            if(shType == 2)//circle
             {
-                fixDef.filter.categoryBits = parseInt(cat);
-                fixDef.filter.maskBits     = parseInt(mask);
-            }
-                         
-            this.body.CreateFixture(fixDef);
-
-
-        }
-        else{//polygon shape
-         
-            var fixtures = shInfo.fixtures;
-            
-            for(var f = 0; f < fixtures.length; ++f)
-            {
-                var fixturePoints = fixtures[f];
-
-
-                var fix = new b2FixtureDef();
-                fix.shape = new b2PolygonShape();
-        
-                fix.density     = density;
-                fix.friction    = friction;
-                fix.restitution = restitution;
-                fix.isSensor    = sensor;
-        
-        
-                var arrayOfPoints = [];
+                var fixDef = new b2FixtureDef();
+                var circle = new b2CircleShape();
                 
-                var i = fixturePoints.length - 1;
-                for(var j = 0; j< fixturePoints.length; ++j)
-                {
-                    var point = ANPointFromString(fixturePoints[j]);
-                    
-                    var x = point[0];
-                    var y = point[1];
-                    
-                    //flip y for platino coordinate system
-                    y =  this.sprite.height - y;
-                    y = y - this.sprite.height;
-                    
-                    arrayOfPoints[i] = new b2Vec2(x, y);
-                    i = i-1;
-                }
-            
-            
+                var circleRadius = parseFloat(shInfo.radius);
+                var offset = ANPointFromString(shInfo.circleOffset);
+    
+                var x = offset[0];
+                var y = offset[1];
+                
+                //flip y for platino coordinate system
+                y = this.sprite.height - y;
+                y = y - this.sprite.height;
+                  
+                fixDef.shape = new b2CircleShape(circleRadius/2);
+                
+                fixDef.shape.SetLocalPosition(new b2Vec2(x, y));
+                fixDef.density = density;
+                fixDef.friction = friction;
+                fixDef.restitution = restitution;
+                fixDef.isSensor = sensor;
+                
                 var cat  = shInfo.category;
                 var mask = shInfo.mask;
                 if(cat != null && mask != null)
                 {
-                    fix.filter.categoryBits = parseInt(cat);
-                    fix.filter.maskBits     = parseInt(mask);
+                    fixDef.filter.categoryBits = parseInt(cat);
+                    fixDef.filter.maskBits     = parseInt(mask);
                 }
-            
-                fix.shape.SetAsArray(arrayOfPoints);
-                    
-                this.body.CreateFixture(fix);   
+                             
+                this.body.CreateFixture(fixDef);
+    
+    
             }
+            else{//polygon shape
+             
+                var fixtures = shInfo.fixtures;
+                
+                for(var f = 0; f < fixtures.length; ++f)
+                {
+                    var fixturePoints = fixtures[f];
+    
+    
+                    var fix = new b2FixtureDef();
+                    fix.shape = new b2PolygonShape();
+            
+                    fix.density     = density;
+                    fix.friction    = friction;
+                    fix.restitution = restitution;
+                    fix.isSensor    = sensor;
+            
+            
+                    var arrayOfPoints = [];
+                    
+                    var i = fixturePoints.length - 1;
+                    for(var j = 0; j< fixturePoints.length; ++j)
+                    {
+                        var point = ANPointFromString(fixturePoints[j]);
+                        
+                        var x = point[0];
+                        var y = point[1];
+                        
+                        //flip y for platino coordinate system
+                        y =  this.sprite.height - y;
+                        y = y - this.sprite.height;
+                        
+                        arrayOfPoints[i] = new b2Vec2(x, y);
+                        i = i-1;
+                    }
+                
+                
+                    var cat  = shInfo.category;
+                    var mask = shInfo.mask;
+                    if(cat != null && mask != null)
+                    {
+                        fix.filter.categoryBits = parseInt(cat);
+                        fix.filter.maskBits     = parseInt(mask);
+                    }
+                
+                    fix.shape.SetAsArray(arrayOfPoints);
+                        
+                    this.body.CreateFixture(fix);   
+                }
+            }
+        }
+    }  
+    else if(chipmunk)
+    {
+        var mass = 1; // we'll use a mass of 1 for everything
+        var width = this.sprite.width;
+		var height = this.sprite.height;
+		
+        // create a moment of inertia to use for body creation
+		var moment = chipmunk.cpMomentForBox(mass, width-2, height-2);
+		
+		// create a body for each sprite
+		//this.body = chipmunk.cpBodyNew(mass, moment);		
+        
+        if(type == 0){//static
+            this.body = chipmunk.cpBodyNewStatic();
+           //  this.body = chipmunk.cpBodyNew(mass, moment);
+            //this.body = chipmunk.cpBodyNew(chipmunk.INFINITY, chipmunk.INFINITY);
+        }
+        else
+        {
+            this.body = chipmunk.cpBodyNew(mass, moment);
+            chipmunk.cpSpaceAddBody(world, this.body);
+        }
+    
+        
+        
+        
+        
+		//this.body.SetFixedRotation(this.bodyInfo.fixed);
+        
+        //this.body.SetSleepingAllowed(this.bodyInfo.sleep);
+        //this.body.SetBullet(this.bodyInfo.bullet);
+        //this.body.SetAwake(this.bodyInfo.awake);
+        //this.body.SetActive(this.bodyInfo.active); 
+        chipmunk.cpBodySetUserData(this.body, this.sprite);
+        
+        
+        
+     
+        var shapesInfo = this.bodyInfo.shapes;
+        for(var s = 0; s< shapesInfo.length; ++s)
+        {
+            var shInfo = shapesInfo[s];
+            
+            var density = shInfo.density;
+            var friction= shInfo.friction;
+            var restitution = shInfo.restitution;
+            var sensor = shInfo.sensor;
+            
+            var shType = shInfo.type;
+            
+            if(shType == 2)//circle
+            {
+                var circleRadius = parseFloat(shInfo.radius);
+                var offset = ANPointFromString(shInfo.circleOffset);
+                
+                var x = offset[0];
+                var y = offset[1];
+                
+                //flip y for platino coordinate system
+                y = this.sprite.height - y;
+                y = y - this.sprite.height;
+                 
+                // create a shape
+                var shape = chipmunk.cpCircleShapeNew(this.body, circleRadius*0.5, v(x, y));
+                
+                if(this.shapes == null)
+                    this.shapes = [];
+                this.shapes.push(shape);
+                
+                
+                if(type == 0){
+                    chipmunk.cpSpaceAddStaticShape(world, shape);    
+                }
+                else{
+                    chipmunk.cpSpaceAddShape(world, shape);
+                }
+                
+                
+                chipmunk.cpShapeSetElasticity(shape, restitution);
+                chipmunk.cpShapeSetFriction(shape, friction);
+                if(sensor){
+                    chipmunk.cpShapeSetSensor(shape, 1);
+                }
+                else{
+                    chipmunk.cpShapeSetSensor(shape, 0);
+                }
+                
+                
+                /*
+                var cat  = shInfo.category;
+                var mask = shInfo.mask;
+                if(cat != null && mask != null)
+                {
+                    fixDef.filter.categoryBits = parseInt(cat);
+                    fixDef.filter.maskBits     = parseInt(mask);
+                }
+                             
+                this.body.CreateFixture(fixDef);
+                */
+    
+            }
+            else{//polygon shape
+             
+                var fixtures = shInfo.fixtures;
+                
+                for(var f = 0; f < fixtures.length; ++f)
+                {
+                    var fixturePoints = fixtures[f];
+            
+                    //fix.density     = density;
+                    //fix.friction    = friction;
+                    //fix.restitution = restitution;
+                    //fix.isSensor    = sensor;
+            
+            
+                    var arrayOfPoints = [];
+                    
+                    var i = fixturePoints.length - 1;
+                    for(var p = fixturePoints.length-1; p > -1; --p)
+                    {
+                        var point = ANPointFromString(fixturePoints[p]);
+                        
+                        var x = point[0];
+                        var y = point[1];
+                        
+                        //flip y for platino coordinate system
+                        y =  this.sprite.height - y;
+                        y = y - this.sprite.height;
+                        
+                        arrayOfPoints[i] = v(x, y);
+                        
+                        i = i-1;
+                    }
+                    
+                   
+                    /*                
+                    var cat  = shInfo.category;
+                    var mask = shInfo.mask;
+                    if(cat != null && mask != null)
+                    {
+                        fix.filter.categoryBits = parseInt(cat);
+                        fix.filter.maskBits     = parseInt(mask);
+                    }
+                    
+                    */
+                
+                    shape = chipmunk.cpPolyShapeNew(this.body, arrayOfPoints.length, arrayOfPoints, v(0, 0));
+                    
+                    if(this.shapes == null){
+                        this.shapes = [];
+                    }
+                    this.shapes.push(shape);
+
+
+                    if(sensor){
+                       chipmunk.cpShapeSetSensor(shape, 1);
+                    }
+                    else{
+                        chipmunk.cpShapeSetSensor(shape, 0);
+                    }
+                    
+                    if(type == 0){
+                        chipmunk.cpSpaceAddStaticShape(world, shape);    
+                    }
+                    else{
+                        chipmunk.cpSpaceAddShape(world, shape);
+                    }
+                
+                    chipmunk.cpShapeSetElasticity(shape, restitution);
+                    chipmunk.cpShapeSetFriction(shape, friction);
+                }
+            }
+        
+        }
+        
+        if(type == 0)//static
+        {
+//            chipmunk.cpSpaceConvertBodyToStatic(world, this.body);
         }
         
     }
-                
 }
 
 

@@ -5,7 +5,7 @@
 //
 
 //Demonstrate loading sprites from a texture atlas generated using SpriteHelper 2
-Ti.include("Sprites_LoadSpriteFromPNGTest.js");
+//Ti.include("Sprites_LoadSpriteFromPNGTest.js");
 //
 
 //Domonstrate loading a skeleton and moving the character hand
@@ -50,7 +50,8 @@ Ti.include("Sprites_LoadSpriteFromPNGTest.js");
 //
 
 //demonstrate loading a physical sprite
-//Ti.include("Physics_LoadSpritesWithBody.js");
+//Ti.include("Physics_LoadSpritesWithBodyBox2d.js");
+Ti.include("Physics_LoadSpritesWithBodyChipmunk2d.js");
 //
 
 //demonstrate filtering box2d collision 
