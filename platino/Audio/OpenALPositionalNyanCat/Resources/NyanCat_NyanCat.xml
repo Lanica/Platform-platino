@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This atlas was generated using SpriteHelper 2 -->
+<!-- http://www.gamedevhelper.com -->
+<Imageset Name="NyanCat" Imagefile="NyanCat_NyanCat.png" NativeHorzRes="350" NativeVertRes="780" AutoScaled="false">
+	<Image Name="nyansprite_1_1.png" XPos="177" YPos="262" Width="170" Height="256"/>
+	<Image Name="nyansprite_1_2.png" XPos="2" YPos="2" Width="171" Height="256"/>
+	<Image Name="nyansprite_1_3.png" XPos="2" YPos="262" Width="171" Height="256"/>
+	<Image Name="nyansprite_1_4.png" XPos="177" YPos="522" Width="170" Height="256"/>
+	<Image Name="nyansprite_1_5.png" XPos="177" YPos="2" Width="171" Height="256"/>
+	<Image Name="nyansprite_1_6.png" XPos="2" YPos="522" Width="171" Height="256"/>
+</Imageset>

@@ -1,0 +1,30 @@
+//Application Window Component Constructor
+function ApplicationWindow() {
+	//load component dependencies
+	var FirstView = require('ui/common/FirstView');
+		
+	//create component instance
+	var self = Ti.UI.createWindow({
+		backgroundColor:'#ffffff',
+<<<<<<< HEAD
+		orientationModes: [
+		Ti.UI.PORTRAIT,
+		Ti.UI.UPSIDE_PORTRAIT,
+		Ti.UI.LANDSCAPE_LEFT,
+		Ti.UI.LANDSCAPE_RIGHT
+		]
+=======
+		fullscreen:false,
+		exitOnClose:true		
+>>>>>>> e89e39806ca6952c2e62d1463825025d403bcbf7
+	});
+		
+	//construct UI
+	var firstView = new FirstView();
+	self.add(firstView);
+	
+	return self;
+}
+
+//make constructor function the public component interface
+module.exports = ApplicationWindow;

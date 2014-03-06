@@ -1,0 +1,41 @@
+
+<lanicaAnimoParticles>
+    <yCoordFlipped value="-1"></yCoordFlipped>
+    <sourcePosition x="150.00" y="50.00"></sourcePosition>
+    <sourcePositionVariance x="0.00" y="0.00"></sourcePositionVariance>
+    <speed value="100.00"></speed>
+    <speedVariance value="0.00"></speedVariance>
+    <particleLifeSpan value="4.0000"></particleLifeSpan>
+    <particleLifespanVariance value="1.0000"></particleLifespanVariance>
+    <angle value="-180.00"></angle>
+    <angleVariance value="-40.00"></angleVariance>
+    <gravity x="0.00" y="-0.00"></gravity>
+    <radialAcceleration value="0.00"></radialAcceleration>
+    <tangentialAcceleration value="-0.00"></tangentialAcceleration>
+    <radialAccelVariance value="0.00"></radialAccelVariance>
+    <tangentialAccelVariance value="-0.00"></tangentialAccelVariance>
+    <startColor red="0.57" green="0.57" blue="0.57" alpha="1.00"></startColor>
+    <startColorVariance red="0.50" green="0.50" blue="0.50" alpha="0.00"></startColorVariance>
+    <finishColor red="0.00" green="0.00" blue="0.00" alpha="1.00"></finishColor>
+    <finishColorVariance red="0.00" green="0.00" blue="0.00" alpha="0.00"></finishColorVariance>
+    <maxParticles value="200"></maxParticles>
+    <startParticleSize value="30.00"></startParticleSize>
+    <startParticleSizeVariance value="10.00"></startParticleSizeVariance>
+    <finishParticleSize value="30.00"></finishParticleSize>
+    <finishParticleSizeVariance value="0.00"></finishParticleSizeVariance>
+    <duration value="-1.00"></duration>
+    <emitterType value="0"></emitterType>
+    <maxRadius value="46.53"></maxRadius>
+    <maxRadiusVariance value="196.60"></maxRadiusVariance>
+    <minRadius value="0.00"></minRadius>
+    <minRadiusVariance value="0.00"></minRadiusVariance>
+    <rotatePerSecond value="0.00"></rotatePerSecond>
+    <rotatePerSecondVariance value="0.00"></rotatePerSecondVariance>
+    <blendFuncSource value="770"></blendFuncSource>
+    <blendFuncDestination value="1"></blendFuncDestination>
+    <rotationStart value="0.00"></rotationStart>
+    <rotationStartVariance value="0.00"></rotationStartVariance>
+    <rotationEnd value="0.00"></rotationEnd>
+    <rotationEndVariance value="0.00"></rotationEndVariance>
+    <texture name="RainbowTrail_100.png" data=""></texture>
+</lanicaAnimoParticles>
