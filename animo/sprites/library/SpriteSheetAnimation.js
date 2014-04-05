@@ -1,7 +1,7 @@
 
 
 require('animo/Utils');
-
+var platino = require('co.lanica.platino');
 
 function AnimationFrame()
 {    
