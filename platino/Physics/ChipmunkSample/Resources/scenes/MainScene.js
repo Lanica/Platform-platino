@@ -104,6 +104,7 @@ var MainScene = function(window, game) {
 		if (sprites) {
 			Ti.API.info("[begin] collision for " + sprites.a.tag + ' with ' + sprites.b.tag);
 		}
+		return true;
 	};
     
     // [preSolve] phase collision callback
@@ -115,6 +116,7 @@ var MainScene = function(window, game) {
 		if (sprites) {
 			Ti.API.info("[preSolve] collision for " + sprites.a.tag + ' with ' + sprites.b.tag);
 		}
+		return true;
     };
     
     // [postSolve] phase collision callback
